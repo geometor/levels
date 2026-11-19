@@ -5,6 +5,7 @@ from __future__ import annotations
 import signal
 import sys
 import time
+from datetime import datetime
 from itertools import combinations
 from pathlib import Path
 
@@ -25,14 +26,15 @@ def run_level3(
     Args:
         order: Pair ordering strategy (``"round_robin"`` or ``"symmetric"``).
         output_dir: Directory for logs and JSON checkpoints. Defaults to
-            ``<repo_root>/runs/<order>``.
+            ``<repo_root>/runs/<order>_<YYYYMMDD-HHMMSS>``.
         save_interval_s: Seconds between periodic JSON checkpoints.
 
     Returns:
         Path to the final saved model JSON file.
     """
     repo_root = Path(__file__).resolve().parents[3]
-    out_dir = output_dir or (repo_root / "runs" / order)
+    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    out_dir = output_dir or (repo_root / "runs" / f"{order}_{stamp}")
     out_dir.mkdir(parents=True, exist_ok=True)
 
     ckpt_path = out_dir / f"level-3-{order}-checkpoint.json"
