@@ -26,7 +26,7 @@ Module Contents
 
    :param order: Pair ordering strategy (``"round_robin"`` or ``"symmetric"``).
    :param output_dir: Directory for logs and JSON checkpoints. Defaults to
-                      ``<repo_root>/runs/<order>``.
+                      ``<repo_root>/runs/<order>_<YYYYMMDD-HHMMSS>``.
    :param save_interval_s: Seconds between periodic JSON checkpoints.
 
    :returns: Path to the final saved model JSON file.
