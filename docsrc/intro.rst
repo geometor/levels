@@ -1,0 +1,1 @@
+**Levels** (Exhaustive compass-and-straightedge level constructions and emergent golden sections) provides exact symbolic computation and interactive tooling powering the interconnected `GEOMETOR <https://geometor.com/>`_ semantic digital archive.
