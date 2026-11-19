@@ -1,0 +1,34 @@
+src.geometor.levels.runner
+==========================
+
+.. py:module:: src.geometor.levels.runner
+
+.. autoapi-nested-parse::
+
+   Resilient Level 3 runner with timed checkpoints and signal handling.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.levels.runner.run_level3
+
+
+Module Contents
+---------------
+
+.. py:function:: run_level3(*, order: str = 'round_robin', output_dir: pathlib.Path | None = None, save_interval_s: float = 3600.0) -> pathlib.Path
+
+   Run Level 3 construction using the selected pair ordering.
+
+   :param order: Pair ordering strategy (``"round_robin"`` or ``"symmetric"``).
+   :param output_dir: Directory for logs and JSON checkpoints. Defaults to
+                      ``<repo_root>/runs/<order>``.
+   :param save_interval_s: Seconds between periodic JSON checkpoints.
+
+   :returns: Path to the final saved model JSON file.
+
+
