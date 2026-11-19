@@ -33,3 +33,4 @@ resources/**/scans/*.tif
 .DS_Store
 .ipynb_checkpoints/
 scratch/
+runs/
