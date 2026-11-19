@@ -1,0 +1,48 @@
+src.geometor.levels.levels
+==========================
+
+.. py:module:: src.geometor.levels.levels
+
+.. autoapi-nested-parse::
+
+   Core level construction and pair-ordering strategies.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.levels.levels.fundamental
+   src.geometor.levels.levels.order_pairs_round_robin
+   src.geometor.levels.levels.order_pairs_symmetric
+   src.geometor.levels.levels.build_level
+
+
+Module Contents
+---------------
+
+.. py:function:: fundamental(model: geometor.model.Model, pt_1: sympy.geometry.Point, pt_2: sympy.geometry.Point) -> None
+
+   Construct the line and both circles determined by ``pt_1`` and ``pt_2``.
+
+
+.. py:function:: order_pairs_round_robin(pts: collections.abc.Sequence[sympy.geometry.Point]) -> list[tuple[sympy.geometry.Point, sympy.geometry.Point]]
+
+   Return all ``C(N, 2)`` pairs in round-robin stride order.
+
+   Stride ``k = 1`` emits ``(P0, P1), (P1, P2), ...``, touching every point
+   within the first ``N`` pairs before advancing to stride ``k = 2``.
+
+
+.. py:function:: order_pairs_symmetric(pts: collections.abc.Sequence[sympy.geometry.Point]) -> list[tuple[sympy.geometry.Point, sympy.geometry.Point]]
+
+   Return all ``C(N, 2)`` pairs ordered radially outward from the origin.
+
+
+.. py:function:: build_level(level: int, *, enable_logging: bool = False, use_point_subscript: bool = True) -> geometor.model.Model
+
+   Build an exact symbolic level model (``level >= 0``).
+
+

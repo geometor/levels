@@ -1,0 +1,11 @@
+src.geometor.levels.__main__
+============================
+
+.. py:module:: src.geometor.levels.__main__
+
+.. autoapi-nested-parse::
+
+   Package entry point for ``python -m geometor.levels``.
+
+
+
