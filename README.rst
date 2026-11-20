@@ -1,13 +1,13 @@
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • levels Medallion
+   :target: https://geometor.github.io/levels/
+   :width: 150px
+   :align: right
+
 GEOMETOR • levels
 =================
 
 **Visit the Online Archive:** https://geometor.github.io/levels/
-
-.. image:: docsrc/_static/logo.png
-   :alt: GEOMETOR • levels Medallion
-   :target: https://geometor.github.io/levels/
-   :width: 180px
-   :align: center
 
 .. image:: docsrc/_static/social/banner.png
    :alt: GEOMETOR • levels featured graphic
