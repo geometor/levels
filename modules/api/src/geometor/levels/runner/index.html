@@ -11,11 +11,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="canonical" href="https://geometor.github.io/levels/modules/api/src/geometor/levels/runner/" />
-  <meta name="description" content="Resilient Level 3 runner with timed checkpoints and signal handling." />
+  <meta name="description" content="Resilient Level 3 runner with memory guards, golden tracking, and telemetry." />
   <meta property="og:site_name" content="GEOMETOR" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="src.geometor.levels.runner — Levels • GEOMETOR" />
-  <meta property="og:description" content="Resilient Level 3 runner with timed checkpoints and signal handling." />
+  <meta property="og:description" content="Resilient Level 3 runner with memory guards, golden tracking, and telemetry." />
   <meta property="og:url" content="https://geometor.github.io/levels/modules/api/src/geometor/levels/runner/" />
   <meta property="og:image" content="https://geometor.github.io/levels/_static/social/banner.png" />
   <meta property="og:image:type" content="image/png" />
@@ -24,7 +24,7 @@
   <meta property="og:image:alt" content="Levels — GEOMETOR" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="src.geometor.levels.runner — Levels • GEOMETOR" />
-  <meta name="twitter:description" content="Resilient Level 3 runner with timed checkpoints and signal handling." />
+  <meta name="twitter:description" content="Resilient Level 3 runner with memory guards, golden tracking, and telemetry." />
   <meta name="twitter:image" content="https://geometor.github.io/levels/_static/social/banner.png" />
   <meta name="twitter:image:alt" content="Levels — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -91,13 +91,13 @@
       <div class="content body book-content" role="main">
         <section class="level-1" id="module-src.geometor.levels.runner">
         <span id="src-geometor-levels-runner"></span><h1>src.geometor.levels.runner<a class="headerlink" href="#module-src.geometor.levels.runner" title="Link to this heading">¶</a></h1>
-        <p>Resilient Level 3 runner with timed checkpoints and signal handling.</p>
+        <p>Resilient Level 3 runner with memory guards, golden tracking, and telemetry.</p>
         <section class="level-2" id="functions">
         <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
         <table class="autosummary longtable docutils align-default">
         <tbody>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.levels.runner.run_level3" title="src.geometor.levels.runner.run_level3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run_level3</span></code></a>(*[, order, output_dir, save_interval_s]) → pathlib.Path</p></td>
-        <td><p>Run Level 3 construction using the selected pair ordering.</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.levels.runner.run_level3" title="src.geometor.levels.runner.run_level3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run_level3</span></code></a>(*[, order, output_dir, save_interval_s, ...]) → pathlib.Path</p></td>
+        <td><p>Run Level 3 construction safely with memory guards and optional golden tracking.</p></td>
         </tr>
         </tbody>
         </table>
@@ -106,15 +106,18 @@
         <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
         <dl class="py function">
         <dt class="sig sig-object py" id="src.geometor.levels.runner.run_level3">
-        <span class="sig-prename descclassname"><span class="pre">src.geometor.levels.runner.</span></span><span class="sig-name descname"><span class="pre">run_level3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'round_robin'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_interval_s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3600.0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pathlib.Path</span></span></span><a class="headerlink" href="#src.geometor.levels.runner.run_level3" title="Link to this definition">¶</a></dt>
-        <dd><p>Run Level 3 construction using the selected pair ordering.</p>
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.levels.runner.</span></span><span class="sig-name descname"><span class="pre">run_level3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'round_robin'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_interval_s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3600.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_rss_gb</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">18.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_avail_gb</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">track_goldens</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pathlib.Path</span></span></span><a class="headerlink" href="#src.geometor.levels.runner.run_level3" title="Link to this definition">¶</a></dt>
+        <dd><p>Run Level 3 construction safely with memory guards and optional golden tracking.</p>
         <dl class="field-list simple">
         <dt class="field-odd">Parameters<span class="colon">:</span></dt>
         <dd class="field-odd"><ul class="simple">
         <li><p><strong>order</strong> – Pair ordering strategy (<code class="docutils literal notranslate"><span class="pre">&quot;round_robin&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;symmetric&quot;</span></code>).</p></li>
-        <li><p><strong>output_dir</strong> – Directory for logs and JSON checkpoints. Defaults to
-        <code class="docutils literal notranslate"><span class="pre">&lt;repo_root&gt;/runs/&lt;order&gt;_&lt;YYYYMMDD-HHMMSS&gt;</span></code>.</p></li>
+        <li><p><strong>output_dir</strong> – Directory for logs, JSONL telemetry, and JSON checkpoints.
+        Defaults to <code class="docutils literal notranslate"><span class="pre">&lt;repo_root&gt;/runs/&lt;order&gt;_&lt;YYYYMMDD-HHMMSS&gt;</span></code>.</p></li>
         <li><p><strong>save_interval_s</strong> – Seconds between periodic JSON checkpoints.</p></li>
+        <li><p><strong>max_rss_gb</strong> – Stop cleanly and save if process RSS exceeds this GiB limit.</p></li>
+        <li><p><strong>min_avail_gb</strong> – Stop cleanly and save if system MemAvailable drops below this GiB.</p></li>
+        <li><p><strong>track_goldens</strong> – Attach <code class="docutils literal notranslate"><span class="pre">GoldenFieldTracker</span></code> to record point-birth golden impact.</p></li>
         </ul>
         </dd>
         <dt class="field-even">Returns<span class="colon">:</span></dt>

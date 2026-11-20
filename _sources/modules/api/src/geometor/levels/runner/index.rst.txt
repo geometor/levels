@@ -5,7 +5,7 @@ src.geometor.levels.runner
 
 .. autoapi-nested-parse::
 
-   Resilient Level 3 runner with timed checkpoints and signal handling.
+   Resilient Level 3 runner with memory guards, golden tracking, and telemetry.
 
 
 
@@ -20,14 +20,17 @@ Functions
 Module Contents
 ---------------
 
-.. py:function:: run_level3(*, order: str = 'round_robin', output_dir: pathlib.Path | None = None, save_interval_s: float = 3600.0) -> pathlib.Path
+.. py:function:: run_level3(*, order: str = 'round_robin', output_dir: pathlib.Path | None = None, save_interval_s: float = 3600.0, max_rss_gb: float = 18.0, min_avail_gb: float = 4.0, track_goldens: bool = True) -> pathlib.Path
 
-   Run Level 3 construction using the selected pair ordering.
+   Run Level 3 construction safely with memory guards and optional golden tracking.
 
    :param order: Pair ordering strategy (``"round_robin"`` or ``"symmetric"``).
-   :param output_dir: Directory for logs and JSON checkpoints. Defaults to
-                      ``<repo_root>/runs/<order>_<YYYYMMDD-HHMMSS>``.
+   :param output_dir: Directory for logs, JSONL telemetry, and JSON checkpoints.
+                      Defaults to ``<repo_root>/runs/<order>_<YYYYMMDD-HHMMSS>``.
    :param save_interval_s: Seconds between periodic JSON checkpoints.
+   :param max_rss_gb: Stop cleanly and save if process RSS exceeds this GiB limit.
+   :param min_avail_gb: Stop cleanly and save if system MemAvailable drops below this GiB.
+   :param track_goldens: Attach ``GoldenFieldTracker`` to record point-birth golden impact.
 
    :returns: Path to the final saved model JSON file.
 
