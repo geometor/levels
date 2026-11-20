@@ -18,6 +18,7 @@ Submodules
    /modules/api/src/geometor/levels/__main__/index
    /modules/api/src/geometor/levels/app/index
    /modules/api/src/geometor/levels/levels/index
+   /modules/api/src/geometor/levels/parallel_l3/index
    /modules/api/src/geometor/levels/runner/index
    /modules/api/src/geometor/levels/visualize/index
 

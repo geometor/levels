@@ -1,0 +1,33 @@
+src.geometor.levels.parallel_l3
+===============================
+
+.. py:module:: src.geometor.levels.parallel_l3
+
+.. autoapi-nested-parse::
+
+   Parallel out-of-core Level 3 structure generation and line-by-line golden scan.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.levels.parallel_l3.generate_l3_structures
+   src.geometor.levels.parallel_l3.run_parallel_l3_golden
+
+
+Module Contents
+---------------
+
+.. py:function:: generate_l3_structures(cache_path: pathlib.Path | None = None) -> tuple[list[sympy.geometry.Line], list[sympy.geometry.Circle]]
+
+   Generate all unique Level 3 lines (17,562) and circles (32,719) using 3D grid dedup.
+
+
+.. py:function:: run_parallel_l3_golden(*, workers: int = 4, limit_lines: int | None = None, line_timeout_s: int = 120, output_dir: pathlib.Path | None = None) -> pathlib.Path
+
+   Generate Level 3 structures and scan lines in parallel for golden sections.
+
+
