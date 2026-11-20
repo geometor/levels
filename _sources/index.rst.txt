@@ -6,5 +6,9 @@
 Levels
 ======
 
+.. image:: _static/medallion.svg
+   :alt: Levels Medallion
+   :class: repo-medallion-hero
+
 .. include:: intro.rst
 
