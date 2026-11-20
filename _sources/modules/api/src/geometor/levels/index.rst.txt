@@ -19,6 +19,7 @@ Submodules
    /modules/api/src/geometor/levels/app/index
    /modules/api/src/geometor/levels/levels/index
    /modules/api/src/geometor/levels/runner/index
+   /modules/api/src/geometor/levels/visualize/index
 
 
 Attributes
@@ -83,6 +84,6 @@ Package Contents
 
 
 .. py:data:: __version__
-   :value: '0.1.0'
+   :value: '0.2.0'
 
 

@@ -1,0 +1,80 @@
+src.geometor.levels.visualize
+=============================
+
+.. py:module:: src.geometor.levels.visualize
+
+.. autoapi-nested-parse::
+
+   Visualization helpers for level constructions and ancestor-isolated golden sections.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   src.geometor.levels.visualize.BG
+   src.geometor.levels.visualize.DIM_LINE
+   src.geometor.levels.visualize.DIM_CIRCLE
+   src.geometor.levels.visualize.DIM_PT
+   src.geometor.levels.visualize.CYAN
+   src.geometor.levels.visualize.GOLD
+   src.geometor.levels.visualize.AMBER
+   src.geometor.levels.visualize.WHITE
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.levels.visualize.section_ancestors
+   src.geometor.levels.visualize.render_ancestor_cycle_gif
+
+
+Module Contents
+---------------
+
+.. py:data:: BG
+   :value: '#0b0e14'
+
+
+.. py:data:: DIM_LINE
+   :value: '#1e2736'
+
+
+.. py:data:: DIM_CIRCLE
+   :value: '#1a222f'
+
+
+.. py:data:: DIM_PT
+   :value: '#2b384c'
+
+
+.. py:data:: CYAN
+   :value: '#4cc9f0'
+
+
+.. py:data:: GOLD
+   :value: '#ffd166'
+
+
+.. py:data:: AMBER
+   :value: '#f77f00'
+
+
+.. py:data:: WHITE
+   :value: '#f8f9fa'
+
+
+.. py:function:: section_ancestors(model: geometor.model.Model, section: geometor.model.sections.Section) -> set[sympy.geometry.GeometryEntity]
+
+   Return the union of all causal DAG ancestors for the 3 points of ``section``.
+
+
+.. py:function:: render_ancestor_cycle_gif(model: geometor.model.Model, sections: list[geometor.model.sections.Section], out_gif: pathlib.Path, *, xlim: tuple[float, float] = (-3.4, 3.4), ylim: tuple[float, float] = (-1.9125, 1.9125), duration_ms: int = 550, subtitle_fn: object | None = None) -> pathlib.Path
+
+   Render an animated GIF graying out non-ancestors for each golden section.
+
+
