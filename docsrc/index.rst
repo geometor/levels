@@ -12,3 +12,9 @@ Levels
 
 .. include:: intro.rst
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Research & Findings
+
+   approaches/index
+
