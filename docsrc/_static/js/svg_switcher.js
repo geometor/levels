@@ -7,7 +7,7 @@
     if (svgCache.has(url)) {
       return svgCache.get(url);
     }
-    const resp = await fetch(url);
+    const resp = await fetch(url, { cache: "no-cache" });
     if (!resp.ok) {
       throw new Error(`Failed to load SVG: ${url} (${resp.status})`);
     }
@@ -179,6 +179,7 @@
     const state = { initial, current: { ...initial } };
     stageEl.replaceChildren(svgEl);
     scaleViewElements(svgEl, initial);
+    requestAnimationFrame(() => scaleViewElements(svgEl, initial));
     return { svgEl, state };
   }
 
