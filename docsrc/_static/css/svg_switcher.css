@@ -65,6 +65,14 @@
   vector-effect: non-scaling-stroke;
 }
 
+.gsv-stage svg.geometor-svg-canvas text.geom-label {
+  paint-order: stroke fill;
+  stroke: #0b0e14;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
 .gsv-toolbar {
   display: flex;
   flex-wrap: wrap;

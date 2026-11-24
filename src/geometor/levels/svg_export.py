@@ -154,7 +154,9 @@ def _render_square_svg(
                     f'<text class="geom-label" x="{sx:.2f}" y="{lbl_y:.2f}" '
                     f'data-anchor-x="{sx:.2f}" data-anchor-y="{sy:.2f}" '
                     f'data-offset-y="{oy}" data-base-font="16" '
-                    'fill="#4cc9f0" font-family="monospace" font-size="16" '
+                    'fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" '
+                    'stroke-linejoin="round" paint-order="stroke fill" '
+                    'font-family="monospace" font-size="16" '
                     f'font-weight="bold" text-anchor="middle">{escape(k)}</text>'
                 )
 
@@ -182,8 +184,10 @@ def _render_square_svg(
         parts.append(
             f'<text class="geom-label" x="{sx:.2f}" y="{lbl_y:.2f}" '
             f'data-anchor-x="{sx:.2f}" data-anchor-y="{sy:.2f}" '
-            f'data-offset-y="{oy}" data-base-font="20" '
-            'fill="#f8f9fa" font-family="monospace" font-size="20" '
+            f'data-offset-y="{oy}" data-base-font="16" '
+            'fill="#ffd166" stroke="#0b0e14" stroke-width="4" '
+            'stroke-linejoin="round" paint-order="stroke fill" '
+            'font-family="monospace" font-size="16" '
             f'font-weight="bold" text-anchor="middle">{escape(pid)}</text>'
         )
 
