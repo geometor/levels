@@ -35,6 +35,11 @@
   height: 100%;
 }
 
+.gsv-stage svg.geometor-svg-canvas line,
+.gsv-stage svg.geometor-svg-canvas circle {
+  vector-effect: non-scaling-stroke;
+}
+
 .gsv-toolbar {
   display: flex;
   flex-wrap: wrap;

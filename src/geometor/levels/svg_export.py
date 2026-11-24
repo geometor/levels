@@ -144,14 +144,18 @@ def _render_square_svg(
             sx, sy = tx(px), ty(py)
             if 0 <= sx <= size and 0 <= sy <= size:
                 parts.append(
-                    f'<circle cx="{sx:.2f}" cy="{sy:.2f}" r="5.5" '
+                    f'<circle class="geom-point" cx="{sx:.2f}" cy="{sy:.2f}" '
+                    'r="5.5" data-base-r="5.5" '
                     'fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>'
                 )
-                lbl_y = sy + 20 if sy < size - 28 else sy - 12
+                oy = 20 if sy < size - 28 else -12
+                lbl_y = sy + oy
                 parts.append(
-                    f'<text x="{sx:.2f}" y="{lbl_y:.2f}" fill="#4cc9f0" '
-                    'font-family="monospace" font-size="16" font-weight="bold" '
-                    f'text-anchor="middle">{escape(k)}</text>'
+                    f'<text class="geom-label" x="{sx:.2f}" y="{lbl_y:.2f}" '
+                    f'data-anchor-x="{sx:.2f}" data-anchor-y="{sy:.2f}" '
+                    f'data-offset-y="{oy}" data-base-font="16" '
+                    'fill="#4cc9f0" font-family="monospace" font-size="16" '
+                    f'font-weight="bold" text-anchor="middle">{escape(k)}</text>'
                 )
 
     # 4. Highlighted golden segments & points
@@ -164,14 +168,18 @@ def _render_square_svg(
     for pid, (px, py) in highlight_pts:
         sx, sy = tx(px), ty(py)
         parts.append(
-            f'<circle cx="{sx:.2f}" cy="{sy:.2f}" r="8" '
+            f'<circle class="geom-point" cx="{sx:.2f}" cy="{sy:.2f}" '
+            'r="8" data-base-r="8" '
             'fill="#f8f9fa" stroke="#ffd166" stroke-width="3"/>'
         )
-        lbl_y = sy - 14 if sy > 36 else sy + 26
+        oy = -14 if sy > 36 else 26
+        lbl_y = sy + oy
         parts.append(
-            f'<text x="{sx:.2f}" y="{lbl_y:.2f}" fill="#f8f9fa" '
-            'font-family="monospace" font-size="20" font-weight="bold" '
-            f'text-anchor="middle">{escape(pid)}</text>'
+            f'<text class="geom-label" x="{sx:.2f}" y="{lbl_y:.2f}" '
+            f'data-anchor-x="{sx:.2f}" data-anchor-y="{sy:.2f}" '
+            f'data-offset-y="{oy}" data-base-font="20" '
+            'fill="#f8f9fa" font-family="monospace" font-size="20" '
+            f'font-weight="bold" text-anchor="middle">{escape(pid)}</text>'
         )
 
     parts.append("</g></svg>")

@@ -29,8 +29,29 @@
     return { x: 0, y: 0, w, h };
   }
 
+  function scaleViewElements(svgEl, vb) {
+    if (!svgEl || !vb) return;
+    const rect = svgEl.getBoundingClientRect();
+    const widthPx = rect.width || 720;
+    const unitsPerPx = vb.w / widthPx;
+
+    svgEl.querySelectorAll("circle.geom-point").forEach((pt) => {
+      const baseR = parseFloat(pt.getAttribute("data-base-r") || "5.5");
+      pt.setAttribute("r", (baseR * unitsPerPx).toFixed(4));
+    });
+
+    svgEl.querySelectorAll("text.geom-label").forEach((lbl) => {
+      const ay = parseFloat(lbl.getAttribute("data-anchor-y") || "0");
+      const oy = parseFloat(lbl.getAttribute("data-offset-y") || "-14");
+      const baseFont = parseFloat(lbl.getAttribute("data-base-font") || "16");
+      lbl.setAttribute("y", (ay + oy * unitsPerPx).toFixed(4));
+      lbl.setAttribute("font-size", (baseFont * unitsPerPx).toFixed(4));
+    });
+  }
+
   function applyViewBox(svgEl, vb) {
     svgEl.setAttribute("viewBox", `${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+    scaleViewElements(svgEl, vb);
   }
 
   function attachPanZoom(stageEl, getSvgEl, getState, setState) {
@@ -38,6 +59,14 @@
     let startClientX = 0;
     let startClientY = 0;
     let startVb = null;
+
+    if (typeof ResizeObserver !== "undefined") {
+      new ResizeObserver(() => {
+        const svgEl = getSvgEl();
+        const state = getState();
+        if (svgEl && state) scaleViewElements(svgEl, state.current);
+      }).observe(stageEl);
+    }
 
     stageEl.addEventListener(
       "wheel",
@@ -149,6 +178,7 @@
     const initial = parseViewBox(svgEl);
     const state = { initial, current: { ...initial } };
     stageEl.replaceChildren(svgEl);
+    scaleViewElements(svgEl, initial);
     return { svgEl, state };
   }
 
