@@ -3,6 +3,9 @@
 :order: 1
 :nav_title: Levels
 :layout: book
+:author: phi ARCHITECT
+:year: 2026
+:excerpt: Iterative constructive closure of the Euclidean plane starting from two given points A and B.
 
 ======
 Levels
