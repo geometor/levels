@@ -1,0 +1,125 @@
+.geometor-svg-viewer,
+.geometor-svg-switcher {
+  margin: 1.5rem auto;
+  max-width: 720px;
+  background: #0b0e14;
+  border: 1px solid #263042;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.geometor-svg-switcher:focus {
+  outline: 2px solid #4cc9f0;
+  outline-offset: 2px;
+}
+
+.gsv-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #0b0e14;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+
+.gsv-stage.is-dragging {
+  cursor: grabbing;
+}
+
+.gsv-stage svg.geometor-svg-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gsv-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.65rem 0.85rem;
+  background: #121722;
+  border-top: 1px solid #263042;
+}
+
+.gsv-transport-group,
+.gsv-zoom-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.gsv-btn {
+  appearance: none;
+  background: #1c2434;
+  color: #e6edf3;
+  border: 1px solid #303b52;
+  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.gsv-btn:hover {
+  background: #273247;
+  border-color: #4cc9f0;
+}
+
+.gsv-btn-primary {
+  background: #1a3547;
+  border-color: #4cc9f0;
+  color: #e6f8ff;
+}
+
+.gsv-btn-primary.is-playing {
+  background: #422618;
+  border-color: #ffd166;
+  color: #ffd166;
+}
+
+.gsv-counter,
+.gsv-hint {
+  font-size: 0.82rem;
+  color: #9ba8bd;
+  font-variant-numeric: tabular-nums;
+  margin-left: 0.35rem;
+}
+
+.gsv-scrubber-row {
+  padding: 0.25rem 0.85rem 0.45rem;
+  background: #121722;
+}
+
+.gsv-scrubber {
+  width: 100%;
+  accent-color: #ffd166;
+  cursor: pointer;
+}
+
+.gsv-caption {
+  padding: 0.55rem 0.85rem 0.7rem;
+  background: #0f141e;
+  border-top: 1px solid #1e2738;
+  color: #d0d9e6;
+  font-size: 0.9rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  line-height: 1.4;
+}
+
+.gsv-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 1.5rem;
+  color: #ff6b6b;
+  font-size: 0.95rem;
+  text-align: center;
+}
