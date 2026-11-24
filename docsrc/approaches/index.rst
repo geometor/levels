@@ -3,6 +3,9 @@
 :order: 2
 :nav_title: Approaches
 :layout: book
+:author: phi ARCHITECT
+:year: 2026
+:excerpt: Constructive depth stratification, pair-closure algorithms, and golden-section discoveries across Euclidean Levels 0–3.
 
 =========================
 Approaches & Discoveries
