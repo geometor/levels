@@ -29,11 +29,16 @@
     return { x: 0, y: 0, w, h };
   }
 
+  function getUnitsPerPx(rect, vb) {
+    const w = rect.width || 720;
+    const h = rect.height || 720;
+    return Math.max(vb.w / w, vb.h / h);
+  }
+
   function scaleViewElements(svgEl, vb) {
     if (!svgEl || !vb) return;
     const rect = svgEl.getBoundingClientRect();
-    const widthPx = rect.width || 720;
-    const unitsPerPx = vb.w / widthPx;
+    const unitsPerPx = getUnitsPerPx(rect, vb);
 
     svgEl.querySelectorAll("circle.geom-point").forEach((pt) => {
       const baseR = parseFloat(pt.getAttribute("data-base-r") || "5.5");
@@ -86,8 +91,13 @@
         );
         const nextH = (nextW / state.current.w) * state.current.h;
 
-        const relX = (ev.clientX - rect.left) / rect.width;
-        const relY = (ev.clientY - rect.top) / rect.height;
+        const unitsPerPx = getUnitsPerPx(rect, state.current);
+        const renderedW = state.current.w / unitsPerPx;
+        const renderedH = state.current.h / unitsPerPx;
+        const offsetX = rect.left + (rect.width - renderedW) * 0.5;
+        const offsetY = rect.top + (rect.height - renderedH) * 0.5;
+        const relX = (ev.clientX - offsetX) / renderedW;
+        const relY = (ev.clientY - offsetY) / renderedH;
 
         const nextVb = {
           x: state.current.x + (state.current.w - nextW) * relX,
@@ -121,8 +131,9 @@
       const rect = svgEl.getBoundingClientRect();
       if (rect.width <= 0 || rect.height <= 0) return;
 
-      const dx = ((ev.clientX - startClientX) / rect.width) * startVb.w;
-      const dy = ((ev.clientY - startClientY) / rect.height) * startVb.h;
+      const unitsPerPx = getUnitsPerPx(rect, startVb);
+      const dx = (ev.clientX - startClientX) * unitsPerPx;
+      const dy = (ev.clientY - startClientY) * unitsPerPx;
       const nextVb = {
         x: startVb.x - dx,
         y: startVb.y - dy,
