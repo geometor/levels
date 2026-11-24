@@ -145,8 +145,8 @@ def _render_square_svg(
             if 0 <= sx <= size and 0 <= sy <= size:
                 parts.append(
                     f'<circle class="geom-point" cx="{sx:.2f}" cy="{sy:.2f}" '
-                    'r="5.5" data-base-r="5.5" '
-                    'fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>'
+                    'r="3.5" data-base-r="3.5" '
+                    'fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>'
                 )
                 oy = 20 if sy < size - 28 else -12
                 lbl_y = sy + oy
@@ -169,8 +169,13 @@ def _render_square_svg(
         sx, sy = tx(px), ty(py)
         parts.append(
             f'<circle class="geom-point" cx="{sx:.2f}" cy="{sy:.2f}" '
-            'r="8" data-base-r="8" '
-            'fill="#f8f9fa" stroke="#ffd166" stroke-width="3"/>'
+            'r="7.5" data-base-r="7.5" '
+            'fill="#0b0e14" stroke="#ffd166" stroke-width="2.5"/>'
+        )
+        parts.append(
+            f'<circle class="geom-point" cx="{sx:.2f}" cy="{sy:.2f}" '
+            'r="3.5" data-base-r="3.5" '
+            'fill="#f8f9fa" stroke="none"/>'
         )
         oy = -14 if sy > 36 else 26
         lbl_y = sy + oy
