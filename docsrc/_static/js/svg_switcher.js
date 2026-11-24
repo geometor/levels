@@ -183,11 +183,51 @@
     return { svgEl, state };
   }
 
+  function syncFullscreenButton(container) {
+    const btn = container.querySelector('[data-action="fullscreen"]');
+    if (!btn) return;
+    const isFs =
+      document.fullscreenElement === container ||
+      container.classList.contains("is-fullscreen");
+    btn.textContent = isFs ? "✕" : "⛶";
+    btn.title = isFs ? "Exit fullscreen (f)" : "Fullscreen (f)";
+  }
+
+  async function toggleFullscreen(container) {
+    if (document.fullscreenElement === container) {
+      await document.exitFullscreen();
+      container.classList.remove("is-fullscreen");
+    } else if (container.requestFullscreen) {
+      try {
+        await container.requestFullscreen();
+      } catch (_) {
+        container.classList.toggle("is-fullscreen");
+      }
+    } else {
+      container.classList.toggle("is-fullscreen");
+    }
+    syncFullscreenButton(container);
+  }
+
+  function wireFullscreen(container) {
+    const btn = container.querySelector('[data-action="fullscreen"]');
+    if (btn) {
+      btn.addEventListener("click", () => toggleFullscreen(container));
+    }
+    document.addEventListener("fullscreenchange", () => {
+      if (document.fullscreenElement !== container) {
+        container.classList.remove("is-fullscreen");
+      }
+      syncFullscreenButton(container);
+    });
+  }
+
   async function initStandaloneViewer(container) {
     const src = container.dataset.src;
     const caption = container.dataset.caption || "";
     if (!src) return;
 
+    container.tabIndex = 0;
     container.innerHTML = `
       <div class="gsv-stage" title="Scroll to zoom, drag to pan"></div>
       <div class="gsv-toolbar">
@@ -195,12 +235,14 @@
           <button type="button" class="gsv-btn" data-action="zoom-in" title="Zoom in">+</button>
           <button type="button" class="gsv-btn" data-action="zoom-out" title="Zoom out">−</button>
           <button type="button" class="gsv-btn" data-action="reset" title="Reset view">Reset</button>
+          <button type="button" class="gsv-btn" data-action="fullscreen" title="Fullscreen (f)">⛶</button>
         </div>
-        <div class="gsv-hint">Scroll to zoom · Drag to pan</div>
+        <div class="gsv-hint">Scroll to zoom · Drag to pan · f fullscreen</div>
       </div>
       ${caption ? `<div class="gsv-caption">${caption}</div>` : ""}
     `;
 
+    wireFullscreen(container);
     const stageEl = container.querySelector(".gsv-stage");
     let svgEl = null;
     let vbState = null;
@@ -256,6 +298,7 @@
           <button type="button" class="gsv-btn" data-action="zoom-in" title="Zoom in">+</button>
           <button type="button" class="gsv-btn" data-action="zoom-out" title="Zoom out">−</button>
           <button type="button" class="gsv-btn" data-action="reset" title="Reset view">Reset</button>
+          <button type="button" class="gsv-btn" data-action="fullscreen" title="Fullscreen (f)">⛶</button>
         </div>
       </div>
       <div class="gsv-scrubber-row">
@@ -264,6 +307,7 @@
       <div class="gsv-caption">Loading frames…</div>
     `;
 
+    wireFullscreen(container);
     const stageEl = container.querySelector(".gsv-stage");
     const playBtn = container.querySelector('[data-action="play"]');
     const counterEl = container.querySelector(".gsv-counter");
@@ -379,7 +423,7 @@
     });
 
     try {
-      const resp = await fetch(manifestUrl);
+      const resp = await fetch(manifestUrl, { cache: "no-cache" });
       if (!resp.ok) {
         throw new Error(`Failed to load manifest: ${manifestUrl} (${resp.status})`);
       }
@@ -398,5 +442,25 @@
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".geometor-svg-viewer").forEach(initStandaloneViewer);
     document.querySelectorAll(".geometor-svg-switcher").forEach(initSwitcher);
+
+    document.addEventListener("keydown", (ev) => {
+      if (ev.key !== "f" && ev.key !== "F") return;
+      if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
+      const tag = (ev.target && ev.target.tagName || "").toLowerCase();
+      if (tag === "input" || tag === "textarea" || tag === "select") return;
+      const viewers = Array.from(
+        document.querySelectorAll(".geometor-svg-switcher, .geometor-svg-viewer")
+      );
+      if (!viewers.length) return;
+      const target =
+        viewers.find((v) => v === document.fullscreenElement) ||
+        viewers.find((v) => v.contains(document.activeElement)) ||
+        viewers.find((v) => v.matches(":hover")) ||
+        viewers[0];
+      if (target) {
+        ev.preventDefault();
+        toggleFullscreen(target);
+      }
+    });
   });
 })();
