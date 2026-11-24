@@ -19,6 +19,7 @@ Attributes
    src.geometor.levels.visualize.DIM_CIRCLE
    src.geometor.levels.visualize.DIM_PT
    src.geometor.levels.visualize.CYAN
+   src.geometor.levels.visualize.MAGENTA
    src.geometor.levels.visualize.GOLD
    src.geometor.levels.visualize.AMBER
    src.geometor.levels.visualize.WHITE
@@ -54,6 +55,10 @@ Module Contents
 
 .. py:data:: CYAN
    :value: '#4cc9f0'
+
+
+.. py:data:: MAGENTA
+   :value: '#ff4dff'
 
 
 .. py:data:: GOLD
