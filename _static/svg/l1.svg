@@ -5,16 +5,16 @@
 <line x1="-750.00" y1="500.00" x2="1750.00" y2="500.00" stroke="#4cc9f0" stroke-width="2.2" stroke-linecap="round"/>
 <circle cx="356.32" cy="500.00" r="287.36" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
 <circle cx="643.68" cy="500.00" r="287.36" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
-<circle cx="68.97" cy="500.00" r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
-<text x="68.97" y="520.00" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">C</text>
-<circle cx="931.03" cy="500.00" r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
-<text x="931.03" y="520.00" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">D</text>
-<circle cx="500.00" cy="748.86" r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
-<text x="500.00" y="768.86" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">E</text>
-<circle cx="500.00" cy="251.14" r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
-<text x="500.00" y="271.14" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">F</text>
-<circle cx="356.32" cy="500.00" r="8" fill="#f8f9fa" stroke="#ffd166" stroke-width="3"/>
-<text x="356.32" y="486.00" fill="#f8f9fa" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">A</text>
-<circle cx="643.68" cy="500.00" r="8" fill="#f8f9fa" stroke="#ffd166" stroke-width="3"/>
-<text x="643.68" y="486.00" fill="#f8f9fa" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">B</text>
+<circle class="geom-point" cx="68.97" cy="500.00" r="5.5" data-base-r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
+<text class="geom-label" x="68.97" y="520.00" data-anchor-x="68.97" data-anchor-y="500.00" data-offset-y="20" data-base-font="16" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">C</text>
+<circle class="geom-point" cx="931.03" cy="500.00" r="5.5" data-base-r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
+<text class="geom-label" x="931.03" y="520.00" data-anchor-x="931.03" data-anchor-y="500.00" data-offset-y="20" data-base-font="16" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">D</text>
+<circle class="geom-point" cx="500.00" cy="748.86" r="5.5" data-base-r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
+<text class="geom-label" x="500.00" y="768.86" data-anchor-x="500.00" data-anchor-y="748.86" data-offset-y="20" data-base-font="16" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">E</text>
+<circle class="geom-point" cx="500.00" cy="251.14" r="5.5" data-base-r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
+<text class="geom-label" x="500.00" y="271.14" data-anchor-x="500.00" data-anchor-y="251.14" data-offset-y="20" data-base-font="16" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">F</text>
+<circle class="geom-point" cx="356.32" cy="500.00" r="8" data-base-r="8" fill="#f8f9fa" stroke="#ffd166" stroke-width="3"/>
+<text class="geom-label" x="356.32" y="486.00" data-anchor-x="356.32" data-anchor-y="500.00" data-offset-y="-14" data-base-font="20" fill="#f8f9fa" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">A</text>
+<circle class="geom-point" cx="643.68" cy="500.00" r="8" data-base-r="8" fill="#f8f9fa" stroke="#ffd166" stroke-width="3"/>
+<text class="geom-label" x="643.68" y="486.00" data-anchor-x="643.68" data-anchor-y="500.00" data-offset-y="-14" data-base-font="20" fill="#f8f9fa" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">B</text>
 </g></svg>
