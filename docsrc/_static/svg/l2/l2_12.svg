@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%" class="levels-svg">
+<defs><clipPath id="sq-clip"><rect x="0" y="0" width="1000" height="1000"/></clipPath></defs>
+<rect x="0" y="0" width="1000" height="1000" fill="#0b0e14"/>
+<g clip-path="url(#sq-clip)">
+<line x1="-278.94" y1="-529.21" x2="971.06" y2="1635.86" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-278.94" y1="1529.21" x2="971.06" y2="-635.86" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1032.64" y1="-529.21" x2="-217.36" y2="1635.86" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1032.64" y1="1529.21" x2="-217.36" y2="-635.86" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-798.05" y1="-71.67" x2="1367.01" y2="1178.33" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1551.74" y1="-71.67" x2="-613.32" y2="1178.33" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1551.74" y1="1071.67" x2="-613.32" y2="-178.33" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="376.85" y1="1750.00" x2="376.85" y2="-750.00" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="192.12" cy="500.00" r="123.15" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="561.58" cy="500.00" r="246.31" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="376.85" cy="606.65" r="123.15" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="376.85" cy="393.35" r="123.15" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="438.42" cy="500.00" r="246.31" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="192.12" cy="500.00" r="246.31" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="561.58" cy="500.00" r="123.15" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="192.12" cy="500.00" r="369.46" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="192.12" cy="500.00" r="213.31" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="376.85" cy="606.65" r="213.31" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="376.85" cy="393.35" r="213.31" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="561.58" cy="500.00" r="213.31" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-873.15" y1="500.00" x2="1626.85" y2="500.00" stroke="#4cc9f0" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="-798.05" y1="1071.67" x2="1367.01" y2="-178.33" stroke="#4cc9f0" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="315.27" cy="500.00" r="123.15" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="438.42" cy="500.00" r="123.15" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="315.27" cy="500.00" r="246.31" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="561.58" cy="500.00" r="369.46" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="315.27" cy="500.00" r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
+<text x="315.27" y="520.00" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">A</text>
+<circle cx="438.42" cy="500.00" r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
+<text x="438.42" y="520.00" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">B</text>
+<circle cx="192.12" cy="500.00" r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
+<text x="192.12" y="520.00" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">C</text>
+<circle cx="561.58" cy="500.00" r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
+<text x="561.58" y="520.00" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">D</text>
+<circle cx="376.85" cy="393.35" r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
+<text x="376.85" y="413.35" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">F</text>
+<line x1="77.95" y1="565.92" x2="491.02" y2="327.43" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line x1="491.02" y1="327.43" x2="746.31" y2="180.04" stroke="#f77f00" stroke-width="5.5" stroke-linecap="round"/>
+<circle cx="77.95" cy="565.92" r="8" fill="#f8f9fa" stroke="#ffd166" stroke-width="3"/>
+<text x="77.95" y="551.92" fill="#f8f9fa" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">Z5</text>
+<circle cx="491.02" cy="327.43" r="8" fill="#f8f9fa" stroke="#ffd166" stroke-width="3"/>
+<text x="491.02" y="313.43" fill="#f8f9fa" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">A6</text>
+<circle cx="746.31" cy="180.04" r="8" fill="#f8f9fa" stroke="#ffd166" stroke-width="3"/>
+<text x="746.31" y="166.04" fill="#f8f9fa" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">K6</text>
+</g></svg>

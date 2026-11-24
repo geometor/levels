@@ -64,6 +64,8 @@ html_title = f"{site_title} • {org_name}"
 blog_title = site_title
 project = site_title
 html_static_path: list[str] = ["_static"]
+html_css_files = ["css/svg_switcher.css"]
+html_js_files = ["js/svg_switcher.js"]
 autoapi_add_toctree_entry = False
 if "intro.rst" not in exclude_patterns:  # noqa: F405
     exclude_patterns.append("intro.rst")  # noqa: F405
