@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%" class="levels-svg">
+<defs><clipPath id="sq-clip"><rect x="0" y="0" width="1000" height="1000"/></clipPath></defs>
+<rect x="0" y="0" width="1000" height="1000" fill="#0b0e14"/>
+<g clip-path="url(#sq-clip)">
+<line x1="-148.95" y1="-541.06" x2="1101.05" y2="1624.01" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-148.95" y1="1541.06" x2="1101.05" y2="-624.01" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1148.95" y1="-541.06" x2="-101.05" y2="1624.01" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1148.95" y1="1541.06" x2="-101.05" y2="-624.01" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-654.37" y1="-83.52" x2="1510.69" y2="1166.48" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-654.37" y1="1083.52" x2="1510.69" y2="-166.48" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1654.37" y1="-83.52" x2="-510.69" y2="1166.48" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1654.37" y1="1083.52" x2="-510.69" y2="-166.48" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="500.00" y1="1750.00" x2="500.00" y2="-750.00" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="356.32" cy="500.00" r="95.79" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="643.68" cy="500.00" r="191.57" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="500.00" cy="582.95" r="95.79" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="500.00" cy="417.05" r="95.79" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="356.32" cy="500.00" r="191.57" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="643.68" cy="500.00" r="95.79" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="356.32" cy="500.00" r="165.91" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="500.00" cy="582.95" r="165.91" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="500.00" cy="417.05" r="165.91" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="643.68" cy="500.00" r="165.91" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-750.00" y1="500.00" x2="1750.00" y2="500.00" stroke="#4cc9f0" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="452.11" cy="500.00" r="95.79" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="547.89" cy="500.00" r="95.79" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="452.11" cy="500.00" r="191.57" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="547.89" cy="500.00" r="191.57" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="356.32" cy="500.00" r="287.36" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="643.68" cy="500.00" r="287.36" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="452.11" cy="500.00" r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
+<text x="452.11" y="520.00" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">A</text>
+<circle cx="547.89" cy="500.00" r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
+<text x="547.89" y="520.00" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">B</text>
+<circle cx="356.32" cy="500.00" r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
+<text x="356.32" y="520.00" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">C</text>
+<circle cx="643.68" cy="500.00" r="5.5" fill="#4cc9f0" stroke="#f8f9fa" stroke-width="1.4"/>
+<text x="643.68" y="520.00" fill="#4cc9f0" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">D</text>
+<line x1="500.00" y1="417.05" x2="500.00" y2="314.51" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line x1="500.00" y1="314.51" x2="500.00" y2="251.14" stroke="#f77f00" stroke-width="5.5" stroke-linecap="round"/>
+<circle cx="500.00" cy="417.05" r="8" fill="#f8f9fa" stroke="#ffd166" stroke-width="3"/>
+<text x="500.00" y="403.05" fill="#f8f9fa" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">F</text>
+<circle cx="500.00" cy="314.51" r="8" fill="#f8f9fa" stroke="#ffd166" stroke-width="3"/>
+<text x="500.00" y="300.51" fill="#f8f9fa" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">W</text>
+<circle cx="500.00" cy="251.14" r="8" fill="#f8f9fa" stroke="#ffd166" stroke-width="3"/>
+<text x="500.00" y="237.14" fill="#f8f9fa" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">H4</text>
+</g></svg>

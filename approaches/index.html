@@ -13,7 +13,7 @@
   <link rel="canonical" href="https://geometor.github.io/levels/approaches/" />
   <meta name="description" content="Starting from two given points A = (-1/2, 0) and B = (1/2, 0), each Level applies the three fundamental Euclidean operations—one line [P\,Q] and two circles (P\,Q) and (Q\,P)—to every unordered…" />
   <meta property="og:site_name" content="GEOMETOR" />
-  <meta property="og:type" content="article" />
+  <meta property="og:type" content="book" />
   <meta property="og:title" content="Approaches &amp; Discoveries — Levels • GEOMETOR" />
   <meta property="og:description" content="Starting from two given points A = (-1/2, 0) and B = (1/2, 0), each Level applies the three fundamental Euclidean operations—one line [P\,Q] and two circles (P\,Q) and (Q\,P)—to every unordered…" />
   <meta property="og:url" content="https://geometor.github.io/levels/approaches/" />
@@ -33,6 +33,7 @@
   <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
   <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=eb8dadcd" />
   <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/svg_switcher.css?v=9354d2bf" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
@@ -40,7 +41,7 @@
   <link rel="icon" href="../_static/favicon.ico" />
 </head>
 
-<body class="book-theme-classical-serif">
+<body class="is-book-page book-theme-classical-serif">
   <header>
     <div class="logo">
       <a href="../index.html" title="Home">
@@ -56,6 +57,12 @@
       <input type="checkbox" id="nav-Header-toggle" >
       <label for="nav-Header-toggle" >Header</label>
       <ul>
+        <li>
+          <a href="../levels/index.html"  >Levels</a>
+        </li>
+        <li>
+          <a href="#" class="is-active" aria-selected="true" aria-current="page">Approaches</a>
+        </li>
         <li>
           <a href="../about/index.html"  >About</a>
         </li>
@@ -85,7 +92,7 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../index.html" title="Levels">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../levels/03-level-3/index.html" title="Level 3">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
           </div>
@@ -94,10 +101,10 @@
           </div>
         </div>
       </header>
-      <div class="content body book-content" role="main">
+      <div class="content body book-content folio-book-page" role="main">
         <section class="level-1" id="approaches-discoveries">
         <h1>Approaches &amp; Discoveries<a class="headerlink" href="#approaches-discoveries" title="Link to this heading">¶</a></h1>
-        <p>Starting from two given points <span class="math notranslate nohighlight">\(A = (-1/2, 0)\)</span> and <span class="math notranslate nohighlight">\(B = (1/2, 0)\)</span>, each <strong>Level</strong> applies the three fundamental Euclidean operations—one line <span class="math notranslate nohighlight">\([P\,Q]\)</span> and two circles <span class="math notranslate nohighlight">\((P\,Q)\)</span> and <span class="math notranslate nohighlight">\((Q\,P)\)</span>—to every unordered pair of points constructed so far, collecting all new exact symbolic intersections.</p>
+        <p>Starting from two given points <span class="math notranslate nohighlight">\(A = (-1/2, 0)\)</span> and <span class="math notranslate nohighlight">\(B = (1/2, 0)\)</span>, each <strong>Level</strong> applies the three fundamental Euclidean operations—one line <span class="math notranslate nohighlight">\([P\,Q]\)</span> and two circles <span class="math notranslate nohighlight">\((P\,Q)\)</span> and <span class="math notranslate nohighlight">\((Q\,P)\)</span>—to every unordered pair of points constructed so far, collecting all new exact symbolic intersections (see <a class="reference internal" href="../levels/index.html"><span class="doc">Levels</span></a> for the formal hierarchy and interactive SVG explorers).</p>
         </section>
         <section class="level-1" id="totals-summary">
         <h1>Totals Summary<a class="headerlink" href="#totals-summary" title="Link to this heading">¶</a></h1>
@@ -260,10 +267,10 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../index.html" title="Levels">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../levels/03-level-3/index.html" title="Level 3">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
-            <a class="book-toc-link" href="../index.html">Levels</a>
+            <a class="book-toc-link" href="#">Approaches</a>
           </div>
           <div class="book-nav-next">
             <a class="book-nav-btn" href="../about/index.html" title="About"><span class="nav-label">Next</span> &rarr;</a>
@@ -313,6 +320,8 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
+        <li><a href="../types/book.html">book</a></li>
+        <li><a href="../types/level.html">level</a></li>
         <li><a href="../types/log.html">log</a></li>
       </ul>
     </aside>
@@ -338,13 +347,14 @@
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../_static/documentation_options.js?v=e259d695"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../_static/js/collection_directory.js?v=2422530d"></script>
   <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
   <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../_static/js/svg_switcher.js?v=66128580"></script>
   <script src="../_static/js/search_highlight.js"></script>
 
 </body>

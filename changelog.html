@@ -11,11 +11,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="canonical" href="https://geometor.github.io/levels/changelog.html" />
-  <meta name="description" content="Added geometor.levels.visualize (render_ancestor_cycle_gif, section_ancestors) and demos/render_level2_impact.py for point-birth golden impact reporting and ancestor-isolated visualizations." />
+  <meta name="description" content="Added geometor.levels.svg_export and demos/export_site_svgs.py for square, title-free vector SVG generation with full ancestor-circle framing." />
   <meta property="og:site_name" content="GEOMETOR" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="changelog — Levels • GEOMETOR" />
-  <meta property="og:description" content="Added geometor.levels.visualize (render_ancestor_cycle_gif, section_ancestors) and demos/render_level2_impact.py for point-birth golden impact reporting and ancestor-isolated visualizations." />
+  <meta property="og:description" content="Added geometor.levels.svg_export and demos/export_site_svgs.py for square, title-free vector SVG generation with full ancestor-circle framing." />
   <meta property="og:url" content="https://geometor.github.io/levels/changelog.html" />
   <meta property="og:image" content="https://geometor.github.io/levels/_static/social/banner.png" />
   <meta property="og:image:type" content="image/png" />
@@ -24,7 +24,7 @@
   <meta property="og:image:alt" content="Levels — GEOMETOR" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="changelog — Levels • GEOMETOR" />
-  <meta name="twitter:description" content="Added geometor.levels.visualize (render_ancestor_cycle_gif, section_ancestors) and demos/render_level2_impact.py for point-birth golden impact reporting and ancestor-isolated visualizations." />
+  <meta name="twitter:description" content="Added geometor.levels.svg_export and demos/export_site_svgs.py for square, title-free vector SVG generation with full ancestor-circle framing." />
   <meta name="twitter:image" content="https://geometor.github.io/levels/_static/social/banner.png" />
   <meta name="twitter:image:alt" content="Levels — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,6 +33,7 @@
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
   <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=eb8dadcd" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="_static/css/svg_switcher.css?v=9354d2bf" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
@@ -56,6 +57,12 @@
       <input type="checkbox" id="nav-Header-toggle" >
       <label for="nav-Header-toggle" >Header</label>
       <ul>
+        <li>
+          <a href="levels/index.html"  >Levels</a>
+        </li>
+        <li>
+          <a href="approaches/index.html"  >Approaches</a>
+        </li>
         <li>
           <a href="about/index.html"  >About</a>
         </li>
@@ -97,13 +104,21 @@
         <section class="level-1" id="changelog">
         <h1>changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
         <section class="level-2" id="id1">
-        <h2>0.2.0 (2026-11-19)<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+        <h2>0.3.0 (2026-11-23)<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p>Added <code class="docutils literal notranslate"><span class="pre">geometor.levels.svg_export</span></code> and <code class="docutils literal notranslate"><span class="pre">demos/export_site_svgs.py</span></code> for square, title-free vector SVG generation with full ancestor-circle framing.</p></li>
+        <li><p>Added interactive pan/zoom SVG viewer and frame switcher widget (<code class="docutils literal notranslate"><span class="pre">svg_switcher.js</span></code> / <code class="docutils literal notranslate"><span class="pre">svg_switcher.css</span></code>).</p></li>
+        <li><p>Organized <code class="docutils literal notranslate"><span class="pre">docsrc/</span></code> into header-level Books (<code class="docutils literal notranslate"><span class="pre">levels</span></code> and <code class="docutils literal notranslate"><span class="pre">approaches</span></code>) with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">collection::</span></code> sub-pages for Levels 1, 2, and 3.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id2">
+        <h2>0.2.0 (2026-11-19)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Added <code class="docutils literal notranslate"><span class="pre">geometor.levels.visualize</span></code> (<code class="docutils literal notranslate"><span class="pre">render_ancestor_cycle_gif</span></code>, <code class="docutils literal notranslate"><span class="pre">section_ancestors</span></code>) and <code class="docutils literal notranslate"><span class="pre">demos/render_level2_impact.py</span></code> for point-birth golden impact reporting and ancestor-isolated visualizations.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id2">
-        <h2>0.1.0 (2026-11-19)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id3">
+        <h2>0.1.0 (2026-11-19)<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Initialize <code class="docutils literal notranslate"><span class="pre">geometor.levels</span></code> (code archetype): Exhaustive compass-and-straightedge level constructions and emergent golden sections..</p></li>
         </ul>
@@ -167,6 +182,8 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
+        <li><a href="types/book.html">book</a></li>
+        <li><a href="types/level.html">level</a></li>
         <li><a href="types/log.html">log</a></li>
       </ul>
     </aside>
@@ -192,12 +209,13 @@
 
   <script src="_static/jquery.js?v=5d32c60e"></script>
   <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="_static/documentation_options.js?v=e259d695"></script>
   <script src="_static/doctools.js?v=fd6eb6e6"></script>
   <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="_static/js/collection_directory.js?v=2422530d"></script>
   <script src="_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="_static/js/svg_switcher.js?v=66128580"></script>
   <script src="_static/js/search_highlight.js"></script>
 
 </body>

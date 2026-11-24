@@ -1,10 +1,14 @@
-:order: 15
+:type: book
+:navigation: header
+:order: 2
+:nav_title: Approaches
+:layout: book
 
 =========================
 Approaches & Discoveries
 =========================
 
-Starting from two given points :math:`A = (-1/2, 0)` and :math:`B = (1/2, 0)`, each **Level** applies the three fundamental Euclidean operations—one line :math:`[P\,Q]` and two circles :math:`(P\,Q)` and :math:`(Q\,P)`—to every unordered pair of points constructed so far, collecting all new exact symbolic intersections.
+Starting from two given points :math:`A = (-1/2, 0)` and :math:`B = (1/2, 0)`, each **Level** applies the three fundamental Euclidean operations—one line :math:`[P\,Q]` and two circles :math:`(P\,Q)` and :math:`(Q\,P)`—to every unordered pair of points constructed so far, collecting all new exact symbolic intersections (see :doc:`../levels/index` for the formal hierarchy and interactive SVG explorers).
 
 Totals Summary
 ==============

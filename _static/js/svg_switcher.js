@@ -1,0 +1,371 @@
+(function () {
+  "use strict";
+
+  const svgCache = new Map();
+
+  async function fetchSvgText(url) {
+    if (svgCache.has(url)) {
+      return svgCache.get(url);
+    }
+    const resp = await fetch(url);
+    if (!resp.ok) {
+      throw new Error(`Failed to load SVG: ${url} (${resp.status})`);
+    }
+    const text = await resp.text();
+    svgCache.set(url, text);
+    return text;
+  }
+
+  function parseViewBox(svgEl) {
+    const vbAttr = svgEl.getAttribute("viewBox");
+    if (vbAttr) {
+      const parts = vbAttr.trim().split(/[\s,]+/).map(Number);
+      if (parts.length === 4 && parts.every((n) => Number.isFinite(n))) {
+        return { x: parts[0], y: parts[1], w: parts[2], h: parts[3] };
+      }
+    }
+    const w = parseFloat(svgEl.getAttribute("width")) || 1000;
+    const h = parseFloat(svgEl.getAttribute("height")) || 1000;
+    return { x: 0, y: 0, w, h };
+  }
+
+  function applyViewBox(svgEl, vb) {
+    svgEl.setAttribute("viewBox", `${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+  }
+
+  function attachPanZoom(stageEl, getSvgEl, getState, setState) {
+    let dragging = false;
+    let startClientX = 0;
+    let startClientY = 0;
+    let startVb = null;
+
+    stageEl.addEventListener(
+      "wheel",
+      (ev) => {
+        const svgEl = getSvgEl();
+        const state = getState();
+        if (!svgEl || !state) return;
+        ev.preventDefault();
+
+        const rect = svgEl.getBoundingClientRect();
+        if (rect.width <= 0 || rect.height <= 0) return;
+
+        const scaleFactor = ev.deltaY < 0 ? 0.85 : 1 / 0.85;
+        const nextW = Math.min(
+          state.initial.w * 8,
+          Math.max(state.initial.w * 0.02, state.current.w * scaleFactor)
+        );
+        const nextH = (nextW / state.current.w) * state.current.h;
+
+        const relX = (ev.clientX - rect.left) / rect.width;
+        const relY = (ev.clientY - rect.top) / rect.height;
+
+        const nextVb = {
+          x: state.current.x + (state.current.w - nextW) * relX,
+          y: state.current.y + (state.current.h - nextH) * relY,
+          w: nextW,
+          h: nextH,
+        };
+        setState({ initial: state.initial, current: nextVb });
+        applyViewBox(svgEl, nextVb);
+      },
+      { passive: false }
+    );
+
+    stageEl.addEventListener("pointerdown", (ev) => {
+      if (ev.button !== 0) return;
+      const state = getState();
+      if (!state) return;
+      dragging = true;
+      startClientX = ev.clientX;
+      startClientY = ev.clientY;
+      startVb = { ...state.current };
+      stageEl.classList.add("is-dragging");
+      stageEl.setPointerCapture(ev.pointerId);
+    });
+
+    stageEl.addEventListener("pointermove", (ev) => {
+      if (!dragging || !startVb) return;
+      const svgEl = getSvgEl();
+      const state = getState();
+      if (!svgEl || !state) return;
+      const rect = svgEl.getBoundingClientRect();
+      if (rect.width <= 0 || rect.height <= 0) return;
+
+      const dx = ((ev.clientX - startClientX) / rect.width) * startVb.w;
+      const dy = ((ev.clientY - startClientY) / rect.height) * startVb.h;
+      const nextVb = {
+        x: startVb.x - dx,
+        y: startVb.y - dy,
+        w: startVb.w,
+        h: startVb.h,
+      };
+      setState({ initial: state.initial, current: nextVb });
+      applyViewBox(svgEl, nextVb);
+    });
+
+    function endDrag(ev) {
+      if (!dragging) return;
+      dragging = false;
+      startVb = null;
+      stageEl.classList.remove("is-dragging");
+      if (ev && stageEl.hasPointerCapture(ev.pointerId)) {
+        stageEl.releasePointerCapture(ev.pointerId);
+      }
+    }
+
+    stageEl.addEventListener("pointerup", endDrag);
+    stageEl.addEventListener("pointercancel", endDrag);
+  }
+
+  function zoomCentered(svgEl, state, factor) {
+    if (!svgEl || !state) return state;
+    const nextW = Math.min(
+      state.initial.w * 8,
+      Math.max(state.initial.w * 0.02, state.current.w * factor)
+    );
+    const nextH = (nextW / state.current.w) * state.current.h;
+    const nextVb = {
+      x: state.current.x + (state.current.w - nextW) * 0.5,
+      y: state.current.y + (state.current.h - nextH) * 0.5,
+      w: nextW,
+      h: nextH,
+    };
+    applyViewBox(svgEl, nextVb);
+    return { initial: state.initial, current: nextVb };
+  }
+
+  function mountSvgIntoStage(stageEl, svgText) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(svgText, "image/svg+xml");
+    const svgEl = doc.documentElement;
+    if (!svgEl || svgEl.nodeName.toLowerCase() !== "svg") {
+      throw new Error("Invalid SVG document");
+    }
+    svgEl.removeAttribute("width");
+    svgEl.removeAttribute("height");
+    svgEl.setAttribute("preserveAspectRatio", "xMidYMid meet");
+    svgEl.classList.add("geometor-svg-canvas");
+    const initial = parseViewBox(svgEl);
+    const state = { initial, current: { ...initial } };
+    stageEl.replaceChildren(svgEl);
+    return { svgEl, state };
+  }
+
+  async function initStandaloneViewer(container) {
+    const src = container.dataset.src;
+    const caption = container.dataset.caption || "";
+    if (!src) return;
+
+    container.innerHTML = `
+      <div class="gsv-stage" title="Scroll to zoom, drag to pan"></div>
+      <div class="gsv-toolbar">
+        <div class="gsv-zoom-group">
+          <button type="button" class="gsv-btn" data-action="zoom-in" title="Zoom in">+</button>
+          <button type="button" class="gsv-btn" data-action="zoom-out" title="Zoom out">−</button>
+          <button type="button" class="gsv-btn" data-action="reset" title="Reset view">Reset</button>
+        </div>
+        <div class="gsv-hint">Scroll to zoom · Drag to pan</div>
+      </div>
+      ${caption ? `<div class="gsv-caption">${caption}</div>` : ""}
+    `;
+
+    const stageEl = container.querySelector(".gsv-stage");
+    let svgEl = null;
+    let vbState = null;
+
+    attachPanZoom(
+      stageEl,
+      () => svgEl,
+      () => vbState,
+      (next) => {
+        vbState = next;
+      }
+    );
+
+    container.querySelector('[data-action="zoom-in"]').addEventListener("click", () => {
+      vbState = zoomCentered(svgEl, vbState, 0.78);
+    });
+    container.querySelector('[data-action="zoom-out"]').addEventListener("click", () => {
+      vbState = zoomCentered(svgEl, vbState, 1 / 0.78);
+    });
+    container.querySelector('[data-action="reset"]').addEventListener("click", () => {
+      if (!svgEl || !vbState) return;
+      vbState = { initial: vbState.initial, current: { ...vbState.initial } };
+      applyViewBox(svgEl, vbState.current);
+    });
+
+    try {
+      const svgText = await fetchSvgText(src);
+      const mounted = mountSvgIntoStage(stageEl, svgText);
+      svgEl = mounted.svgEl;
+      vbState = mounted.state;
+    } catch (err) {
+      stageEl.innerHTML = `<div class="gsv-error">${err.message}</div>`;
+    }
+  }
+
+  async function initSwitcher(container) {
+    const manifestUrl = container.dataset.manifest;
+    const baseUrl = container.dataset.base || manifestUrl.replace(/[^/]+$/, "");
+    const intervalMs = Number(container.dataset.interval) || 1500;
+    if (!manifestUrl) return;
+
+    container.tabIndex = 0;
+    container.innerHTML = `
+      <div class="gsv-stage" title="Scroll to zoom, drag to pan"></div>
+      <div class="gsv-toolbar">
+        <div class="gsv-transport-group">
+          <button type="button" class="gsv-btn" data-action="prev" title="Previous frame">◀ Prev</button>
+          <button type="button" class="gsv-btn gsv-btn-primary" data-action="play" title="Play / Pause">▶ Play</button>
+          <button type="button" class="gsv-btn" data-action="next" title="Next frame">Next ▶</button>
+          <span class="gsv-counter">0 / 0</span>
+        </div>
+        <div class="gsv-zoom-group">
+          <button type="button" class="gsv-btn" data-action="zoom-in" title="Zoom in">+</button>
+          <button type="button" class="gsv-btn" data-action="zoom-out" title="Zoom out">−</button>
+          <button type="button" class="gsv-btn" data-action="reset" title="Reset view">Reset</button>
+        </div>
+      </div>
+      <div class="gsv-scrubber-row">
+        <input type="range" class="gsv-scrubber" min="0" max="0" value="0" aria-label="Frame selector" />
+      </div>
+      <div class="gsv-caption">Loading frames…</div>
+    `;
+
+    const stageEl = container.querySelector(".gsv-stage");
+    const playBtn = container.querySelector('[data-action="play"]');
+    const counterEl = container.querySelector(".gsv-counter");
+    const scrubberEl = container.querySelector(".gsv-scrubber");
+    const captionEl = container.querySelector(".gsv-caption");
+
+    let frames = [];
+    let index = 0;
+    let timer = null;
+    let svgEl = null;
+    let vbState = null;
+    let renderToken = 0;
+
+    attachPanZoom(
+      stageEl,
+      () => svgEl,
+      () => vbState,
+      (next) => {
+        vbState = next;
+      }
+    );
+
+    async function showFrame(nextIndex) {
+      if (!frames.length) return;
+      index = ((nextIndex % frames.length) + frames.length) % frames.length;
+      const frame = frames[index];
+      const token = ++renderToken;
+
+      counterEl.textContent = `${index + 1} / ${frames.length}`;
+      scrubberEl.value = String(index);
+      captionEl.textContent = frame.caption || frame.src;
+
+      const svgUrl = frame.src.startsWith("/") || frame.src.includes("://")
+        ? frame.src
+        : baseUrl + frame.src;
+
+      try {
+        const svgText = await fetchSvgText(svgUrl);
+        if (token !== renderToken) return;
+        const mounted = mountSvgIntoStage(stageEl, svgText);
+        svgEl = mounted.svgEl;
+        vbState = mounted.state;
+      } catch (err) {
+        if (token !== renderToken) return;
+        stageEl.innerHTML = `<div class="gsv-error">${err.message}</div>`;
+      }
+    }
+
+    function stopPlayback() {
+      if (timer !== null) {
+        clearInterval(timer);
+        timer = null;
+      }
+      playBtn.textContent = "▶ Play";
+      playBtn.classList.remove("is-playing");
+    }
+
+    function startPlayback() {
+      if (timer !== null || frames.length <= 1) return;
+      playBtn.textContent = "⏸ Pause";
+      playBtn.classList.add("is-playing");
+      timer = setInterval(() => {
+        showFrame(index + 1);
+      }, intervalMs);
+    }
+
+    container.querySelector('[data-action="prev"]').addEventListener("click", () => {
+      stopPlayback();
+      showFrame(index - 1);
+    });
+    container.querySelector('[data-action="next"]').addEventListener("click", () => {
+      stopPlayback();
+      showFrame(index + 1);
+    });
+    playBtn.addEventListener("click", () => {
+      if (timer !== null) {
+        stopPlayback();
+      } else {
+        startPlayback();
+      }
+    });
+    scrubberEl.addEventListener("input", () => {
+      stopPlayback();
+      showFrame(Number(scrubberEl.value));
+    });
+
+    container.querySelector('[data-action="zoom-in"]').addEventListener("click", () => {
+      vbState = zoomCentered(svgEl, vbState, 0.78);
+    });
+    container.querySelector('[data-action="zoom-out"]').addEventListener("click", () => {
+      vbState = zoomCentered(svgEl, vbState, 1 / 0.78);
+    });
+    container.querySelector('[data-action="reset"]').addEventListener("click", () => {
+      if (!svgEl || !vbState) return;
+      vbState = { initial: vbState.initial, current: { ...vbState.initial } };
+      applyViewBox(svgEl, vbState.current);
+    });
+
+    container.addEventListener("keydown", (ev) => {
+      if (ev.key === "ArrowLeft") {
+        ev.preventDefault();
+        stopPlayback();
+        showFrame(index - 1);
+      } else if (ev.key === "ArrowRight") {
+        ev.preventDefault();
+        stopPlayback();
+        showFrame(index + 1);
+      } else if (ev.key === " ") {
+        ev.preventDefault();
+        if (timer !== null) stopPlayback();
+        else startPlayback();
+      }
+    });
+
+    try {
+      const resp = await fetch(manifestUrl);
+      if (!resp.ok) {
+        throw new Error(`Failed to load manifest: ${manifestUrl} (${resp.status})`);
+      }
+      frames = await resp.json();
+      if (!Array.isArray(frames) || frames.length === 0) {
+        captionEl.textContent = "No frames available.";
+        return;
+      }
+      scrubberEl.max = String(frames.length - 1);
+      await showFrame(0);
+    } catch (err) {
+      captionEl.textContent = err.message;
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".geometor-svg-viewer").forEach(initStandaloneViewer);
+    document.querySelectorAll(".geometor-svg-switcher").forEach(initSwitcher);
+  });
+})();

@@ -1,0 +1,39 @@
+src.geometor.levels.svg_export
+==============================
+
+.. py:module:: src.geometor.levels.svg_export
+
+.. autoapi-nested-parse::
+
+   Export title-free, square (1:1) vector SVGs for Levels 1–3 and interactive switchers.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.levels.svg_export.export_level1_svg
+   src.geometor.levels.svg_export.export_level2_svgs
+   src.geometor.levels.svg_export.export_level3_ancestor_svgs
+
+
+Module Contents
+---------------
+
+.. py:function:: export_level1_svg(out_path: pathlib.Path) -> pathlib.Path
+
+   Export a clean square SVG for Level 1 (vesica pisces).
+
+
+.. py:function:: export_level2_svgs(out_dir: pathlib.Path) -> list[dict[str, str]]
+
+   Export square SVGs for Level 2 overview and each of its 34 explicit-line golden sections.
+
+
+.. py:function:: export_level3_ancestor_svgs(ckpt_path: pathlib.Path, out_dir: pathlib.Path, *, count: int = 24) -> list[dict[str, str]]
+
+   Export ``count`` square SVGs of Level 3 golden sections with full recursive ancestors.
+
+

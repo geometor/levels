@@ -20,6 +20,7 @@ Submodules
    /modules/api/src/geometor/levels/levels/index
    /modules/api/src/geometor/levels/parallel_l3/index
    /modules/api/src/geometor/levels/runner/index
+   /modules/api/src/geometor/levels/svg_export/index
    /modules/api/src/geometor/levels/visualize/index
 
 
@@ -85,6 +86,6 @@ Package Contents
 
 
 .. py:data:: __version__
-   :value: '0.2.0'
+   :value: '0.3.0'
 
 
