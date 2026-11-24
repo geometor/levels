@@ -80,8 +80,8 @@
 <line x1="500.00" y1="251.14" x2="732.48" y2="551.27" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
 <circle class="geom-point" cx="452.11" cy="500.00" r="7.5" data-base-r="7.5" fill="#0b0e14" stroke="#ffd166" stroke-width="2.5"/>
 <circle class="geom-point" cx="452.11" cy="500.00" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="none"/>
-<text class="geom-label" x="452.11" y="486.00" data-anchor-x="452.11" data-anchor-y="500.00" data-offset-y="-14" data-base-font="20" fill="#f8f9fa" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">A</text>
+<text class="geom-label" x="452.11" y="486.00" data-anchor-x="452.11" data-anchor-y="500.00" data-offset-y="-14" data-base-font="16" fill="#ffd166" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">A</text>
 <circle class="geom-point" cx="547.89" cy="500.00" r="7.5" data-base-r="7.5" fill="#0b0e14" stroke="#ffd166" stroke-width="2.5"/>
 <circle class="geom-point" cx="547.89" cy="500.00" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="none"/>
-<text class="geom-label" x="547.89" y="486.00" data-anchor-x="547.89" data-anchor-y="500.00" data-offset-y="-14" data-base-font="20" fill="#f8f9fa" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle">B</text>
+<text class="geom-label" x="547.89" y="486.00" data-anchor-x="547.89" data-anchor-y="500.00" data-offset-y="-14" data-base-font="16" fill="#ffd166" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">B</text>
 </g></svg>
