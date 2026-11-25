@@ -418,7 +418,12 @@
       const segRows = segs
         .map((s) => {
           const roleLower = s.role.toLowerCase();
-          const segKey = roleLower === "major" || roleLower === "minor" ? roleLower : "ratio";
+          const segKey =
+            roleLower === "a" || roleLower === "major"
+              ? "major"
+              : roleLower === "b" || roleLower === "minor"
+                ? "minor"
+                : "ratio";
           const roleCls =
             segKey === "major"
               ? "gsv-seg-major"
@@ -448,7 +453,7 @@
           </table>
         </div>
         <div>
-          <h4 class="gsv-section-title">Golden Segments (Major &amp; Minor)</h4>
+          <h4 class="gsv-section-title">Golden Segments (a &amp; b)</h4>
           <table class="gsv-table">
             <thead>
               <tr><th>Segment</th><th>Points</th><th>Length</th></tr>
