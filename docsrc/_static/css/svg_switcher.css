@@ -281,6 +281,12 @@
   color: #f77f00;
 }
 
+.gsv-seg-ratio {
+  font-weight: 700;
+  color: #4cc9f0;
+  white-space: nowrap;
+}
+
 .gsv-alg {
   color: #e6edf3;
   word-break: break-word;

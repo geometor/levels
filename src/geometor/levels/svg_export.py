@@ -54,6 +54,9 @@ def _build_section_metadata(
         maj = (f"{tri[1]}–{tri[2]}", d12, f12)
         mnr = (f"{tri[0]}–{tri[1]}", d01, f01)
 
+    ratio_expr = sp.simplify(maj[1] / mnr[1])
+    ratio_num = maj[2] / mnr[2]
+
     segments_meta = [
         {
             "role": "Major",
@@ -68,6 +71,16 @@ def _build_section_metadata(
             "len_alg": _fmt_alg(mnr[1]),
             "len_tex": sp.latex(mnr[1]),
             "len_num": f"{mnr[2]:.10f}",
+        },
+        {
+            "role": "a / b",
+            "label": f"({maj[0]}) / ({mnr[0]})",
+            "len_alg": _fmt_alg(ratio_expr),
+            "len_tex": (
+                rf"\frac{{{sp.latex(maj[1])}}}{{{sp.latex(mnr[1])}}}"
+                rf" = {sp.latex(ratio_expr)}"
+            ),
+            "len_num": f"{ratio_num:.10f}",
         },
     ]
     return {"points": points_meta, "segments": segments_meta}
