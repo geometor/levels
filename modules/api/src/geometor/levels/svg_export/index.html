@@ -61,6 +61,9 @@
           <a href="../../../../../../levels/index.html"  >Levels</a>
         </li>
         <li>
+          <a href="../../../../../../round-robin/index.html"  >Round Robin</a>
+        </li>
+        <li>
           <a href="../../../../../../approaches/index.html"  >Approaches</a>
         </li>
         <li>
@@ -112,6 +115,9 @@
         <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.levels.svg_export.export_level3_ancestor_svgs" title="src.geometor.levels.svg_export.export_level3_ancestor_svgs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">export_level3_ancestor_svgs</span></code></a>(ckpt_path, out_dir, *[, count]) → list[dict[str, Any]]</p></td>
         <td><p>Export <code class="docutils literal notranslate"><span class="pre">count</span></code> square SVGs of Level 3 golden sections with full recursive ancestors.</p></td>
         </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.levels.svg_export.export_round_robin_pairs" title="src.geometor.levels.svg_export.export_round_robin_pairs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">export_round_robin_pairs</span></code></a>(ckpt_path, out_dir) → list[dict[str, Any]]</p></td>
+        <td><p>Export per-pair overlays (no labels + size stats) and individual golden SVGs.</p></td>
+        </tr>
         </tbody>
         </table>
         </section>
@@ -133,6 +139,12 @@
         <dt class="sig sig-object py" id="src.geometor.levels.svg_export.export_level3_ancestor_svgs">
         <span class="sig-prename descclassname"><span class="pre">src.geometor.levels.svg_export.</span></span><span class="sig-name descname"><span class="pre">export_level3_ancestor_svgs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ckpt_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">24</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.levels.svg_export.export_level3_ancestor_svgs" title="Link to this definition">¶</a></dt>
         <dd><p>Export <code class="docutils literal notranslate"><span class="pre">count</span></code> square SVGs of Level 3 golden sections with full recursive ancestors.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.levels.svg_export.export_round_robin_pairs">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.levels.svg_export.</span></span><span class="sig-name descname"><span class="pre">export_round_robin_pairs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ckpt_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#src.geometor.levels.svg_export.export_round_robin_pairs" title="Link to this definition">¶</a></dt>
+        <dd><p>Export per-pair overlays (no labels + size stats) and individual golden SVGs.</p>
         </dd></dl>
 
         </section>
@@ -197,6 +209,7 @@
         <li><a href="../../../../../../types/book.html">book</a></li>
         <li><a href="../../../../../../types/level.html">level</a></li>
         <li><a href="../../../../../../types/log.html">log</a></li>
+        <li><a href="../../../../../../types/pair.html">pair</a></li>
       </ul>
     </aside>
   </div>
@@ -227,7 +240,7 @@
   <script src="../../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../../../../../_static/js/collection_directory.js?v=0928c9d3"></script>
   <script src="../../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
-  <script src="../../../../../../_static/js/svg_switcher.js?v=a730bd0d"></script>
+  <script src="../../../../../../_static/js/svg_switcher.js?v=c9d97e5c"></script>
   <script src="../../../../../../_static/js/search_highlight.js"></script>
 
 </body>

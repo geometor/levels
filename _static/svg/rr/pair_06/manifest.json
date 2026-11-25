@@ -1,0 +1,138 @@
+[
+  {
+    "src": "overlay.svg",
+    "caption": "Pair 06 (F \u2014 G) Overlay: 2 new golden sections & ancestors",
+    "stats": {
+      "pair_idx": 6,
+      "pair": "F \u2014 G",
+      "new_pts": 66,
+      "new_lines": 1,
+      "new_circles": 2,
+      "new_goldens": 2,
+      "cum_pts": 269,
+      "cum_lines": 11,
+      "cum_circles": 18,
+      "cum_goldens": 40,
+      "size_counts": [
+        {
+          "a_alg": "\u221a(15)",
+          "a_tex": "\\sqrt{15}",
+          "a_num": "3.8729833462",
+          "count": 2
+        }
+      ]
+    }
+  },
+  {
+    "src": "sec_001.svg",
+    "caption": "1/2: E11 \u2014 K4 \u2014 L4 (7 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "E11",
+        "x_alg": "-9/2",
+        "x_tex": "- \\frac{9}{2}",
+        "x_num": "-4.5000000000",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      },
+      {
+        "id": "K4",
+        "x_alg": "-3*\u221a(5)/4 - 3/4",
+        "x_tex": "- \\frac{3 \\sqrt{5}}{4} - \\frac{3}{4}",
+        "x_num": "-2.4270509831",
+        "y_alg": "-\u221a(3)/4 + \u221a(15)/4",
+        "y_tex": "- \\frac{\\sqrt{3}}{4} + \\frac{\\sqrt{15}}{4}",
+        "y_num": "0.5352331347"
+      },
+      {
+        "id": "L4",
+        "x_alg": "-3/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{3}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "0.9270509831",
+        "y_alg": "-\u221a(15)/4 - \u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} - \\frac{\\sqrt{3}}{4}",
+        "y_num": "-1.4012585384"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "K4\u2013L4",
+        "len_alg": "\u221a(15)",
+        "len_tex": "\\sqrt{15}",
+        "len_num": "3.8729833462"
+      },
+      {
+        "role": "b",
+        "label": "E11\u2013K4",
+        "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
+        "len_num": "2.3936353458"
+      },
+      {
+        "role": "a / b",
+        "label": "(K4\u2013L4) / (E11\u2013K4)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{15}}{- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_002.svg",
+    "caption": "2/2: G11 \u2014 Z5 \u2014 A6 (7 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "G11",
+        "x_alg": "-9/2",
+        "x_tex": "- \\frac{9}{2}",
+        "x_num": "-4.5000000000",
+        "y_alg": "-\u221a(3)",
+        "y_tex": "- \\sqrt{3}",
+        "y_num": "-1.7320508076"
+      },
+      {
+        "id": "Z5",
+        "x_alg": "-3*\u221a(5)/4 - 3/4",
+        "x_tex": "- \\frac{3 \\sqrt{5}}{4} - \\frac{3}{4}",
+        "x_num": "-2.4270509831",
+        "y_alg": "-\u221a(15)/4 + \u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{\\sqrt{3}}{4}",
+        "y_num": "-0.5352331347"
+      },
+      {
+        "id": "A6",
+        "x_alg": "-3/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{3}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "0.9270509831",
+        "y_alg": "\u221a(3)/4 + \u221a(15)/4",
+        "y_tex": "\\frac{\\sqrt{3}}{4} + \\frac{\\sqrt{15}}{4}",
+        "y_num": "1.4012585384"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "Z5\u2013A6",
+        "len_alg": "\u221a(15)",
+        "len_tex": "\\sqrt{15}",
+        "len_num": "3.8729833462"
+      },
+      {
+        "role": "b",
+        "label": "G11\u2013Z5",
+        "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
+        "len_num": "2.3936353458"
+      },
+      {
+        "role": "a / b",
+        "label": "(Z5\u2013A6) / (G11\u2013Z5)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{15}}{- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  }
+]

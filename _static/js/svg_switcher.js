@@ -387,15 +387,67 @@
     }
 
     function renderInspector(frame) {
+      function fmtMath(tex, alg) {
+        return tex ? `\\(${escHtml(tex)}\\)` : escHtml(alg || "");
+      }
+
+      function typesetInspector() {
+        if (window.MathJax && typeof window.MathJax.typesetPromise === "function") {
+          window.MathJax.typesetPromise([inspectorEl]).catch(() => {});
+        } else if (window.MathJax && window.MathJax.Hub) {
+          window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub, inspectorEl]);
+        }
+      }
+
+      if (frame.stats) {
+        const st = frame.stats;
+        const sizeRows = (st.size_counts || [])
+          .map(
+            (row) => `
+            <tr>
+              <td>
+                <div class="gsv-alg">${fmtMath(row.a_tex, row.a_alg)}</div>
+                <div class="gsv-num">${escHtml(row.a_num)}</div>
+              </td>
+              <td class="gsv-pt-id">${escHtml(row.count)}</td>
+            </tr>`
+          )
+          .join("");
+
+        inspectorEl.innerHTML = `
+          <div>
+            <h4 class="gsv-section-title">Pair ${escHtml(st.pair_idx)} (${escHtml(st.pair)})</h4>
+            <table class="gsv-table">
+              <thead>
+                <tr><th>Metric</th><th>New</th><th>Total</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Points</td><td class="gsv-seg-ratio">+${escHtml(st.new_pts)}</td><td>${escHtml(st.cum_pts)}</td></tr>
+                <tr><td>Lines</td><td class="gsv-seg-ratio">+${escHtml(st.new_lines)}</td><td>${escHtml(st.cum_lines)}</td></tr>
+                <tr><td>Circles</td><td class="gsv-seg-ratio">+${escHtml(st.new_circles)}</td><td>${escHtml(st.cum_circles)}</td></tr>
+                <tr><td>Golden Sections</td><td class="gsv-seg-major">+${escHtml(st.new_goldens)}</td><td>${escHtml(st.cum_goldens)}</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h4 class="gsv-section-title">Count by Size (a)</h4>
+            <table class="gsv-table">
+              <thead>
+                <tr><th>Major Length (a)</th><th>Count</th></tr>
+              </thead>
+              <tbody>${sizeRows}</tbody>
+            </table>
+          </div>
+        `;
+        typesetInspector();
+        return;
+      }
+
       const pts = Array.isArray(frame.points) ? frame.points : [];
       const segs = Array.isArray(frame.segments) ? frame.segments : [];
       if (!pts.length && !segs.length) {
         inspectorEl.innerHTML = "";
         return;
-      }
-
-      function fmtMath(tex, alg) {
-        return tex ? `\\(${escHtml(tex)}\\)` : escHtml(alg || "");
       }
 
       const ptRows = pts

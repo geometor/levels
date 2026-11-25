@@ -17,6 +17,7 @@ Functions
    src.geometor.levels.svg_export.export_level1_svg
    src.geometor.levels.svg_export.export_level2_svgs
    src.geometor.levels.svg_export.export_level3_ancestor_svgs
+   src.geometor.levels.svg_export.export_round_robin_pairs
 
 
 Module Contents
@@ -35,5 +36,10 @@ Module Contents
 .. py:function:: export_level3_ancestor_svgs(ckpt_path: pathlib.Path, out_dir: pathlib.Path, *, count: int = 24) -> list[dict[str, Any]]
 
    Export ``count`` square SVGs of Level 3 golden sections with full recursive ancestors.
+
+
+.. py:function:: export_round_robin_pairs(ckpt_path: pathlib.Path, out_dir: pathlib.Path) -> list[dict[str, Any]]
+
+   Export per-pair overlays (no labels + size stats) and individual golden SVGs.
 
 

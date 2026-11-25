@@ -1,0 +1,144 @@
+[
+  {
+    "src": "overlay.svg",
+    "caption": "Pair 63 (K3 \u2014 L3) Overlay: 2 new golden sections & ancestors",
+    "stats": {
+      "pair_idx": 63,
+      "pair": "K3 \u2014 L3",
+      "new_pts": 864,
+      "new_lines": 1,
+      "new_circles": 2,
+      "new_goldens": 2,
+      "cum_pts": 21978,
+      "cum_lines": 51,
+      "cum_circles": 131,
+      "cum_goldens": 1184,
+      "size_counts": [
+        {
+          "a_alg": "\u221a(14)/2",
+          "a_tex": "\\frac{\\sqrt{14}}{2}",
+          "a_num": "1.8708286934",
+          "count": 1
+        },
+        {
+          "a_alg": "\u221a(14)/4 + \u221a(70)/4",
+          "a_tex": "\\frac{\\sqrt{14}}{4} + \\frac{\\sqrt{70}}{4}",
+          "a_num": "3.0270644130",
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "src": "sec_001.svg",
+    "caption": "1/2: K3 \u2014 O813 \u2014 L3 (7 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "K3",
+        "x_alg": "3/4",
+        "x_tex": "\\frac{3}{4}",
+        "x_num": "0.7500000000",
+        "y_alg": "3*\u221a(7)/4",
+        "y_tex": "\\frac{3 \\sqrt{7}}{4}",
+        "y_num": "1.9843134833"
+      },
+      {
+        "id": "O813",
+        "x_alg": "13/8 - 7*\u221a(5)/24",
+        "x_tex": "\\frac{13}{8} - \\frac{7 \\sqrt{5}}{24}",
+        "x_num": "0.9728135066",
+        "y_alg": "\u221a(7)/24 + \u221a(35)/8",
+        "y_tex": "\\frac{\\sqrt{7}}{24} + \\frac{\\sqrt{35}}{8}",
+        "y_num": "0.8497496108"
+      },
+      {
+        "id": "L3",
+        "x_alg": "4/3",
+        "x_tex": "\\frac{4}{3}",
+        "x_num": "1.3333333333",
+        "y_alg": "-\u221a(35)/6",
+        "y_tex": "- \\frac{\\sqrt{35}}{6}",
+        "y_num": "-0.9860132972"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "O813\u2013L3",
+        "len_alg": "\u221a(14)/2",
+        "len_tex": "\\frac{\\sqrt{14}}{2}",
+        "len_num": "1.8708286934"
+      },
+      {
+        "role": "b",
+        "label": "K3\u2013O813",
+        "len_alg": "-\u221a(14)/4 + \u221a(70)/4",
+        "len_tex": "- \\frac{\\sqrt{14}}{4} + \\frac{\\sqrt{70}}{4}",
+        "len_num": "1.1562357196"
+      },
+      {
+        "role": "a / b",
+        "label": "(O813\u2013L3) / (K3\u2013O813)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{\\sqrt{14}}{2}}{- \\frac{\\sqrt{14}}{4} + \\frac{\\sqrt{70}}{4}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_002.svg",
+    "caption": "2/2: O813 \u2014 L3 \u2014 F846 (8 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "O813",
+        "x_alg": "13/8 - 7*\u221a(5)/24",
+        "x_tex": "\\frac{13}{8} - \\frac{7 \\sqrt{5}}{24}",
+        "x_num": "0.9728135066",
+        "y_alg": "\u221a(7)/24 + \u221a(35)/8",
+        "y_tex": "\\frac{\\sqrt{7}}{24} + \\frac{\\sqrt{35}}{8}",
+        "y_num": "0.8497496108"
+      },
+      {
+        "id": "L3",
+        "x_alg": "4/3",
+        "x_tex": "\\frac{4}{3}",
+        "x_num": "1.3333333333",
+        "y_alg": "-\u221a(35)/6",
+        "y_tex": "- \\frac{\\sqrt{35}}{6}",
+        "y_num": "-0.9860132972"
+      },
+      {
+        "id": "F846",
+        "x_alg": "23/12",
+        "x_tex": "\\frac{23}{12}",
+        "x_num": "1.9166666667",
+        "y_alg": "-3*\u221a(7)/4 - \u221a(35)/3",
+        "y_tex": "- \\frac{3 \\sqrt{7}}{4} - \\frac{\\sqrt{35}}{3}",
+        "y_num": "-3.9563400777"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "L3\u2013F846",
+        "len_alg": "\u221a(14)/4 + \u221a(70)/4",
+        "len_tex": "\\frac{\\sqrt{14}}{4} + \\frac{\\sqrt{70}}{4}",
+        "len_num": "3.0270644130"
+      },
+      {
+        "role": "b",
+        "label": "O813\u2013L3",
+        "len_alg": "\u221a(14)/2",
+        "len_tex": "\\frac{\\sqrt{14}}{2}",
+        "len_num": "1.8708286934"
+      },
+      {
+        "role": "a / b",
+        "label": "(L3\u2013F846) / (O813\u2013L3)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{\\sqrt{14}}{4} + \\frac{\\sqrt{70}}{4}}{\\frac{\\sqrt{14}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2730 @@
+[
+  {
+    "src": "overlay.svg",
+    "caption": "Pair 14 (N \u2014 O) Overlay: 47 new golden sections & ancestors",
+    "stats": {
+      "pair_idx": 14,
+      "pair": "N \u2014 O",
+      "new_pts": 136,
+      "new_lines": 1,
+      "new_circles": 2,
+      "new_goldens": 47,
+      "cum_pts": 1280,
+      "cum_lines": 19,
+      "cum_circles": 33,
+      "cum_goldens": 297,
+      "size_counts": [
+        {
+          "a_alg": "-\u221a(3)/2 + \u221a(15)/2",
+          "a_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+          "a_num": "1.0704662693",
+          "count": 11
+        },
+        {
+          "a_alg": "\u221a(3)",
+          "a_tex": "\\sqrt{3}",
+          "a_num": "1.7320508076",
+          "count": 11
+        },
+        {
+          "a_alg": "\u221a(3)/2 + \u221a(15)/2",
+          "a_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+          "a_num": "2.8025170769",
+          "count": 9
+        },
+        {
+          "a_alg": "\u221a(15)",
+          "a_tex": "\\sqrt{15}",
+          "a_num": "3.8729833462",
+          "count": 4
+        },
+        {
+          "a_alg": "-\u221a(15)/3 + \u221a(3)",
+          "a_tex": "- \\frac{\\sqrt{15}}{3} + \\sqrt{3}",
+          "a_num": "0.4410563588",
+          "count": 2
+        },
+        {
+          "a_alg": "-\u221a(3) + \u221a(15)",
+          "a_tex": "- \\sqrt{3} + \\sqrt{15}",
+          "a_num": "2.1409325386",
+          "count": 2
+        },
+        {
+          "a_alg": "2*\u221a(3)",
+          "a_tex": "2 \\sqrt{3}",
+          "a_num": "3.4641016151",
+          "count": 2
+        },
+        {
+          "a_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+          "a_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+          "a_num": "0.3307922691",
+          "count": 1
+        },
+        {
+          "a_alg": "-\u221a(3)/2 + 3*\u221a(15)/2",
+          "a_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{3 \\sqrt{15}}{2}",
+          "a_num": "4.9434496155",
+          "count": 1
+        },
+        {
+          "a_alg": "\u221a(3) + \u221a(15)",
+          "a_tex": "\\sqrt{3} + \\sqrt{15}",
+          "a_num": "5.6050341538",
+          "count": 1
+        },
+        {
+          "a_alg": "4*\u221a(3)",
+          "a_tex": "4 \\sqrt{3}",
+          "a_num": "6.9282032303",
+          "count": 1
+        },
+        {
+          "a_alg": "\u221a(15) + 3*\u221a(3)",
+          "a_tex": "\\sqrt{15} + 3 \\sqrt{3}",
+          "a_num": "9.0691357689",
+          "count": 1
+        },
+        {
+          "a_alg": "3 + 3*\u221a(5)",
+          "a_tex": "3 + 3 \\sqrt{5}",
+          "a_num": "9.7082039325",
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "src": "sec_001.svg",
+    "caption": "1/47: E7 \u2014 F7 \u2014 E45 (9 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "E7",
+        "x_alg": "3/4 - 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} - \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.9270509831",
+        "y_alg": "-\u221a(15)/4 - \u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} - \\frac{\\sqrt{3}}{4}",
+        "y_num": "-1.4012585384"
+      },
+      {
+        "id": "F7",
+        "x_alg": "3/4 + 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "2.4270509831",
+        "y_alg": "-\u221a(3)/4 + \u221a(15)/4",
+        "y_tex": "- \\frac{\\sqrt{3}}{4} + \\frac{\\sqrt{15}}{4}",
+        "y_num": "0.5352331347"
+      },
+      {
+        "id": "E45",
+        "x_alg": "9/2",
+        "x_tex": "\\frac{9}{2}",
+        "x_num": "4.5000000000",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "E7\u2013F7",
+        "len_alg": "\u221a(15)",
+        "len_tex": "\\sqrt{15}",
+        "len_num": "3.8729833462"
+      },
+      {
+        "role": "b",
+        "label": "F7\u2013E45",
+        "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
+        "len_num": "2.3936353458"
+      },
+      {
+        "role": "a / b",
+        "label": "(E7\u2013F7) / (F7\u2013E45)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{15}}{- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_002.svg",
+    "caption": "2/47: X25 \u2014 K20 \u2014 K45 (9 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "X25",
+        "x_alg": "-4",
+        "x_tex": "-4",
+        "x_num": "-4.0000000000",
+        "y_alg": "-\u221a(15)/2",
+        "y_tex": "- \\frac{\\sqrt{15}}{2}",
+        "y_num": "-1.9364916731"
+      },
+      {
+        "id": "K20",
+        "x_alg": "-1/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{1}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "1.4270509831",
+        "y_alg": "-\u221a(15)/4 + \u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{\\sqrt{3}}{4}",
+        "y_num": "-0.5352331347"
+      },
+      {
+        "id": "K45",
+        "x_alg": "7/2 + 3*\u221a(5)",
+        "x_tex": "\\frac{7}{2} + 3 \\sqrt{5}",
+        "x_num": "10.2082039325",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "K20\u2013K45",
+        "len_alg": "\u221a(15) + 3*\u221a(3)",
+        "len_tex": "\\sqrt{15} + 3 \\sqrt{3}",
+        "len_num": "9.0691357689"
+      },
+      {
+        "role": "b",
+        "label": "X25\u2013K20",
+        "len_alg": "\u221a(3) + \u221a(15)",
+        "len_tex": "\\sqrt{3} + \\sqrt{15}",
+        "len_num": "5.6050341538"
+      },
+      {
+        "role": "a / b",
+        "label": "(K20\u2013K45) / (X25\u2013K20)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{15} + 3 \\sqrt{3}}{\\sqrt{3} + \\sqrt{15}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_003.svg",
+    "caption": "3/47: T21 \u2014 J \u2014 K45 (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "T21",
+        "x_alg": "-4 + 3*\u221a(5)/2",
+        "x_tex": "-4 + \\frac{3 \\sqrt{5}}{2}",
+        "x_num": "-0.6458980338",
+        "y_alg": "-\u221a(15)/2 + \u221a(3)/2",
+        "y_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{\\sqrt{3}}{2}",
+        "y_num": "-1.0704662693"
+      },
+      {
+        "id": "J",
+        "x_alg": "7/2",
+        "x_tex": "\\frac{7}{2}",
+        "x_num": "3.5000000000",
+        "y_alg": "0",
+        "y_tex": "0",
+        "y_num": "0.0000000000"
+      },
+      {
+        "id": "K45",
+        "x_alg": "7/2 + 3*\u221a(5)",
+        "x_tex": "\\frac{7}{2} + 3 \\sqrt{5}",
+        "x_num": "10.2082039325",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "J\u2013K45",
+        "len_alg": "4*\u221a(3)",
+        "len_tex": "4 \\sqrt{3}",
+        "len_num": "6.9282032303"
+      },
+      {
+        "role": "b",
+        "label": "T21\u2013J",
+        "len_alg": "-2*\u221a(3) + 2*\u221a(15)",
+        "len_tex": "- 2 \\sqrt{3} + 2 \\sqrt{15}",
+        "len_num": "4.2818650773"
+      },
+      {
+        "role": "a / b",
+        "label": "(J\u2013K45) / (T21\u2013J)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{4 \\sqrt{3}}{- 2 \\sqrt{3} + 2 \\sqrt{15}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_004.svg",
+    "caption": "4/47: U20 \u2014 I24 \u2014 K45 (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "U20",
+        "x_alg": "3*\u221a(5)/8 + 13/8",
+        "x_tex": "\\frac{3 \\sqrt{5}}{8} + \\frac{13}{8}",
+        "x_num": "2.4635254916",
+        "y_alg": "-\u221a(15)/8 + \u221a(3)/8",
+        "y_tex": "- \\frac{\\sqrt{15}}{8} + \\frac{\\sqrt{3}}{8}",
+        "y_num": "-0.2676165673"
+      },
+      {
+        "id": "I24",
+        "x_alg": "29/4",
+        "x_tex": "\\frac{29}{4}",
+        "x_num": "7.2500000000",
+        "y_alg": "\u221a(15)/4",
+        "y_tex": "\\frac{\\sqrt{15}}{4}",
+        "y_num": "0.9682458366"
+      },
+      {
+        "id": "K45",
+        "x_alg": "7/2 + 3*\u221a(5)",
+        "x_tex": "\\frac{7}{2} + 3 \\sqrt{5}",
+        "x_num": "10.2082039325",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "U20\u2013I24",
+        "len_alg": "-\u221a(3)/2 + 3*\u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{3 \\sqrt{15}}{2}",
+        "len_num": "4.9434496155"
+      },
+      {
+        "role": "b",
+        "label": "I24\u2013K45",
+        "len_alg": "-\u221a(15) + 4*\u221a(3)",
+        "len_tex": "- \\sqrt{15} + 4 \\sqrt{3}",
+        "len_num": "3.0552198841"
+      },
+      {
+        "role": "a / b",
+        "label": "(U20\u2013I24) / (I24\u2013K45)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{3 \\sqrt{15}}{2}}{- \\sqrt{15} + 4 \\sqrt{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_005.svg",
+    "caption": "5/47: K17 \u2014 N \u2014 K45 (11 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "K17",
+        "x_alg": "-11/2",
+        "x_tex": "- \\frac{11}{2}",
+        "x_num": "-5.5000000000",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      },
+      {
+        "id": "N",
+        "x_alg": "1/2",
+        "x_tex": "\\frac{1}{2}",
+        "x_num": "0.5000000000",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      },
+      {
+        "id": "K45",
+        "x_alg": "7/2 + 3*\u221a(5)",
+        "x_tex": "\\frac{7}{2} + 3 \\sqrt{5}",
+        "x_num": "10.2082039325",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "N\u2013K45",
+        "len_alg": "3 + 3*\u221a(5)",
+        "len_tex": "3 + 3 \\sqrt{5}",
+        "len_num": "9.7082039325"
+      },
+      {
+        "role": "b",
+        "label": "K17\u2013N",
+        "len_alg": "6",
+        "len_tex": "6",
+        "len_num": "6.0000000000"
+      },
+      {
+        "role": "a / b",
+        "label": "(N\u2013K45) / (K17\u2013N)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{3 + 3 \\sqrt{5}}{6} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_006.svg",
+    "caption": "6/47: Q46 \u2014 F \u2014 W2 (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "Q46",
+        "x_alg": "3/4 - 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} - \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.9270509831",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "F",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      },
+      {
+        "id": "W2",
+        "x_alg": "3/2",
+        "x_tex": "\\frac{3}{2}",
+        "x_num": "1.5000000000",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "F\u2013W2",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "b",
+        "label": "Q46\u2013F",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "a / b",
+        "label": "(F\u2013W2) / (Q46\u2013F)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_007.svg",
+    "caption": "7/47: Q46 \u2014 W2 \u2014 K6 (11 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "Q46",
+        "x_alg": "3/4 - 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} - \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.9270509831",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "W2",
+        "x_alg": "3/2",
+        "x_tex": "\\frac{3}{2}",
+        "x_num": "1.5000000000",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      },
+      {
+        "id": "K6",
+        "x_alg": "3",
+        "x_tex": "3",
+        "x_num": "3.0000000000",
+        "y_alg": "3*\u221a(3)/2",
+        "y_tex": "\\frac{3 \\sqrt{3}}{2}",
+        "y_num": "2.5980762114"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "Q46\u2013W2",
+        "len_alg": "\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "2.8025170769"
+      },
+      {
+        "role": "b",
+        "label": "W2\u2013K6",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "a / b",
+        "label": "(Q46\u2013W2) / (W2\u2013K6)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{\\sqrt{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339888"
+      }
+    ]
+  },
+  {
+    "src": "sec_008.svg",
+    "caption": "8/47: Z5 \u2014 Q46 \u2014 F (8 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "Z5",
+        "x_alg": "-3*\u221a(5)/4 - 3/4",
+        "x_tex": "- \\frac{3 \\sqrt{5}}{4} - \\frac{3}{4}",
+        "x_num": "-2.4270509831",
+        "y_alg": "-\u221a(15)/4 + \u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{\\sqrt{3}}{4}",
+        "y_num": "-0.5352331347"
+      },
+      {
+        "id": "Q46",
+        "x_alg": "3/4 - 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} - \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.9270509831",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "F",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "Z5\u2013Q46",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "b",
+        "label": "Q46\u2013F",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "a / b",
+        "label": "(Z5\u2013Q46) / (Q46\u2013F)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_009.svg",
+    "caption": "9/47: Z5 \u2014 Q46 \u2014 W2 (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "Z5",
+        "x_alg": "-3*\u221a(5)/4 - 3/4",
+        "x_tex": "- \\frac{3 \\sqrt{5}}{4} - \\frac{3}{4}",
+        "x_num": "-2.4270509831",
+        "y_alg": "-\u221a(15)/4 + \u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{\\sqrt{3}}{4}",
+        "y_num": "-0.5352331347"
+      },
+      {
+        "id": "Q46",
+        "x_alg": "3/4 - 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} - \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.9270509831",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "W2",
+        "x_alg": "3/2",
+        "x_tex": "\\frac{3}{2}",
+        "x_num": "1.5000000000",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "Q46\u2013W2",
+        "len_alg": "\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "2.8025170769"
+      },
+      {
+        "role": "b",
+        "label": "Z5\u2013Q46",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "a / b",
+        "label": "(Q46\u2013W2) / (Z5\u2013Q46)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{\\sqrt{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339888"
+      }
+    ]
+  },
+  {
+    "src": "sec_010.svg",
+    "caption": "10/47: C \u2014 Q46 \u2014 F (8 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "C",
+        "x_alg": "-3/2",
+        "x_tex": "- \\frac{3}{2}",
+        "x_num": "-1.5000000000",
+        "y_alg": "0",
+        "y_tex": "0",
+        "y_num": "0.0000000000"
+      },
+      {
+        "id": "Q46",
+        "x_alg": "3/4 - 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} - \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.9270509831",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "F",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "Q46\u2013F",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "b",
+        "label": "C\u2013Q46",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
+        "len_num": "0.6615845382"
+      },
+      {
+        "role": "a / b",
+        "label": "(Q46\u2013F) / (C\u2013Q46)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_011.svg",
+    "caption": "11/47: Z5 \u2014 C \u2014 Q46 (8 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "Z5",
+        "x_alg": "-3*\u221a(5)/4 - 3/4",
+        "x_tex": "- \\frac{3 \\sqrt{5}}{4} - \\frac{3}{4}",
+        "x_num": "-2.4270509831",
+        "y_alg": "-\u221a(15)/4 + \u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{\\sqrt{3}}{4}",
+        "y_num": "-0.5352331347"
+      },
+      {
+        "id": "C",
+        "x_alg": "-3/2",
+        "x_tex": "- \\frac{3}{2}",
+        "x_num": "-1.5000000000",
+        "y_alg": "0",
+        "y_tex": "0",
+        "y_num": "0.0000000000"
+      },
+      {
+        "id": "Q46",
+        "x_alg": "3/4 - 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} - \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.9270509831",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "Z5\u2013C",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "b",
+        "label": "C\u2013Q46",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
+        "len_num": "0.6615845382"
+      },
+      {
+        "role": "a / b",
+        "label": "(Z5\u2013C) / (C\u2013Q46)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_012.svg",
+    "caption": "12/47: W2 \u2014 R46 \u2014 K6 (11 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "W2",
+        "x_alg": "3/2",
+        "x_tex": "\\frac{3}{2}",
+        "x_num": "1.5000000000",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      },
+      {
+        "id": "R46",
+        "x_alg": "3/4 + 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "2.4270509831",
+        "y_alg": "\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "\\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "2.2672839422"
+      },
+      {
+        "id": "K6",
+        "x_alg": "3",
+        "x_tex": "3",
+        "x_num": "3.0000000000",
+        "y_alg": "3*\u221a(3)/2",
+        "y_tex": "\\frac{3 \\sqrt{3}}{2}",
+        "y_num": "2.5980762114"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "W2\u2013R46",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "b",
+        "label": "R46\u2013K6",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
+        "len_num": "0.6615845382"
+      },
+      {
+        "role": "a / b",
+        "label": "(W2\u2013R46) / (R46\u2013K6)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_013.svg",
+    "caption": "13/47: L6 \u2014 Q46 \u2014 R46 (9 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "L6",
+        "x_alg": "-3",
+        "x_tex": "-3",
+        "x_num": "-3.0000000000",
+        "y_alg": "-\u221a(3)/2",
+        "y_tex": "- \\frac{\\sqrt{3}}{2}",
+        "y_num": "-0.8660254038"
+      },
+      {
+        "id": "Q46",
+        "x_alg": "3/4 - 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} - \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.9270509831",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "R46",
+        "x_alg": "3/4 + 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "2.4270509831",
+        "y_alg": "\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "\\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "2.2672839422"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "Q46\u2013R46",
+        "len_alg": "\u221a(15)",
+        "len_tex": "\\sqrt{15}",
+        "len_num": "3.8729833462"
+      },
+      {
+        "role": "b",
+        "label": "L6\u2013Q46",
+        "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
+        "len_num": "2.3936353458"
+      },
+      {
+        "role": "a / b",
+        "label": "(Q46\u2013R46) / (L6\u2013Q46)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{15}}{- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_014.svg",
+    "caption": "14/47: C \u2014 F \u2014 R46 (8 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "C",
+        "x_alg": "-3/2",
+        "x_tex": "- \\frac{3}{2}",
+        "x_num": "-1.5000000000",
+        "y_alg": "0",
+        "y_tex": "0",
+        "y_num": "0.0000000000"
+      },
+      {
+        "id": "F",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      },
+      {
+        "id": "R46",
+        "x_alg": "3/4 + 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "2.4270509831",
+        "y_alg": "\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "\\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "2.2672839422"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "F\u2013R46",
+        "len_alg": "\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "2.8025170769"
+      },
+      {
+        "role": "b",
+        "label": "C\u2013F",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "a / b",
+        "label": "(F\u2013R46) / (C\u2013F)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{\\sqrt{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339888"
+      }
+    ]
+  },
+  {
+    "src": "sec_015.svg",
+    "caption": "15/47: F \u2014 A6 \u2014 R46 (8 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "F",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      },
+      {
+        "id": "A6",
+        "x_alg": "-3/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{3}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "0.9270509831",
+        "y_alg": "\u221a(3)/4 + \u221a(15)/4",
+        "y_tex": "\\frac{\\sqrt{3}}{4} + \\frac{\\sqrt{15}}{4}",
+        "y_num": "1.4012585384"
+      },
+      {
+        "id": "R46",
+        "x_alg": "3/4 + 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "2.4270509831",
+        "y_alg": "\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "\\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "2.2672839422"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "A6\u2013R46",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "b",
+        "label": "F\u2013A6",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "a / b",
+        "label": "(A6\u2013R46) / (F\u2013A6)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_016.svg",
+    "caption": "16/47: C \u2014 A6 \u2014 R46 (8 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "C",
+        "x_alg": "-3/2",
+        "x_tex": "- \\frac{3}{2}",
+        "x_num": "-1.5000000000",
+        "y_alg": "0",
+        "y_tex": "0",
+        "y_num": "0.0000000000"
+      },
+      {
+        "id": "A6",
+        "x_alg": "-3/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{3}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "0.9270509831",
+        "y_alg": "\u221a(3)/4 + \u221a(15)/4",
+        "y_tex": "\\frac{\\sqrt{3}}{4} + \\frac{\\sqrt{15}}{4}",
+        "y_num": "1.4012585384"
+      },
+      {
+        "id": "R46",
+        "x_alg": "3/4 + 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "2.4270509831",
+        "y_alg": "\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "\\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "2.2672839422"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "C\u2013A6",
+        "len_alg": "\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "2.8025170769"
+      },
+      {
+        "role": "b",
+        "label": "A6\u2013R46",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "a / b",
+        "label": "(C\u2013A6) / (A6\u2013R46)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{\\sqrt{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339888"
+      }
+    ]
+  },
+  {
+    "src": "sec_017.svg",
+    "caption": "17/47: A6 \u2014 W2 \u2014 R46 (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "A6",
+        "x_alg": "-3/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{3}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "0.9270509831",
+        "y_alg": "\u221a(3)/4 + \u221a(15)/4",
+        "y_tex": "\\frac{\\sqrt{3}}{4} + \\frac{\\sqrt{15}}{4}",
+        "y_num": "1.4012585384"
+      },
+      {
+        "id": "W2",
+        "x_alg": "3/2",
+        "x_tex": "\\frac{3}{2}",
+        "x_num": "1.5000000000",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      },
+      {
+        "id": "R46",
+        "x_alg": "3/4 + 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "2.4270509831",
+        "y_alg": "\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "\\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "2.2672839422"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "W2\u2013R46",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "b",
+        "label": "A6\u2013W2",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
+        "len_num": "0.6615845382"
+      },
+      {
+        "role": "a / b",
+        "label": "(W2\u2013R46) / (A6\u2013W2)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_018.svg",
+    "caption": "18/47: F \u2014 W2 \u2014 R46 (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "F",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      },
+      {
+        "id": "W2",
+        "x_alg": "3/2",
+        "x_tex": "\\frac{3}{2}",
+        "x_num": "1.5000000000",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      },
+      {
+        "id": "R46",
+        "x_alg": "3/4 + 3*\u221a(5)/4",
+        "x_tex": "\\frac{3}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "2.4270509831",
+        "y_alg": "\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "\\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "2.2672839422"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "F\u2013W2",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "b",
+        "label": "W2\u2013R46",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "a / b",
+        "label": "(F\u2013W2) / (W2\u2013R46)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_019.svg",
+    "caption": "19/47: U46 \u2014 F \u2014 H4 (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "U46",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(15)/2 + \u221a(3)",
+        "y_tex": "- \\frac{\\sqrt{15}}{2} + \\sqrt{3}",
+        "y_num": "-0.2044408655"
+      },
+      {
+        "id": "F",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      },
+      {
+        "id": "H4",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "3*\u221a(3)/2",
+        "y_tex": "\\frac{3 \\sqrt{3}}{2}",
+        "y_num": "2.5980762114"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "F\u2013H4",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "b",
+        "label": "U46\u2013F",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "a / b",
+        "label": "(F\u2013H4) / (U46\u2013F)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_020.svg",
+    "caption": "20/47: V \u2014 U46 \u2014 F (9 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "V",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(15)/2",
+        "y_tex": "- \\frac{\\sqrt{15}}{2}",
+        "y_num": "-1.9364916731"
+      },
+      {
+        "id": "U46",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(15)/2 + \u221a(3)",
+        "y_tex": "- \\frac{\\sqrt{15}}{2} + \\sqrt{3}",
+        "y_num": "-0.2044408655"
+      },
+      {
+        "id": "F",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "V\u2013U46",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "b",
+        "label": "U46\u2013F",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "a / b",
+        "label": "(V\u2013U46) / (U46\u2013F)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_021.svg",
+    "caption": "21/47: V \u2014 U46 \u2014 H4 (11 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "V",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(15)/2",
+        "y_tex": "- \\frac{\\sqrt{15}}{2}",
+        "y_num": "-1.9364916731"
+      },
+      {
+        "id": "U46",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(15)/2 + \u221a(3)",
+        "y_tex": "- \\frac{\\sqrt{15}}{2} + \\sqrt{3}",
+        "y_num": "-0.2044408655"
+      },
+      {
+        "id": "H4",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "3*\u221a(3)/2",
+        "y_tex": "\\frac{3 \\sqrt{3}}{2}",
+        "y_num": "2.5980762114"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "U46\u2013H4",
+        "len_alg": "\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "2.8025170769"
+      },
+      {
+        "role": "b",
+        "label": "V\u2013U46",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "a / b",
+        "label": "(U46\u2013H4) / (V\u2013U46)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{\\sqrt{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339888"
+      }
+    ]
+  },
+  {
+    "src": "sec_022.svg",
+    "caption": "22/47: E \u2014 U46 \u2014 F (8 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "E",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(3)/2",
+        "y_tex": "- \\frac{\\sqrt{3}}{2}",
+        "y_num": "-0.8660254038"
+      },
+      {
+        "id": "U46",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(15)/2 + \u221a(3)",
+        "y_tex": "- \\frac{\\sqrt{15}}{2} + \\sqrt{3}",
+        "y_num": "-0.2044408655"
+      },
+      {
+        "id": "F",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "U46\u2013F",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "b",
+        "label": "E\u2013U46",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
+        "len_num": "0.6615845382"
+      },
+      {
+        "role": "a / b",
+        "label": "(U46\u2013F) / (E\u2013U46)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_023.svg",
+    "caption": "23/47: V \u2014 E \u2014 U46 (9 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "V",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(15)/2",
+        "y_tex": "- \\frac{\\sqrt{15}}{2}",
+        "y_num": "-1.9364916731"
+      },
+      {
+        "id": "E",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(3)/2",
+        "y_tex": "- \\frac{\\sqrt{3}}{2}",
+        "y_num": "-0.8660254038"
+      },
+      {
+        "id": "U46",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(15)/2 + \u221a(3)",
+        "y_tex": "- \\frac{\\sqrt{15}}{2} + \\sqrt{3}",
+        "y_num": "-0.2044408655"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "V\u2013E",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "b",
+        "label": "E\u2013U46",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
+        "len_num": "0.6615845382"
+      },
+      {
+        "role": "a / b",
+        "label": "(V\u2013E) / (E\u2013U46)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_024.svg",
+    "caption": "24/47: G4 \u2014 U46 \u2014 V46 (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "G4",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-3*\u221a(3)/2",
+        "y_tex": "- \\frac{3 \\sqrt{3}}{2}",
+        "y_num": "-2.5980762114"
+      },
+      {
+        "id": "U46",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(15)/2 + \u221a(3)",
+        "y_tex": "- \\frac{\\sqrt{15}}{2} + \\sqrt{3}",
+        "y_num": "-0.2044408655"
+      },
+      {
+        "id": "V46",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3) + \u221a(15)/2",
+        "y_tex": "\\sqrt{3} + \\frac{\\sqrt{15}}{2}",
+        "y_num": "3.6685424807"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "U46\u2013V46",
+        "len_alg": "\u221a(15)",
+        "len_tex": "\\sqrt{15}",
+        "len_num": "3.8729833462"
+      },
+      {
+        "role": "b",
+        "label": "G4\u2013U46",
+        "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
+        "len_num": "2.3936353458"
+      },
+      {
+        "role": "a / b",
+        "label": "(U46\u2013V46) / (G4\u2013U46)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{15}}{- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_025.svg",
+    "caption": "25/47: E \u2014 F \u2014 V46 (8 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "E",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(3)/2",
+        "y_tex": "- \\frac{\\sqrt{3}}{2}",
+        "y_num": "-0.8660254038"
+      },
+      {
+        "id": "F",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      },
+      {
+        "id": "V46",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3) + \u221a(15)/2",
+        "y_tex": "\\sqrt{3} + \\frac{\\sqrt{15}}{2}",
+        "y_num": "3.6685424807"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "F\u2013V46",
+        "len_alg": "\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "2.8025170769"
+      },
+      {
+        "role": "b",
+        "label": "E\u2013F",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "a / b",
+        "label": "(F\u2013V46) / (E\u2013F)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{\\sqrt{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339888"
+      }
+    ]
+  },
+  {
+    "src": "sec_026.svg",
+    "caption": "26/47: F \u2014 W \u2014 V46 (9 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "F",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      },
+      {
+        "id": "W",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(15)/2",
+        "y_tex": "\\frac{\\sqrt{15}}{2}",
+        "y_num": "1.9364916731"
+      },
+      {
+        "id": "V46",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3) + \u221a(15)/2",
+        "y_tex": "\\sqrt{3} + \\frac{\\sqrt{15}}{2}",
+        "y_num": "3.6685424807"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "W\u2013V46",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "b",
+        "label": "F\u2013W",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "a / b",
+        "label": "(W\u2013V46) / (F\u2013W)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_027.svg",
+    "caption": "27/47: E \u2014 W \u2014 V46 (9 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "E",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(3)/2",
+        "y_tex": "- \\frac{\\sqrt{3}}{2}",
+        "y_num": "-0.8660254038"
+      },
+      {
+        "id": "W",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(15)/2",
+        "y_tex": "\\frac{\\sqrt{15}}{2}",
+        "y_num": "1.9364916731"
+      },
+      {
+        "id": "V46",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3) + \u221a(15)/2",
+        "y_tex": "\\sqrt{3} + \\frac{\\sqrt{15}}{2}",
+        "y_num": "3.6685424807"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "E\u2013W",
+        "len_alg": "\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "2.8025170769"
+      },
+      {
+        "role": "b",
+        "label": "W\u2013V46",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "a / b",
+        "label": "(E\u2013W) / (W\u2013V46)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{\\sqrt{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339888"
+      }
+    ]
+  },
+  {
+    "src": "sec_028.svg",
+    "caption": "28/47: W \u2014 H4 \u2014 V46 (11 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "W",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(15)/2",
+        "y_tex": "\\frac{\\sqrt{15}}{2}",
+        "y_num": "1.9364916731"
+      },
+      {
+        "id": "H4",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "3*\u221a(3)/2",
+        "y_tex": "\\frac{3 \\sqrt{3}}{2}",
+        "y_num": "2.5980762114"
+      },
+      {
+        "id": "V46",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3) + \u221a(15)/2",
+        "y_tex": "\\sqrt{3} + \\frac{\\sqrt{15}}{2}",
+        "y_num": "3.6685424807"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "H4\u2013V46",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "b",
+        "label": "W\u2013H4",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
+        "len_num": "0.6615845382"
+      },
+      {
+        "role": "a / b",
+        "label": "(H4\u2013V46) / (W\u2013H4)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_029.svg",
+    "caption": "29/47: F \u2014 H4 \u2014 V46 (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "F",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      },
+      {
+        "id": "H4",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "3*\u221a(3)/2",
+        "y_tex": "\\frac{3 \\sqrt{3}}{2}",
+        "y_num": "2.5980762114"
+      },
+      {
+        "id": "V46",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "\u221a(3) + \u221a(15)/2",
+        "y_tex": "\\sqrt{3} + \\frac{\\sqrt{15}}{2}",
+        "y_num": "3.6685424807"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "F\u2013H4",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "b",
+        "label": "H4\u2013V46",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "a / b",
+        "label": "(F\u2013H4) / (H4\u2013V46)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_030.svg",
+    "caption": "30/47: M49 \u2014 I \u2014 G14 (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "M49",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "-\u221a(15)/2 + \u221a(3)",
+        "y_tex": "- \\frac{\\sqrt{15}}{2} + \\sqrt{3}",
+        "y_num": "-0.2044408655"
+      },
+      {
+        "id": "I",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      },
+      {
+        "id": "G14",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "3*\u221a(3)/2",
+        "y_tex": "\\frac{3 \\sqrt{3}}{2}",
+        "y_num": "2.5980762114"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "I\u2013G14",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "b",
+        "label": "M49\u2013I",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "a / b",
+        "label": "(I\u2013G14) / (M49\u2013I)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_031.svg",
+    "caption": "31/47: I13 \u2014 M49 \u2014 J34 (12 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "I13",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "-3*\u221a(3)/2",
+        "y_tex": "- \\frac{3 \\sqrt{3}}{2}",
+        "y_num": "-2.5980762114"
+      },
+      {
+        "id": "M49",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "-\u221a(15)/2 + \u221a(3)",
+        "y_tex": "- \\frac{\\sqrt{15}}{2} + \\sqrt{3}",
+        "y_num": "-0.2044408655"
+      },
+      {
+        "id": "J34",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "\u221a(3) + \u221a(15)/2",
+        "y_tex": "\\sqrt{3} + \\frac{\\sqrt{15}}{2}",
+        "y_num": "3.6685424807"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "M49\u2013J34",
+        "len_alg": "\u221a(15)",
+        "len_tex": "\\sqrt{15}",
+        "len_num": "3.8729833462"
+      },
+      {
+        "role": "b",
+        "label": "I13\u2013M49",
+        "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
+        "len_num": "2.3936353458"
+      },
+      {
+        "role": "a / b",
+        "label": "(M49\u2013J34) / (I13\u2013M49)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{15}}{- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_032.svg",
+    "caption": "32/47: I2 \u2014 M49 \u2014 I (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "I2",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "-\u221a(15)/2",
+        "y_tex": "- \\frac{\\sqrt{15}}{2}",
+        "y_num": "-1.9364916731"
+      },
+      {
+        "id": "M49",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "-\u221a(15)/2 + \u221a(3)",
+        "y_tex": "- \\frac{\\sqrt{15}}{2} + \\sqrt{3}",
+        "y_num": "-0.2044408655"
+      },
+      {
+        "id": "I",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "I2\u2013M49",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "b",
+        "label": "M49\u2013I",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "a / b",
+        "label": "(I2\u2013M49) / (M49\u2013I)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_033.svg",
+    "caption": "33/47: I2 \u2014 M49 \u2014 G14 (11 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "I2",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "-\u221a(15)/2",
+        "y_tex": "- \\frac{\\sqrt{15}}{2}",
+        "y_num": "-1.9364916731"
+      },
+      {
+        "id": "M49",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "-\u221a(15)/2 + \u221a(3)",
+        "y_tex": "- \\frac{\\sqrt{15}}{2} + \\sqrt{3}",
+        "y_num": "-0.2044408655"
+      },
+      {
+        "id": "G14",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "3*\u221a(3)/2",
+        "y_tex": "\\frac{3 \\sqrt{3}}{2}",
+        "y_num": "2.5980762114"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "M49\u2013G14",
+        "len_alg": "\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "2.8025170769"
+      },
+      {
+        "role": "b",
+        "label": "I2\u2013M49",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "a / b",
+        "label": "(M49\u2013G14) / (I2\u2013M49)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{\\sqrt{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339888"
+      }
+    ]
+  },
+  {
+    "src": "sec_034.svg",
+    "caption": "34/47: H \u2014 M49 \u2014 I (9 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "H",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "-\u221a(3)/2",
+        "y_tex": "- \\frac{\\sqrt{3}}{2}",
+        "y_num": "-0.8660254038"
+      },
+      {
+        "id": "M49",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "-\u221a(15)/2 + \u221a(3)",
+        "y_tex": "- \\frac{\\sqrt{15}}{2} + \\sqrt{3}",
+        "y_num": "-0.2044408655"
+      },
+      {
+        "id": "I",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "\u221a(3)/2",
+        "y_tex": "\\frac{\\sqrt{3}}{2}",
+        "y_num": "0.8660254038"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "M49\u2013I",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "b",
+        "label": "H\u2013M49",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
+        "len_num": "0.6615845382"
+      },
+      {
+        "role": "a / b",
+        "label": "(M49\u2013I) / (H\u2013M49)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_035.svg",
+    "caption": "35/47: I2 \u2014 H \u2014 M49 (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "I2",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "-\u221a(15)/2",
+        "y_tex": "- \\frac{\\sqrt{15}}{2}",
+        "y_num": "-1.9364916731"
+      },
+      {
+        "id": "H",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "-\u221a(3)/2",
+        "y_tex": "- \\frac{\\sqrt{3}}{2}",
+        "y_num": "-0.8660254038"
+      },
+      {
+        "id": "M49",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "-\u221a(15)/2 + \u221a(3)",
+        "y_tex": "- \\frac{\\sqrt{15}}{2} + \\sqrt{3}",
+        "y_num": "-0.2044408655"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "I2\u2013H",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "b",
+        "label": "H\u2013M49",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
+        "len_num": "0.6615845382"
+      },
+      {
+        "role": "a / b",
+        "label": "(I2\u2013H) / (H\u2013M49)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_036.svg",
+    "caption": "36/47: B50 \u2014 M \u2014 X42 (9 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "B50",
+        "x_alg": "-7/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{7}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.0729490169",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "M",
+        "x_alg": "1/2",
+        "x_tex": "\\frac{1}{2}",
+        "x_num": "0.5000000000",
+        "y_alg": "-\u221a(3)",
+        "y_tex": "- \\sqrt{3}",
+        "y_num": "-1.7320508076"
+      },
+      {
+        "id": "X42",
+        "x_alg": "-1/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{1}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "1.4270509831",
+        "y_alg": "-3*\u221a(15)/4 - 5*\u221a(3)/4",
+        "y_tex": "- \\frac{3 \\sqrt{15}}{4} - \\frac{5 \\sqrt{3}}{4}",
+        "y_num": "-5.0698010191"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "M\u2013X42",
+        "len_alg": "2*\u221a(3)",
+        "len_tex": "2 \\sqrt{3}",
+        "len_num": "3.4641016151"
+      },
+      {
+        "role": "b",
+        "label": "B50\u2013M",
+        "len_alg": "-\u221a(3) + \u221a(15)",
+        "len_tex": "- \\sqrt{3} + \\sqrt{15}",
+        "len_num": "2.1409325386"
+      },
+      {
+        "role": "a / b",
+        "label": "(M\u2013X42) / (B50\u2013M)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{2 \\sqrt{3}}{- \\sqrt{3} + \\sqrt{15}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_037.svg",
+    "caption": "37/47: J34 \u2014 B50 \u2014 M (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "J34",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "\u221a(3) + \u221a(15)/2",
+        "y_tex": "\\sqrt{3} + \\frac{\\sqrt{15}}{2}",
+        "y_num": "3.6685424807"
+      },
+      {
+        "id": "B50",
+        "x_alg": "-7/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{7}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.0729490169",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "M",
+        "x_alg": "1/2",
+        "x_tex": "\\frac{1}{2}",
+        "x_num": "0.5000000000",
+        "y_alg": "-\u221a(3)",
+        "y_tex": "- \\sqrt{3}",
+        "y_num": "-1.7320508076"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "J34\u2013B50",
+        "len_alg": "2*\u221a(3)",
+        "len_tex": "2 \\sqrt{3}",
+        "len_num": "3.4641016151"
+      },
+      {
+        "role": "b",
+        "label": "B50\u2013M",
+        "len_alg": "-\u221a(3) + \u221a(15)",
+        "len_tex": "- \\sqrt{3} + \\sqrt{15}",
+        "len_num": "2.1409325386"
+      },
+      {
+        "role": "a / b",
+        "label": "(J34\u2013B50) / (B50\u2013M)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{2 \\sqrt{3}}{- \\sqrt{3} + \\sqrt{15}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_038.svg",
+    "caption": "38/47: J34 \u2014 B50 \u2014 X42 (11 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "J34",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "\u221a(3) + \u221a(15)/2",
+        "y_tex": "\\sqrt{3} + \\frac{\\sqrt{15}}{2}",
+        "y_num": "3.6685424807"
+      },
+      {
+        "id": "B50",
+        "x_alg": "-7/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{7}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.0729490169",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "X42",
+        "x_alg": "-1/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{1}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "1.4270509831",
+        "y_alg": "-3*\u221a(15)/4 - 5*\u221a(3)/4",
+        "y_tex": "- \\frac{3 \\sqrt{15}}{4} - \\frac{5 \\sqrt{3}}{4}",
+        "y_num": "-5.0698010191"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "B50\u2013X42",
+        "len_alg": "\u221a(3) + \u221a(15)",
+        "len_tex": "\\sqrt{3} + \\sqrt{15}",
+        "len_num": "5.6050341538"
+      },
+      {
+        "role": "b",
+        "label": "J34\u2013B50",
+        "len_alg": "2*\u221a(3)",
+        "len_tex": "2 \\sqrt{3}",
+        "len_num": "3.4641016151"
+      },
+      {
+        "role": "a / b",
+        "label": "(B50\u2013X42) / (J34\u2013B50)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3} + \\sqrt{15}}{2 \\sqrt{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339888"
+      }
+    ]
+  },
+  {
+    "src": "sec_039.svg",
+    "caption": "39/47: C33 \u2014 B50 \u2014 Z32 (8 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "C33",
+        "x_alg": "-11/8 + 3*\u221a(5)/8",
+        "x_tex": "- \\frac{11}{8} + \\frac{3 \\sqrt{5}}{8}",
+        "x_num": "-0.5364745084",
+        "y_alg": "\u221a(15)/8 + 7*\u221a(3)/8",
+        "y_tex": "\\frac{\\sqrt{15}}{8} + \\frac{7 \\sqrt{3}}{8}",
+        "y_num": "1.9996673749"
+      },
+      {
+        "id": "B50",
+        "x_alg": "-7/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{7}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.0729490169",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "Z32",
+        "x_alg": "-5/8 + 3*\u221a(5)/8",
+        "x_tex": "- \\frac{5}{8} + \\frac{3 \\sqrt{5}}{8}",
+        "x_num": "0.2135254916",
+        "y_alg": "-\u221a(15)/8 - \u221a(3)/8",
+        "y_tex": "- \\frac{\\sqrt{15}}{8} - \\frac{\\sqrt{3}}{8}",
+        "y_num": "-0.7006292692"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "C33\u2013B50",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "b",
+        "label": "B50\u2013Z32",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "a / b",
+        "label": "(C33\u2013B50) / (B50\u2013Z32)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_040.svg",
+    "caption": "40/47: M33 \u2014 B50 \u2014 M (9 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "M33",
+        "x_alg": "5/4 - 3*\u221a(5)/4",
+        "x_tex": "\\frac{5}{4} - \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.4270509831",
+        "y_alg": "-3*\u221a(3)/4 + 3*\u221a(15)/4",
+        "y_tex": "- \\frac{3 \\sqrt{3}}{4} + \\frac{3 \\sqrt{15}}{4}",
+        "y_num": "1.6056994040"
+      },
+      {
+        "id": "B50",
+        "x_alg": "-7/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{7}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.0729490169",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "M",
+        "x_alg": "1/2",
+        "x_tex": "\\frac{1}{2}",
+        "x_num": "0.5000000000",
+        "y_alg": "-\u221a(3)",
+        "y_tex": "- \\sqrt{3}",
+        "y_num": "-1.7320508076"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "B50\u2013M",
+        "len_alg": "-\u221a(3) + \u221a(15)",
+        "len_tex": "- \\sqrt{3} + \\sqrt{15}",
+        "len_num": "2.1409325386"
+      },
+      {
+        "role": "b",
+        "label": "M33\u2013B50",
+        "len_alg": "-\u221a(15) + 3*\u221a(3)",
+        "len_tex": "- \\sqrt{15} + 3 \\sqrt{3}",
+        "len_num": "1.3231690765"
+      },
+      {
+        "role": "a / b",
+        "label": "(B50\u2013M) / (M33\u2013B50)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\sqrt{3} + \\sqrt{15}}{- \\sqrt{15} + 3 \\sqrt{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_041.svg",
+    "caption": "41/47: L \u2014 B50 \u2014 Z32 (8 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "L",
+        "x_alg": "-1/4",
+        "x_tex": "- \\frac{1}{4}",
+        "x_num": "-0.2500000000",
+        "y_alg": "\u221a(15)/4",
+        "y_tex": "\\frac{\\sqrt{15}}{4}",
+        "y_num": "0.9682458366"
+      },
+      {
+        "id": "B50",
+        "x_alg": "-7/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{7}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.0729490169",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "Z32",
+        "x_alg": "-5/8 + 3*\u221a(5)/8",
+        "x_tex": "- \\frac{5}{8} + \\frac{3 \\sqrt{5}}{8}",
+        "x_num": "0.2135254916",
+        "y_alg": "-\u221a(15)/8 - \u221a(3)/8",
+        "y_tex": "- \\frac{\\sqrt{15}}{8} - \\frac{\\sqrt{3}}{8}",
+        "y_num": "-0.7006292692"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "B50\u2013Z32",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "b",
+        "label": "L\u2013B50",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
+        "len_num": "0.6615845382"
+      },
+      {
+        "role": "a / b",
+        "label": "(B50\u2013Z32) / (L\u2013B50)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_042.svg",
+    "caption": "42/47: W33 \u2014 B50 \u2014 D34 (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "W33",
+        "x_alg": "-3/4 + \u221a(5)/4",
+        "x_tex": "- \\frac{3}{4} + \\frac{\\sqrt{5}}{4}",
+        "x_num": "-0.1909830056",
+        "y_alg": "\u221a(15)/12 + \u221a(3)/4",
+        "y_tex": "\\frac{\\sqrt{15}}{12} + \\frac{\\sqrt{3}}{4}",
+        "y_num": "0.7557613141"
+      },
+      {
+        "id": "B50",
+        "x_alg": "-7/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{7}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.0729490169",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "D34",
+        "x_alg": "0",
+        "x_tex": "0",
+        "x_num": "0.0000000000",
+        "y_alg": "-\u221a(3)/3 + \u221a(15)/6",
+        "y_tex": "- \\frac{\\sqrt{3}}{3} + \\frac{\\sqrt{15}}{6}",
+        "y_num": "0.0681469552"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "W33\u2013B50",
+        "len_alg": "-\u221a(15)/3 + \u221a(3)",
+        "len_tex": "- \\frac{\\sqrt{15}}{3} + \\sqrt{3}",
+        "len_num": "0.4410563588"
+      },
+      {
+        "role": "b",
+        "label": "B50\u2013D34",
+        "len_alg": "-4*\u221a(3)/3 + 2*\u221a(15)/3",
+        "len_tex": "- \\frac{4 \\sqrt{3}}{3} + \\frac{2 \\sqrt{15}}{3}",
+        "len_num": "0.2725878207"
+      },
+      {
+        "role": "a / b",
+        "label": "(W33\u2013B50) / (B50\u2013D34)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{15}}{3} + \\sqrt{3}}{- \\frac{4 \\sqrt{3}}{3} + \\frac{2 \\sqrt{15}}{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_043.svg",
+    "caption": "43/47: I34 \u2014 B50 \u2014 D33 (11 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "I34",
+        "x_alg": "-1 + 3*\u221a(5)/8",
+        "x_tex": "-1 + \\frac{3 \\sqrt{5}}{8}",
+        "x_num": "-0.1614745084",
+        "y_alg": "3*\u221a(3)/8",
+        "y_tex": "\\frac{3 \\sqrt{3}}{8}",
+        "y_num": "0.6495190528"
+      },
+      {
+        "id": "B50",
+        "x_alg": "-7/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{7}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.0729490169",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      },
+      {
+        "id": "D33",
+        "x_alg": "-7/16 + 3*\u221a(5)/16",
+        "x_tex": "- \\frac{7}{16} + \\frac{3 \\sqrt{5}}{16}",
+        "x_num": "-0.0182372542",
+        "y_alg": "-\u221a(3)/16 + \u221a(15)/16",
+        "y_tex": "- \\frac{\\sqrt{3}}{16} + \\frac{\\sqrt{15}}{16}",
+        "y_num": "0.1338082837"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "I34\u2013B50",
+        "len_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "len_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "len_num": "0.3307922691"
+      },
+      {
+        "role": "b",
+        "label": "B50\u2013D33",
+        "len_alg": "-\u221a(3) + \u221a(15)/2",
+        "len_tex": "- \\sqrt{3} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "0.2044408655"
+      },
+      {
+        "role": "a / b",
+        "label": "(I34\u2013B50) / (B50\u2013D33)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}}{- \\sqrt{3} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_044.svg",
+    "caption": "44/47: X44 \u2014 C33 \u2014 B50 (9 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "X44",
+        "x_alg": "-17/8 + 3*\u221a(5)/8",
+        "x_tex": "- \\frac{17}{8} + \\frac{3 \\sqrt{5}}{8}",
+        "x_num": "-1.2864745084",
+        "y_alg": "3*\u221a(15)/8 + 15*\u221a(3)/8",
+        "y_tex": "\\frac{3 \\sqrt{15}}{8} + \\frac{15 \\sqrt{3}}{8}",
+        "y_num": "4.6999640190"
+      },
+      {
+        "id": "C33",
+        "x_alg": "-11/8 + 3*\u221a(5)/8",
+        "x_tex": "- \\frac{11}{8} + \\frac{3 \\sqrt{5}}{8}",
+        "x_num": "-0.5364745084",
+        "y_alg": "\u221a(15)/8 + 7*\u221a(3)/8",
+        "y_tex": "\\frac{\\sqrt{15}}{8} + \\frac{7 \\sqrt{3}}{8}",
+        "y_num": "1.9996673749"
+      },
+      {
+        "id": "B50",
+        "x_alg": "-7/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{7}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.0729490169",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "X44\u2013C33",
+        "len_alg": "\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "2.8025170769"
+      },
+      {
+        "role": "b",
+        "label": "C33\u2013B50",
+        "len_alg": "\u221a(3)",
+        "len_tex": "\\sqrt{3}",
+        "len_num": "1.7320508076"
+      },
+      {
+        "role": "a / b",
+        "label": "(X44\u2013C33) / (C33\u2013B50)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{\\sqrt{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339888"
+      }
+    ]
+  },
+  {
+    "src": "sec_045.svg",
+    "caption": "45/47: J34 \u2014 M33 \u2014 B50 (11 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "J34",
+        "x_alg": "-1",
+        "x_tex": "-1",
+        "x_num": "-1.0000000000",
+        "y_alg": "\u221a(3) + \u221a(15)/2",
+        "y_tex": "\\sqrt{3} + \\frac{\\sqrt{15}}{2}",
+        "y_num": "3.6685424807"
+      },
+      {
+        "id": "M33",
+        "x_alg": "5/4 - 3*\u221a(5)/4",
+        "x_tex": "\\frac{5}{4} - \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.4270509831",
+        "y_alg": "-3*\u221a(3)/4 + 3*\u221a(15)/4",
+        "y_tex": "- \\frac{3 \\sqrt{3}}{4} + \\frac{3 \\sqrt{15}}{4}",
+        "y_num": "1.6056994040"
+      },
+      {
+        "id": "B50",
+        "x_alg": "-7/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{7}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.0729490169",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "J34\u2013M33",
+        "len_alg": "-\u221a(3) + \u221a(15)",
+        "len_tex": "- \\sqrt{3} + \\sqrt{15}",
+        "len_num": "2.1409325386"
+      },
+      {
+        "role": "b",
+        "label": "M33\u2013B50",
+        "len_alg": "-\u221a(15) + 3*\u221a(3)",
+        "len_tex": "- \\sqrt{15} + 3 \\sqrt{3}",
+        "len_num": "1.3231690765"
+      },
+      {
+        "role": "a / b",
+        "label": "(J34\u2013M33) / (M33\u2013B50)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\sqrt{3} + \\sqrt{15}}{- \\sqrt{15} + 3 \\sqrt{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_046.svg",
+    "caption": "46/47: C33 \u2014 L \u2014 B50 (8 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "C33",
+        "x_alg": "-11/8 + 3*\u221a(5)/8",
+        "x_tex": "- \\frac{11}{8} + \\frac{3 \\sqrt{5}}{8}",
+        "x_num": "-0.5364745084",
+        "y_alg": "\u221a(15)/8 + 7*\u221a(3)/8",
+        "y_tex": "\\frac{\\sqrt{15}}{8} + \\frac{7 \\sqrt{3}}{8}",
+        "y_num": "1.9996673749"
+      },
+      {
+        "id": "L",
+        "x_alg": "-1/4",
+        "x_tex": "- \\frac{1}{4}",
+        "x_num": "-0.2500000000",
+        "y_alg": "\u221a(15)/4",
+        "y_tex": "\\frac{\\sqrt{15}}{4}",
+        "y_num": "0.9682458366"
+      },
+      {
+        "id": "B50",
+        "x_alg": "-7/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{7}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.0729490169",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "C33\u2013L",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
+        "len_num": "1.0704662693"
+      },
+      {
+        "role": "b",
+        "label": "L\u2013B50",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
+        "len_num": "0.6615845382"
+      },
+      {
+        "role": "a / b",
+        "label": "(C33\u2013L) / (L\u2013B50)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_047.svg",
+    "caption": "47/47: C34 \u2014 W33 \u2014 B50 (10 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "C34",
+        "x_alg": "-5/2 + \u221a(5)",
+        "x_tex": "- \\frac{5}{2} + \\sqrt{5}",
+        "x_num": "-0.2639320225",
+        "y_alg": "-\u221a(15)/3 + 4*\u221a(3)/3",
+        "y_tex": "- \\frac{\\sqrt{15}}{3} + \\frac{4 \\sqrt{3}}{3}",
+        "y_num": "1.0184066280"
+      },
+      {
+        "id": "W33",
+        "x_alg": "-3/4 + \u221a(5)/4",
+        "x_tex": "- \\frac{3}{4} + \\frac{\\sqrt{5}}{4}",
+        "x_num": "-0.1909830056",
+        "y_alg": "\u221a(15)/12 + \u221a(3)/4",
+        "y_tex": "\\frac{\\sqrt{15}}{12} + \\frac{\\sqrt{3}}{4}",
+        "y_num": "0.7557613141"
+      },
+      {
+        "id": "B50",
+        "x_alg": "-7/4 + 3*\u221a(5)/4",
+        "x_tex": "- \\frac{7}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "-0.0729490169",
+        "y_alg": "-\u221a(15)/4 + 3*\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{15}}{4} + \\frac{3 \\sqrt{3}}{4}",
+        "y_num": "0.3307922691"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "W33\u2013B50",
+        "len_alg": "-\u221a(15)/3 + \u221a(3)",
+        "len_tex": "- \\frac{\\sqrt{15}}{3} + \\sqrt{3}",
+        "len_num": "0.4410563588"
+      },
+      {
+        "role": "b",
+        "label": "C34\u2013W33",
+        "len_alg": "-4*\u221a(3)/3 + 2*\u221a(15)/3",
+        "len_tex": "- \\frac{4 \\sqrt{3}}{3} + \\frac{2 \\sqrt{15}}{3}",
+        "len_num": "0.2725878207"
+      },
+      {
+        "role": "a / b",
+        "label": "(W33\u2013B50) / (C34\u2013W33)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{15}}{3} + \\sqrt{3}}{- \\frac{4 \\sqrt{3}}{3} + \\frac{2 \\sqrt{15}}{3}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  }
+]

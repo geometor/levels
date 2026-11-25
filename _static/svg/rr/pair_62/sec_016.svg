@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%" class="levels-svg">
+<defs><clipPath id="sq-clip"><rect x="0" y="0" width="1000" height="1000"/></clipPath></defs>
+<rect x="0" y="0" width="1000" height="1000" fill="#0b0e14"/>
+<g clip-path="url(#sq-clip)">
+<line x1="-100.69" y1="-569.75" x2="1149.31" y2="1595.31" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-100.69" y1="1511.09" x2="1149.31" y2="-653.98" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-606.84" y1="-112.22" x2="1558.22" y2="1137.78" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-606.84" y1="1053.55" x2="1558.22" y2="-196.45" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1704.10" y1="1053.55" x2="-460.97" y2="-196.45" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="548.63" y1="1720.67" x2="548.63" y2="-779.33" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1608.20" y1="19.40" x2="-754.08" y2="837.71" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-704.10" y1="-112.22" x2="1460.97" y2="1137.78" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="451.37" y1="1720.67" x2="451.37" y2="-779.33" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-557.29" y1="192.33" x2="1897.67" y2="664.78" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1916.97" y1="205.25" x2="-503.65" y2="830.25" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="524.31" y1="1720.67" x2="524.31" y2="-779.33" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="226.26" y1="-696.60" x2="895.30" y2="1712.21" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="597.25" y1="1720.67" x2="597.25" y2="-779.33" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1750.00" y1="302.22" x2="-750.00" y2="302.22" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-342.41" y1="-472.17" x2="1391.03" y2="1329.28" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1705.45" y1="187.84" x2="-656.83" y2="1006.16" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-342.41" y1="1413.50" x2="1391.03" y2="-387.94" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-363.72" y1="-196.45" x2="1801.35" y2="1053.55" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1819.72" y1="205.25" x2="-600.90" y2="830.25" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="427.06" y1="1720.67" x2="427.06" y2="-779.33" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-6.26" y1="-630.45" x2="981.95" y2="1665.95" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="284.75" y1="-739.64" x2="909.75" y2="1680.97" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="645.88" y1="1720.67" x2="645.88" y2="-779.33" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1711.41" y1="-117.97" x2="-628.88" y2="761.25" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1774.78" y1="929.42" x2="-662.81" y2="374.30" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1385.05" y1="1459.52" x2="-448.40" y2="-240.02" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1774.78" y1="11.91" x2="-662.81" y2="567.03" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1436.65" y1="-238.56" x2="-728.41" y2="1011.44" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-819.72" y1="205.25" x2="1600.90" y2="830.25" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="572.94" y1="1720.67" x2="572.94" y2="-779.33" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1006.26" y1="-630.45" x2="18.05" y2="1665.95" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="133.36" y1="-754.19" x2="866.64" y2="1635.85" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1626.28" y1="780.15" x2="-689.63" y2="-161.41" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1602.42" y1="81.23" x2="-651.05" y2="1163.77" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="36.57" y1="-644.30" x2="1196.97" y2="1570.08" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="670.19" y1="1720.67" x2="670.19" y2="-779.33" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1252.91" y1="-531.41" x2="-97.44" y2="1572.53" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1830.71" y1="440.70" x2="-650.93" y2="138.24" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1603.71" y1="901.58" x2="-798.21" y2="208.20" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-808.18" y1="145.69" x2="1548.84" y2="979.02" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="629.67" y1="1720.67" x2="629.67" y2="-779.33" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1665.32" y1="642.24" x2="-699.63" y2="-168.31" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1672.47" y1="351.73" x2="-721.10" y2="1073.42" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="598.70" y1="-782.59" x2="638.22" y2="1717.10" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="409.05" y1="-804.45" x2="890.81" y2="1648.69" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="678.29" y1="1720.67" x2="678.29" y2="-779.33" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1230.56" y1="-483.04" x2="-122.75" y2="1619.00" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1569.25" y1="986.05" x2="-471.99" y2="-457.32" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-340.21" y1="979.06" x2="1994.21" y2="84.35" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="1935.12" y1="310.28" x2="-529.91" y2="726.94" stroke="#1a2332" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="402.75" cy="470.67" r="97.25" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="548.63" cy="554.89" r="97.25" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="548.63" cy="386.44" r="97.25" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="694.50" cy="470.67" r="97.25" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="694.50" cy="470.67" r="291.75" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="402.75" cy="470.67" r="168.44" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="548.63" cy="554.89" r="168.44" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="548.63" cy="386.44" r="168.44" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="694.50" cy="470.67" r="168.44" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="548.63" cy="386.44" r="257.30" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="305.50" cy="470.67" r="257.30" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="305.50" cy="470.67" r="168.44" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="451.37" cy="554.89" r="168.44" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="451.37" cy="386.44" r="168.44" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="451.37" cy="386.44" r="445.66" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="889.01" cy="470.67" r="445.66" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="889.01" cy="470.67" r="376.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="524.31" cy="564.83" r="376.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="524.31" cy="564.83" r="188.33" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="524.31" cy="376.50" r="188.33" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="524.31" cy="376.50" r="272.55" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="597.25" cy="639.11" r="272.55" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="597.25" cy="639.11" r="336.89" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="597.25" cy="302.22" r="336.89" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="597.25" cy="302.22" r="194.50" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="402.75" cy="302.22" r="194.50" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="402.75" cy="302.22" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="645.88" cy="554.89" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="645.88" cy="554.89" r="257.30" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="402.75" cy="639.11" r="257.30" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="402.75" cy="639.11" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="645.88" cy="386.44" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="645.88" cy="386.44" r="168.44" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="791.75" cy="470.67" r="168.44" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="791.75" cy="470.67" r="376.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="427.06" cy="564.83" r="376.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="427.06" cy="564.83" r="188.33" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="427.06" cy="376.50" r="188.33" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="427.06" cy="376.50" r="307.54" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="548.63" cy="658.99" r="307.54" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="548.63" cy="658.99" r="376.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="548.63" cy="282.34" r="376.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="548.63" cy="282.34" r="389.01" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="645.88" cy="658.99" r="389.01" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="645.88" cy="658.99" r="376.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="645.88" cy="282.34" r="376.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="645.88" cy="282.34" r="223.50" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="436.65" cy="360.94" r="223.50" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="436.65" cy="360.94" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="611.97" cy="664.61" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="611.97" cy="664.61" r="114.84" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="500.00" cy="639.11" r="114.84" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="500.00" cy="639.11" r="86.38" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="436.65" cy="580.39" r="86.38" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="436.65" cy="580.39" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="611.97" cy="276.72" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="611.97" cy="276.72" r="114.84" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="500.00" cy="302.22" r="114.84" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="500.00" cy="302.22" r="336.89" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="208.25" cy="470.67" r="336.89" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="208.25" cy="470.67" r="376.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="572.94" cy="564.83" r="376.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="572.94" cy="564.83" r="188.33" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="572.94" cy="376.50" r="188.33" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="451.37" cy="658.99" r="307.54" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="451.37" cy="658.99" r="376.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="451.37" cy="282.34" r="376.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="451.37" cy="282.34" r="331.56" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="548.63" cy="599.32" r="331.56" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="548.63" cy="599.32" r="257.30" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="548.63" cy="342.01" r="257.30" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="548.63" cy="342.01" r="173.37" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="388.03" cy="276.72" r="173.37" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="388.03" cy="276.72" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="563.35" cy="580.39" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="563.35" cy="580.39" r="194.50" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="388.03" cy="664.61" r="194.50" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="388.03" cy="664.61" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="563.35" cy="360.94" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="563.35" cy="360.94" r="230.18" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="670.19" cy="564.83" r="230.18" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="670.19" cy="564.83" r="188.33" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="670.19" cy="376.50" r="188.33" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="670.19" cy="376.50" r="342.34" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="485.28" cy="664.61" r="342.34" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="485.28" cy="664.61" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="660.60" cy="360.94" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="660.60" cy="360.94" r="253.39" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="533.90" cy="580.39" r="253.39" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="709.23" cy="276.72" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="709.23" cy="276.72" r="29.45" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="694.50" cy="302.22" r="29.45" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="694.50" cy="302.22" r="210.77" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="485.28" cy="276.72" r="210.77" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="485.28" cy="276.72" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="660.60" cy="580.39" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="660.60" cy="580.39" r="253.39" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="533.90" cy="360.94" r="253.39" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="533.90" cy="360.94" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="709.23" cy="664.61" r="350.65" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="709.23" cy="664.61" r="29.45" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="694.50" cy="639.11" r="29.45" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="694.50" cy="639.11" r="607.34" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="110.99" cy="470.67" r="607.34" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="110.99" cy="470.67" r="550.14" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="629.67" cy="654.05" r="550.14" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="629.67" cy="654.05" r="366.76" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="629.67" cy="287.29" r="366.76" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="629.67" cy="287.29" r="310.42" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="336.02" cy="186.64" r="310.42" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="336.02" cy="186.64" r="558.67" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="615.35" cy="670.46" r="558.67" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="615.35" cy="670.46" r="291.75" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="336.02" cy="754.69" r="291.75" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="336.02" cy="754.69" r="558.67" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="615.35" cy="270.87" r="558.67" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="615.35" cy="270.87" r="392.83" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="621.56" cy="663.64" r="392.83" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="621.56" cy="663.64" r="385.96" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="621.56" cy="277.69" r="385.96" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="621.56" cy="277.69" r="294.39" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="678.29" cy="566.56" r="294.39" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="678.29" cy="566.56" r="191.78" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="678.29" cy="374.77" r="191.78" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="678.29" cy="374.77" r="459.57" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="429.52" cy="761.19" r="459.57" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="429.52" cy="761.19" r="476.43" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="667.73" cy="348.59" r="476.43" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="667.73" cy="348.59" r="291.75" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="429.52" cy="180.14" r="291.75" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="429.52" cy="180.14" r="476.43" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="667.73" cy="592.75" r="476.43" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="667.73" cy="592.75" r="341.12" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="986.26" cy="470.67" r="341.12" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="986.26" cy="470.67" r="575.35" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<circle cx="418.96" cy="566.56" r="575.35" fill="none" stroke="#161f2c" stroke-width="1.0" stroke-opacity="0.45"/>
+<line x1="-701.37" y1="470.67" x2="1798.63" y2="470.67" stroke="#4cc9f0" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1197.94" y1="-569.75" x2="-52.06" y2="1595.31" stroke="#4cc9f0" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1197.94" y1="1511.09" x2="-52.06" y2="-653.98" stroke="#4cc9f0" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1704.10" y1="-112.22" x2="-460.97" y2="1137.78" stroke="#4cc9f0" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="621.56" y1="1720.67" x2="621.56" y2="-779.33" stroke="#4cc9f0" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="500.00" cy="470.67" r="97.25" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="597.25" cy="470.67" r="97.25" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="500.00" cy="470.67" r="194.50" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="694.50" cy="470.67" r="194.50" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="597.25" cy="470.67" r="194.50" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="402.75" cy="470.67" r="194.50" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="402.75" cy="470.67" r="291.75" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="572.94" cy="376.50" r="307.54" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle cx="533.90" cy="580.39" r="350.65" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
+<circle class="geom-point" data-pt-id="A" cx="500.00" cy="470.67" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>
+<text class="geom-label" data-pt-id="A" x="500.00" y="490.67" data-anchor-x="500.00" data-anchor-y="470.67" data-offset-y="20" data-base-font="16" fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">A</text>
+<circle class="geom-point" data-pt-id="B" cx="597.25" cy="470.67" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>
+<text class="geom-label" data-pt-id="B" x="597.25" y="490.67" data-anchor-x="597.25" data-anchor-y="470.67" data-offset-y="20" data-base-font="16" fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">B</text>
+<circle class="geom-point" data-pt-id="C" cx="402.75" cy="470.67" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>
+<text class="geom-label" data-pt-id="C" x="402.75" y="490.67" data-anchor-x="402.75" data-anchor-y="470.67" data-offset-y="20" data-base-font="16" fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">C</text>
+<circle class="geom-point" data-pt-id="D" cx="694.50" cy="470.67" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>
+<text class="geom-label" data-pt-id="D" x="694.50" y="490.67" data-anchor-x="694.50" data-anchor-y="470.67" data-offset-y="20" data-base-font="16" fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">D</text>
+<circle class="geom-point" data-pt-id="E" cx="548.63" cy="554.89" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>
+<text class="geom-label" data-pt-id="E" x="548.63" y="574.89" data-anchor-x="548.63" data-anchor-y="554.89" data-offset-y="20" data-base-font="16" fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">E</text>
+<circle class="geom-point" data-pt-id="F" cx="548.63" cy="386.44" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>
+<text class="geom-label" data-pt-id="F" x="548.63" y="406.44" data-anchor-x="548.63" data-anchor-y="386.44" data-offset-y="20" data-base-font="16" fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">F</text>
+<circle class="geom-point" data-pt-id="H2" cx="572.94" cy="376.50" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>
+<text class="geom-label" data-pt-id="H2" x="572.94" y="396.50" data-anchor-x="572.94" data-anchor-y="376.50" data-offset-y="20" data-base-font="16" fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">H2</text>
+<circle class="geom-point" data-pt-id="I2" cx="451.37" cy="658.99" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>
+<text class="geom-label" data-pt-id="I2" x="451.37" y="678.99" data-anchor-x="451.37" data-anchor-y="658.99" data-offset-y="20" data-base-font="16" fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">I2</text>
+<circle class="geom-point" data-pt-id="J3" cx="621.56" cy="663.64" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>
+<text class="geom-label" data-pt-id="J3" x="621.56" y="683.64" data-anchor-x="621.56" data-anchor-y="663.64" data-offset-y="20" data-base-font="16" fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">J3</text>
+<circle class="geom-point" data-pt-id="K3" cx="621.56" cy="277.69" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>
+<text class="geom-label" data-pt-id="K3" x="621.56" y="297.69" data-anchor-x="621.56" data-anchor-y="277.69" data-offset-y="20" data-base-font="16" fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">K3</text>
+<circle class="geom-point" data-pt-id="U2" cx="533.90" cy="580.39" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>
+<text class="geom-label" data-pt-id="U2" x="533.90" y="600.39" data-anchor-x="533.90" data-anchor-y="580.39" data-offset-y="20" data-base-font="16" fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">U2</text>
+<circle class="geom-point" data-pt-id="V2" cx="709.23" cy="276.72" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>
+<text class="geom-label" data-pt-id="V2" x="709.23" y="296.72" data-anchor-x="709.23" data-anchor-y="276.72" data-offset-y="20" data-base-font="16" fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">V2</text>
+<line class="geom-seg" data-seg-role="major" x1="621.56" y1="512.78" x2="621.56" y2="240.88" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="minor" x1="621.56" y1="240.88" x2="621.56" y2="72.83" stroke="#f77f00" stroke-width="5.5" stroke-linecap="round"/>
+<circle class="geom-point" data-pt-id="K7" cx="621.56" cy="512.78" r="7.5" data-base-r="7.5" fill="#0b0e14" stroke="#ffd166" stroke-width="2.5"/>
+<circle class="geom-point" data-pt-id="K7" cx="621.56" cy="512.78" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="none"/>
+<text class="geom-label" data-pt-id="K7" x="621.56" y="498.78" data-anchor-x="621.56" data-anchor-y="512.78" data-offset-y="-14" data-base-font="16" fill="#ffd166" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">K7</text>
+<circle class="geom-point" data-pt-id="Z788" cx="621.56" cy="240.88" r="7.5" data-base-r="7.5" fill="#0b0e14" stroke="#ffd166" stroke-width="2.5"/>
+<circle class="geom-point" data-pt-id="Z788" cx="621.56" cy="240.88" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="none"/>
+<text class="geom-label" data-pt-id="Z788" x="621.56" y="226.88" data-anchor-x="621.56" data-anchor-y="240.88" data-offset-y="-14" data-base-font="16" fill="#ffd166" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">Z788</text>
+<circle class="geom-point" data-pt-id="K787" cx="621.56" cy="72.83" r="7.5" data-base-r="7.5" fill="#0b0e14" stroke="#ffd166" stroke-width="2.5"/>
+<circle class="geom-point" data-pt-id="K787" cx="621.56" cy="72.83" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="none"/>
+<text class="geom-label" data-pt-id="K787" x="621.56" y="58.83" data-anchor-x="621.56" data-anchor-y="72.83" data-offset-y="-14" data-base-font="16" fill="#ffd166" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">K787</text>
+</g></svg>
