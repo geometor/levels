@@ -42,15 +42,15 @@
       {
         "role": "Minor",
         "label": "K4\u2013C",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "a / b",
         "label": "(C\u2013E) / (K4\u2013C)",
-        "len_alg": "\u221a(2)/\u221a(3 - \u221a(5))",
-        "len_tex": "\\frac{\\sqrt{3}}{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}} = \\frac{\\sqrt{2}}{\\sqrt{3 - \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -147,22 +147,22 @@
       {
         "role": "Major",
         "label": "E\u2013L4",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "Minor",
         "label": "L4\u2013B3",
-        "len_alg": "\u221a(42 - 18*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
         "len_num": "0.6615845382"
       },
       {
         "role": "a / b",
         "label": "(E\u2013L4) / (L4\u2013B3)",
-        "len_alg": "\u221a(3 - \u221a(5))/\u221a(7 - 3*\u221a(5))",
-        "len_tex": "\\frac{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}}{\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}} = \\frac{\\sqrt{3 - \\sqrt{5}}}{\\sqrt{7 - 3 \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -210,15 +210,15 @@
       {
         "role": "Minor",
         "label": "E\u2013L4",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "a / b",
         "label": "(C\u2013E) / (E\u2013L4)",
-        "len_alg": "\u221a(2)/\u221a(3 - \u221a(5))",
-        "len_tex": "\\frac{\\sqrt{3}}{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}} = \\frac{\\sqrt{2}}{\\sqrt{3 - \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -266,15 +266,15 @@
       {
         "role": "Minor",
         "label": "L4\u2013V4",
-        "len_alg": "\u221a(90 - 30*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{90 - 30 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
         "len_num": "2.3936353458"
       },
       {
         "role": "a / b",
         "label": "(K4\u2013L4) / (L4\u2013V4)",
-        "len_alg": "\u221a(2)/\u221a(3 - \u221a(5))",
-        "len_tex": "\\frac{\\sqrt{15}}{\\frac{\\sqrt{90 - 30 \\sqrt{5}}}{2}} = \\frac{\\sqrt{2}}{\\sqrt{3 - \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{15}}{- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -315,22 +315,22 @@
       {
         "role": "Major",
         "label": "K4\u2013C",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "Minor",
         "label": "I5\u2013K4",
-        "len_alg": "\u221a(42 - 18*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
         "len_num": "0.6615845382"
       },
       {
         "role": "a / b",
         "label": "(K4\u2013C) / (I5\u2013K4)",
-        "len_alg": "\u221a(3 - \u221a(5))/\u221a(7 - 3*\u221a(5))",
-        "len_tex": "\\frac{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}}{\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}} = \\frac{\\sqrt{3 - \\sqrt{5}}}{\\sqrt{7 - 3 \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -434,15 +434,15 @@
       {
         "role": "Minor",
         "label": "Z5\u2013C",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "a / b",
         "label": "(C\u2013F) / (Z5\u2013C)",
-        "len_alg": "\u221a(2)/\u221a(3 - \u221a(5))",
-        "len_tex": "\\frac{\\sqrt{3}}{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}} = \\frac{\\sqrt{2}}{\\sqrt{3 - \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -539,22 +539,22 @@
       {
         "role": "Major",
         "label": "F\u2013A6",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "Minor",
         "label": "A6\u2013W2",
-        "len_alg": "\u221a(42 - 18*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
         "len_num": "0.6615845382"
       },
       {
         "role": "a / b",
         "label": "(F\u2013A6) / (A6\u2013W2)",
-        "len_alg": "\u221a(3 - \u221a(5))/\u221a(7 - 3*\u221a(5))",
-        "len_tex": "\\frac{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}}{\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}} = \\frac{\\sqrt{3 - \\sqrt{5}}}{\\sqrt{7 - 3 \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -602,15 +602,15 @@
       {
         "role": "Minor",
         "label": "F\u2013A6",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "a / b",
         "label": "(C\u2013F) / (F\u2013A6)",
-        "len_alg": "\u221a(2)/\u221a(3 - \u221a(5))",
-        "len_tex": "\\frac{\\sqrt{3}}{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}} = \\frac{\\sqrt{2}}{\\sqrt{3 - \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -658,15 +658,15 @@
       {
         "role": "Minor",
         "label": "A6\u2013K6",
-        "len_alg": "\u221a(90 - 30*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{90 - 30 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
         "len_num": "2.3936353458"
       },
       {
         "role": "a / b",
         "label": "(Z5\u2013A6) / (A6\u2013K6)",
-        "len_alg": "\u221a(2)/\u221a(3 - \u221a(5))",
-        "len_tex": "\\frac{\\sqrt{15}}{\\frac{\\sqrt{90 - 30 \\sqrt{5}}}{2}} = \\frac{\\sqrt{2}}{\\sqrt{3 - \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{15}}{- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -707,22 +707,22 @@
       {
         "role": "Major",
         "label": "Z5\u2013C",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "Minor",
         "label": "L6\u2013Z5",
-        "len_alg": "\u221a(42 - 18*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
         "len_num": "0.6615845382"
       },
       {
         "role": "a / b",
         "label": "(Z5\u2013C) / (L6\u2013Z5)",
-        "len_alg": "\u221a(3 - \u221a(5))/\u221a(7 - 3*\u221a(5))",
-        "len_tex": "\\frac{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}}{\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}} = \\frac{\\sqrt{3 - \\sqrt{5}}}{\\sqrt{7 - 3 \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -826,15 +826,15 @@
       {
         "role": "Minor",
         "label": "E7\u2013E",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "a / b",
         "label": "(E\u2013D) / (E7\u2013E)",
-        "len_alg": "\u221a(2)/\u221a(3 - \u221a(5))",
-        "len_tex": "\\frac{\\sqrt{3}}{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}} = \\frac{\\sqrt{2}}{\\sqrt{3 - \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -875,22 +875,22 @@
       {
         "role": "Major",
         "label": "E7\u2013E",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "Minor",
         "label": "Q\u2013E7",
-        "len_alg": "\u221a(42 - 18*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
         "len_num": "0.6615845382"
       },
       {
         "role": "a / b",
         "label": "(E7\u2013E) / (Q\u2013E7)",
-        "len_alg": "\u221a(3 - \u221a(5))/\u221a(7 - 3*\u221a(5))",
-        "len_tex": "\\frac{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}}{\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}} = \\frac{\\sqrt{3 - \\sqrt{5}}}{\\sqrt{7 - 3 \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -994,15 +994,15 @@
       {
         "role": "Minor",
         "label": "D\u2013F7",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "a / b",
         "label": "(E\u2013D) / (D\u2013F7)",
-        "len_alg": "\u221a(2)/\u221a(3 - \u221a(5))",
-        "len_tex": "\\frac{\\sqrt{3}}{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}} = \\frac{\\sqrt{2}}{\\sqrt{3 - \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -1050,15 +1050,15 @@
       {
         "role": "Minor",
         "label": "L7\u2013E7",
-        "len_alg": "\u221a(90 - 30*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{90 - 30 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
         "len_num": "2.3936353458"
       },
       {
         "role": "a / b",
         "label": "(E7\u2013F7) / (L7\u2013E7)",
-        "len_alg": "\u221a(2)/\u221a(3 - \u221a(5))",
-        "len_tex": "\\frac{\\sqrt{15}}{\\frac{\\sqrt{90 - 30 \\sqrt{5}}}{2}} = \\frac{\\sqrt{2}}{\\sqrt{3 - \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{15}}{- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -1155,22 +1155,22 @@
       {
         "role": "Major",
         "label": "D\u2013F7",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "Minor",
         "label": "F7\u2013A8",
-        "len_alg": "\u221a(42 - 18*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
         "len_num": "0.6615845382"
       },
       {
         "role": "a / b",
         "label": "(D\u2013F7) / (F7\u2013A8)",
-        "len_alg": "\u221a(3 - \u221a(5))/\u221a(7 - 3*\u221a(5))",
-        "len_tex": "\\frac{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}}{\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}} = \\frac{\\sqrt{3 - \\sqrt{5}}}{\\sqrt{7 - 3 \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -1218,15 +1218,15 @@
       {
         "role": "Minor",
         "label": "F8\u2013F",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "a / b",
         "label": "(F\u2013D) / (F8\u2013F)",
-        "len_alg": "\u221a(2)/\u221a(3 - \u221a(5))",
-        "len_tex": "\\frac{\\sqrt{3}}{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}} = \\frac{\\sqrt{2}}{\\sqrt{3 - \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -1267,22 +1267,22 @@
       {
         "role": "Major",
         "label": "F8\u2013F",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "Minor",
         "label": "O\u2013F8",
-        "len_alg": "\u221a(42 - 18*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
         "len_num": "0.6615845382"
       },
       {
         "role": "a / b",
         "label": "(F8\u2013F) / (O\u2013F8)",
-        "len_alg": "\u221a(3 - \u221a(5))/\u221a(7 - 3*\u221a(5))",
-        "len_tex": "\\frac{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}}{\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}} = \\frac{\\sqrt{3 - \\sqrt{5}}}{\\sqrt{7 - 3 \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -1386,15 +1386,15 @@
       {
         "role": "Minor",
         "label": "D\u2013G8",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "a / b",
         "label": "(F\u2013D) / (D\u2013G8)",
-        "len_alg": "\u221a(2)/\u221a(3 - \u221a(5))",
-        "len_tex": "\\frac{\\sqrt{3}}{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}} = \\frac{\\sqrt{2}}{\\sqrt{3 - \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{3}}{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -1442,15 +1442,15 @@
       {
         "role": "Minor",
         "label": "M8\u2013F8",
-        "len_alg": "\u221a(90 - 30*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{90 - 30 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
         "len_num": "2.3936353458"
       },
       {
         "role": "a / b",
         "label": "(F8\u2013G8) / (M8\u2013F8)",
-        "len_alg": "\u221a(2)/\u221a(3 - \u221a(5))",
-        "len_tex": "\\frac{\\sqrt{15}}{\\frac{\\sqrt{90 - 30 \\sqrt{5}}}{2}} = \\frac{\\sqrt{2}}{\\sqrt{3 - \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{15}}{- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
@@ -1547,22 +1547,22 @@
       {
         "role": "Major",
         "label": "D\u2013G8",
-        "len_alg": "\u221a(18 - 6*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
+        "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
         "role": "Minor",
         "label": "G8\u2013P8",
-        "len_alg": "\u221a(42 - 18*\u221a(5))/2",
-        "len_tex": "\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}",
+        "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
+        "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
         "len_num": "0.6615845382"
       },
       {
         "role": "a / b",
         "label": "(D\u2013G8) / (G8\u2013P8)",
-        "len_alg": "\u221a(3 - \u221a(5))/\u221a(7 - 3*\u221a(5))",
-        "len_tex": "\\frac{\\frac{\\sqrt{18 - 6 \\sqrt{5}}}{2}}{\\frac{\\sqrt{42 - 18 \\sqrt{5}}}{2}} = \\frac{\\sqrt{3 - \\sqrt{5}}}{\\sqrt{7 - 3 \\sqrt{5}}}",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}}{- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
         "len_num": "1.6180339887"
       }
     ]
