@@ -28,60 +28,60 @@
 <circle cx="500.00" cy="582.95" r="165.91" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
 <circle cx="500.00" cy="417.05" r="165.91" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
 <circle cx="643.68" cy="500.00" r="165.91" fill="none" stroke="#ff4dff" stroke-width="2.2"/>
-<line x1="212.64" y1="417.05" x2="356.32" y2="500.00" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="212.64" y1="417.05" x2="588.80" y2="634.22" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="267.52" y1="448.73" x2="500.00" y2="582.95" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="267.52" y1="448.73" x2="643.68" y2="665.91" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="267.52" y1="448.73" x2="787.36" y2="748.86" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="356.32" y1="500.00" x2="588.80" y2="634.22" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="582.95" x2="643.68" y2="665.91" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="212.64" y1="582.95" x2="356.32" y2="500.00" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="212.64" y1="582.95" x2="588.80" y2="365.78" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="267.52" y1="551.27" x2="500.00" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="267.52" y1="551.27" x2="643.68" y2="334.09" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="267.52" y1="551.27" x2="787.36" y2="251.14" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="356.32" y1="500.00" x2="588.80" y2="365.78" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="417.05" x2="643.68" y2="334.09" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="212.64" y1="748.86" x2="732.48" y2="448.73" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="356.32" y1="665.91" x2="500.00" y2="582.95" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="356.32" y1="665.91" x2="732.48" y2="448.73" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="411.20" y1="634.22" x2="643.68" y2="500.00" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="411.20" y1="634.22" x2="787.36" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="582.95" x2="732.48" y2="448.73" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="643.68" y1="500.00" x2="787.36" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="212.64" y1="251.14" x2="732.48" y2="551.27" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="356.32" y1="334.09" x2="500.00" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="356.32" y1="334.09" x2="732.48" y2="551.27" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="411.20" y1="365.78" x2="643.68" y2="500.00" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="411.20" y1="365.78" x2="787.36" y2="582.95" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="417.05" x2="732.48" y2="551.27" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="643.68" y1="500.00" x2="787.36" y2="582.95" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="748.86" x2="500.00" y2="582.95" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="748.86" x2="500.00" y2="314.51" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="685.49" x2="500.00" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="685.49" x2="500.00" y2="251.14" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="582.95" x2="500.00" y2="314.51" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="417.05" x2="500.00" y2="251.14" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="404.21" y1="685.49" x2="404.21" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="404.21" y1="582.95" x2="404.21" y2="314.51" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="595.79" y1="685.49" x2="595.79" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="595.79" y1="582.95" x2="595.79" y2="314.51" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="685.49" x2="732.48" y2="551.27" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="267.52" y1="551.27" x2="500.00" y2="685.49" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="267.52" y1="448.73" x2="500.00" y2="314.51" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="314.51" x2="732.48" y2="448.73" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="68.97" y1="500.00" x2="588.80" y2="365.78" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="68.97" y1="500.00" x2="588.80" y2="634.22" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="411.20" y1="634.22" x2="931.03" y2="500.00" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="411.20" y1="365.78" x2="931.03" y2="500.00" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="267.52" y1="448.73" x2="500.00" y2="748.86" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="748.86" x2="732.48" y2="448.73" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="267.52" y1="551.27" x2="500.00" y2="251.14" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<line x1="500.00" y1="251.14" x2="732.48" y2="551.27" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
-<circle class="geom-point" cx="452.11" cy="500.00" r="7.5" data-base-r="7.5" fill="#0b0e14" stroke="#ffd166" stroke-width="2.5"/>
-<circle class="geom-point" cx="452.11" cy="500.00" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="none"/>
-<text class="geom-label" x="452.11" y="486.00" data-anchor-x="452.11" data-anchor-y="500.00" data-offset-y="-14" data-base-font="16" fill="#ffd166" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">A</text>
-<circle class="geom-point" cx="547.89" cy="500.00" r="7.5" data-base-r="7.5" fill="#0b0e14" stroke="#ffd166" stroke-width="2.5"/>
-<circle class="geom-point" cx="547.89" cy="500.00" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="none"/>
-<text class="geom-label" x="547.89" y="486.00" data-anchor-x="547.89" data-anchor-y="500.00" data-offset-y="-14" data-base-font="16" fill="#ffd166" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">B</text>
+<line class="geom-seg" data-seg-role="major" x1="212.64" y1="417.05" x2="356.32" y2="500.00" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="212.64" y1="417.05" x2="588.80" y2="634.22" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="267.52" y1="448.73" x2="500.00" y2="582.95" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="267.52" y1="448.73" x2="643.68" y2="665.91" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="267.52" y1="448.73" x2="787.36" y2="748.86" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="356.32" y1="500.00" x2="588.80" y2="634.22" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="582.95" x2="643.68" y2="665.91" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="212.64" y1="582.95" x2="356.32" y2="500.00" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="212.64" y1="582.95" x2="588.80" y2="365.78" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="267.52" y1="551.27" x2="500.00" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="267.52" y1="551.27" x2="643.68" y2="334.09" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="267.52" y1="551.27" x2="787.36" y2="251.14" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="356.32" y1="500.00" x2="588.80" y2="365.78" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="417.05" x2="643.68" y2="334.09" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="212.64" y1="748.86" x2="732.48" y2="448.73" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="356.32" y1="665.91" x2="500.00" y2="582.95" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="356.32" y1="665.91" x2="732.48" y2="448.73" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="411.20" y1="634.22" x2="643.68" y2="500.00" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="411.20" y1="634.22" x2="787.36" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="582.95" x2="732.48" y2="448.73" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="643.68" y1="500.00" x2="787.36" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="212.64" y1="251.14" x2="732.48" y2="551.27" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="356.32" y1="334.09" x2="500.00" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="356.32" y1="334.09" x2="732.48" y2="551.27" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="411.20" y1="365.78" x2="643.68" y2="500.00" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="411.20" y1="365.78" x2="787.36" y2="582.95" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="417.05" x2="732.48" y2="551.27" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="643.68" y1="500.00" x2="787.36" y2="582.95" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="748.86" x2="500.00" y2="582.95" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="748.86" x2="500.00" y2="314.51" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="685.49" x2="500.00" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="685.49" x2="500.00" y2="251.14" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="582.95" x2="500.00" y2="314.51" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="417.05" x2="500.00" y2="251.14" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="404.21" y1="685.49" x2="404.21" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="404.21" y1="582.95" x2="404.21" y2="314.51" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="595.79" y1="685.49" x2="595.79" y2="417.05" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="595.79" y1="582.95" x2="595.79" y2="314.51" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="685.49" x2="732.48" y2="551.27" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="267.52" y1="551.27" x2="500.00" y2="685.49" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="267.52" y1="448.73" x2="500.00" y2="314.51" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="314.51" x2="732.48" y2="448.73" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="68.97" y1="500.00" x2="588.80" y2="365.78" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="68.97" y1="500.00" x2="588.80" y2="634.22" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="411.20" y1="634.22" x2="931.03" y2="500.00" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="411.20" y1="365.78" x2="931.03" y2="500.00" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="267.52" y1="448.73" x2="500.00" y2="748.86" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="748.86" x2="732.48" y2="448.73" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="267.52" y1="551.27" x2="500.00" y2="251.14" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<line class="geom-seg" data-seg-role="major" x1="500.00" y1="251.14" x2="732.48" y2="551.27" stroke="#ffd166" stroke-width="5.5" stroke-linecap="round"/>
+<circle class="geom-point" data-pt-id="A" cx="452.11" cy="500.00" r="7.5" data-base-r="7.5" fill="#0b0e14" stroke="#ffd166" stroke-width="2.5"/>
+<circle class="geom-point" data-pt-id="A" cx="452.11" cy="500.00" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="none"/>
+<text class="geom-label" data-pt-id="A" x="452.11" y="486.00" data-anchor-x="452.11" data-anchor-y="500.00" data-offset-y="-14" data-base-font="16" fill="#ffd166" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">A</text>
+<circle class="geom-point" data-pt-id="B" cx="547.89" cy="500.00" r="7.5" data-base-r="7.5" fill="#0b0e14" stroke="#ffd166" stroke-width="2.5"/>
+<circle class="geom-point" data-pt-id="B" cx="547.89" cy="500.00" r="3.5" data-base-r="3.5" fill="#f8f9fa" stroke="none"/>
+<text class="geom-label" data-pt-id="B" x="547.89" y="486.00" data-anchor-x="547.89" data-anchor-y="500.00" data-offset-y="-14" data-base-font="16" fill="#ffd166" stroke="#0b0e14" stroke-width="4" stroke-linejoin="round" paint-order="stroke fill" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">B</text>
 </g></svg>

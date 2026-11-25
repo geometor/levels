@@ -297,7 +297,10 @@
 
     container.tabIndex = 0;
     container.innerHTML = `
-      <div class="gsv-stage" title="Scroll to zoom, drag to pan"></div>
+      <div class="gsv-main">
+        <div class="gsv-stage" title="Scroll to zoom, drag to pan"></div>
+        <aside class="gsv-inspector" aria-label="Golden section details"></aside>
+      </div>
       <div class="gsv-toolbar">
         <div class="gsv-transport-group">
           <button type="button" class="gsv-btn" data-action="prev" title="Previous frame">◀ Prev</button>
@@ -320,6 +323,7 @@
 
     wireFullscreen(container);
     const stageEl = container.querySelector(".gsv-stage");
+    const inspectorEl = container.querySelector(".gsv-inspector");
     const playBtn = container.querySelector('[data-action="play"]');
     const counterEl = container.querySelector(".gsv-counter");
     const scrubberEl = container.querySelector(".gsv-scrubber");
@@ -331,6 +335,145 @@
     let svgEl = null;
     let vbState = null;
     let renderToken = 0;
+
+    function clearHighlights() {
+      if (svgEl) {
+        svgEl.querySelectorAll(".is-highlighted").forEach((el) => {
+          el.classList.remove("is-highlighted");
+        });
+      }
+      inspectorEl.querySelectorAll(".is-hovered").forEach((el) => {
+        el.classList.remove("is-hovered");
+      });
+    }
+
+    function highlightPoint(ptId) {
+      clearHighlights();
+      if (!ptId) return;
+      if (svgEl) {
+        svgEl.querySelectorAll(`[data-pt-id="${CSS.escape(ptId)}"]`).forEach((el) => {
+          el.classList.add("is-highlighted");
+        });
+      }
+      inspectorEl.querySelectorAll(`tr[data-pt-id="${CSS.escape(ptId)}"]`).forEach((row) => {
+        row.classList.add("is-hovered");
+      });
+    }
+
+    function highlightSegment(role) {
+      clearHighlights();
+      if (!role) return;
+      const key = role.toLowerCase();
+      if (svgEl) {
+        svgEl.querySelectorAll(`[data-seg-role="${CSS.escape(key)}"]`).forEach((el) => {
+          el.classList.add("is-highlighted");
+        });
+      }
+      inspectorEl.querySelectorAll(`tr[data-seg-role="${CSS.escape(key)}"]`).forEach((row) => {
+        row.classList.add("is-hovered");
+      });
+    }
+
+    function escHtml(s) {
+      return String(s)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function renderInspector(frame) {
+      const pts = Array.isArray(frame.points) ? frame.points : [];
+      const segs = Array.isArray(frame.segments) ? frame.segments : [];
+      if (!pts.length && !segs.length) {
+        inspectorEl.innerHTML = "";
+        return;
+      }
+
+      const ptRows = pts
+        .map(
+          (p) => `
+          <tr data-pt-id="${escHtml(p.id)}">
+            <td class="gsv-pt-id">${escHtml(p.id)}</td>
+            <td>
+              <div class="gsv-alg">${escHtml(p.x_alg)}</div>
+              <div class="gsv-num">${escHtml(p.x_num)}</div>
+            </td>
+            <td>
+              <div class="gsv-alg">${escHtml(p.y_alg)}</div>
+              <div class="gsv-num">${escHtml(p.y_num)}</div>
+            </td>
+          </tr>`
+        )
+        .join("");
+
+      const segRows = segs
+        .map((s) => {
+          const roleLower = s.role.toLowerCase();
+          const roleCls = roleLower === "major" ? "gsv-seg-major" : "gsv-seg-minor";
+          return `
+          <tr data-seg-role="${escHtml(roleLower)}">
+            <td class="${roleCls}">${escHtml(s.role)}</td>
+            <td>${escHtml(s.label)}</td>
+            <td>
+              <div class="gsv-alg">${escHtml(s.len_alg)}</div>
+              <div class="gsv-num">${escHtml(s.len_num)}</div>
+            </td>
+          </tr>`;
+        })
+        .join("");
+
+      inspectorEl.innerHTML = `
+        <div>
+          <h4 class="gsv-section-title">Golden Points (Algebraic &amp; Float)</h4>
+          <table class="gsv-table">
+            <thead>
+              <tr><th>Pt</th><th>x</th><th>y</th></tr>
+            </thead>
+            <tbody>${ptRows}</tbody>
+          </table>
+        </div>
+        <div>
+          <h4 class="gsv-section-title">Golden Segments (Major &amp; Minor)</h4>
+          <table class="gsv-table">
+            <thead>
+              <tr><th>Segment</th><th>Points</th><th>Length</th></tr>
+            </thead>
+            <tbody>${segRows}</tbody>
+          </table>
+        </div>
+      `;
+
+      inspectorEl.querySelectorAll("tr[data-pt-id]").forEach((row) => {
+        row.addEventListener("mouseenter", () => highlightPoint(row.dataset.ptId));
+        row.addEventListener("mouseleave", clearHighlights);
+      });
+      inspectorEl.querySelectorAll("tr[data-seg-role]").forEach((row) => {
+        row.addEventListener("mouseenter", () => highlightSegment(row.dataset.segRole));
+        row.addEventListener("mouseleave", clearHighlights);
+      });
+    }
+
+    stageEl.addEventListener("pointerover", (ev) => {
+      const target = ev.target;
+      if (!target || !target.getAttribute) return;
+      const ptId = target.getAttribute("data-pt-id");
+      if (ptId) {
+        highlightPoint(ptId);
+        return;
+      }
+      const segRole = target.getAttribute("data-seg-role");
+      if (segRole) {
+        highlightSegment(segRole);
+      }
+    });
+    stageEl.addEventListener("pointerout", (ev) => {
+      const target = ev.target;
+      if (!target || !target.getAttribute) return;
+      if (target.getAttribute("data-pt-id") || target.getAttribute("data-seg-role")) {
+        clearHighlights();
+      }
+    });
 
     attachPanZoom(
       stageEl,
@@ -350,6 +493,7 @@
       counterEl.textContent = `${index + 1} / ${frames.length}`;
       scrubberEl.value = String(index);
       captionEl.textContent = frame.caption || frame.src;
+      renderInspector(frame);
 
       const svgUrl = frame.src.startsWith("/") || frame.src.includes("://")
         ? frame.src
