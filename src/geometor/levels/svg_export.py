@@ -67,14 +67,14 @@ def _build_section_metadata(
 
     segments_meta = [
         {
-            "role": "Major",
+            "role": "a",
             "label": maj[0],
             "len_alg": _fmt_alg(maj[1]),
             "len_tex": sp.latex(maj[1]),
             "len_num": f"{maj[2]:.10f}",
         },
         {
-            "role": "Minor",
+            "role": "b",
             "label": mnr[0],
             "len_alg": _fmt_alg(mnr[1]),
             "len_tex": sp.latex(mnr[1]),

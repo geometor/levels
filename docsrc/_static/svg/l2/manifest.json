@@ -33,14 +33,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "C\u2013E",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
         "len_num": "1.7320508076"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "K4\u2013C",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
@@ -89,14 +89,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "K4\u2013E",
         "len_alg": "\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "2.8025170769"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "E\u2013B3",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
@@ -145,14 +145,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "E\u2013L4",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "L4\u2013B3",
         "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
@@ -201,14 +201,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "C\u2013E",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
         "len_num": "1.7320508076"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "E\u2013L4",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
@@ -257,14 +257,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "K4\u2013L4",
         "len_alg": "\u221a(15)",
         "len_tex": "\\sqrt{15}",
         "len_num": "3.8729833462"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "L4\u2013V4",
         "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
@@ -313,14 +313,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "K4\u2013C",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "I5\u2013K4",
         "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
@@ -369,14 +369,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "C\u2013L4",
         "len_alg": "\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "2.8025170769"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "I5\u2013C",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
@@ -425,14 +425,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "C\u2013F",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
         "len_num": "1.7320508076"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "Z5\u2013C",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
@@ -481,14 +481,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "Z5\u2013F",
         "len_alg": "\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "2.8025170769"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "F\u2013W2",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
@@ -537,14 +537,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "F\u2013A6",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "A6\u2013W2",
         "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
@@ -593,14 +593,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "C\u2013F",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
         "len_num": "1.7320508076"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "F\u2013A6",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
@@ -649,14 +649,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "Z5\u2013A6",
         "len_alg": "\u221a(15)",
         "len_tex": "\\sqrt{15}",
         "len_num": "3.8729833462"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "A6\u2013K6",
         "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
@@ -705,14 +705,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "Z5\u2013C",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "L6\u2013Z5",
         "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
@@ -761,14 +761,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "C\u2013A6",
         "len_alg": "\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "2.8025170769"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "L6\u2013C",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
@@ -817,14 +817,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "E\u2013D",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
         "len_num": "1.7320508076"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "E7\u2013E",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
@@ -873,14 +873,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "E7\u2013E",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "Q\u2013E7",
         "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
@@ -929,14 +929,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "E\u2013F7",
         "len_alg": "\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "2.8025170769"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "Q\u2013E",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
@@ -985,14 +985,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "E\u2013D",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
         "len_num": "1.7320508076"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "D\u2013F7",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
@@ -1041,14 +1041,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "E7\u2013F7",
         "len_alg": "\u221a(15)",
         "len_tex": "\\sqrt{15}",
         "len_num": "3.8729833462"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "L7\u2013E7",
         "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
@@ -1097,14 +1097,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "E7\u2013D",
         "len_alg": "\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "2.8025170769"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "D\u2013A8",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
@@ -1153,14 +1153,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "D\u2013F7",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "F7\u2013A8",
         "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
@@ -1209,14 +1209,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "F\u2013D",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
         "len_num": "1.7320508076"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "F8\u2013F",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
@@ -1265,14 +1265,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "F8\u2013F",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "O\u2013F8",
         "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
@@ -1321,14 +1321,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "F\u2013G8",
         "len_alg": "\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "2.8025170769"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "O\u2013F",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
@@ -1377,14 +1377,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "F\u2013D",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
         "len_num": "1.7320508076"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "D\u2013G8",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
@@ -1433,14 +1433,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "F8\u2013G8",
         "len_alg": "\u221a(15)",
         "len_tex": "\\sqrt{15}",
         "len_num": "3.8729833462"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "M8\u2013F8",
         "len_alg": "-\u221a(15)/2 + 5*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{5 \\sqrt{3}}{2}",
@@ -1489,14 +1489,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "F8\u2013D",
         "len_alg": "\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "2.8025170769"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "D\u2013P8",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
@@ -1545,14 +1545,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "D\u2013G8",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "G8\u2013P8",
         "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
@@ -1601,14 +1601,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "E\u2013F",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
         "len_num": "1.7320508076"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "V\u2013E",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
@@ -1657,14 +1657,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "E\u2013F",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
         "len_num": "1.7320508076"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "F\u2013W",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
@@ -1713,14 +1713,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "V\u2013E",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "G4\u2013V",
         "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
@@ -1769,14 +1769,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "E\u2013W",
         "len_alg": "\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "2.8025170769"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "G4\u2013E",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
@@ -1825,14 +1825,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "V\u2013F",
         "len_alg": "\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "2.8025170769"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "F\u2013H4",
         "len_alg": "\u221a(3)",
         "len_tex": "\\sqrt{3}",
@@ -1881,14 +1881,14 @@
     ],
     "segments": [
       {
-        "role": "Major",
+        "role": "a",
         "label": "F\u2013W",
         "len_alg": "-\u221a(3)/2 + \u221a(15)/2",
         "len_tex": "- \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{15}}{2}",
         "len_num": "1.0704662693"
       },
       {
-        "role": "Minor",
+        "role": "b",
         "label": "W\u2013H4",
         "len_alg": "-\u221a(15)/2 + 3*\u221a(3)/2",
         "len_tex": "- \\frac{\\sqrt{15}}{2} + \\frac{3 \\sqrt{3}}{2}",
