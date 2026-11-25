@@ -29,14 +29,47 @@
   border-radius: 0;
 }
 
+.gsv-main {
+  display: block;
+}
+
+.gsv-inspector {
+  display: none;
+}
+
+.geometor-svg-viewer:fullscreen .gsv-main,
+.geometor-svg-switcher:fullscreen .gsv-main,
+.geometor-svg-viewer.is-fullscreen .gsv-main,
+.geometor-svg-switcher.is-fullscreen .gsv-main {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+}
+
 .geometor-svg-viewer:fullscreen .gsv-stage,
 .geometor-svg-switcher:fullscreen .gsv-stage,
 .geometor-svg-viewer.is-fullscreen .gsv-stage,
 .geometor-svg-switcher.is-fullscreen .gsv-stage {
   flex: 1 1 auto;
+  min-width: 0;
   min-height: 0;
   aspect-ratio: auto;
   width: 100%;
+}
+
+.geometor-svg-switcher:fullscreen .gsv-inspector,
+.geometor-svg-switcher.is-fullscreen .gsv-inspector {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  width: 480px;
+  max-width: 40vw;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 1rem 1.1rem;
+  background: #0f141e;
+  border-left: 1px solid #263042;
 }
 
 .gsv-stage {
@@ -71,6 +104,27 @@
   stroke-width: 4px;
   stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
+  cursor: pointer;
+}
+
+.gsv-stage svg.geometor-svg-canvas .geom-point,
+.gsv-stage svg.geometor-svg-canvas .geom-seg {
+  cursor: pointer;
+}
+
+.gsv-stage svg.geometor-svg-canvas .geom-point.is-highlighted {
+  filter: drop-shadow(0 0 6px #ffd166);
+  stroke: #ffffff;
+}
+
+.gsv-stage svg.geometor-svg-canvas text.geom-label.is-highlighted {
+  fill: #ffffff;
+  filter: drop-shadow(0 0 6px #ffd166);
+}
+
+.gsv-stage svg.geometor-svg-canvas line.geom-seg.is-highlighted {
+  stroke-width: 9px;
+  filter: drop-shadow(0 0 8px #ffd166);
 }
 
 .gsv-toolbar {
@@ -161,3 +215,80 @@
   font-size: 0.95rem;
   text-align: center;
 }
+
+.gsv-section-title {
+  margin: 0 0 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9ba8bd;
+}
+
+.gsv-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+  background: #0b0e14;
+  border: 1px solid #263042;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.gsv-table th,
+.gsv-table td {
+  padding: 0.45rem 0.55rem;
+  text-align: left;
+  border-bottom: 1px solid #1b2232;
+  vertical-align: top;
+}
+
+.gsv-table th {
+  background: #141a26;
+  color: #9ba8bd;
+  font-weight: 600;
+  font-size: 0.74rem;
+}
+
+.gsv-table tbody tr {
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.gsv-table tbody tr:hover,
+.gsv-table tbody tr.is-hovered {
+  background: #1c273b;
+}
+
+.gsv-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.gsv-pt-id {
+  font-weight: 700;
+  color: #ffd166;
+  white-space: nowrap;
+}
+
+.gsv-seg-major {
+  font-weight: 700;
+  color: #ffd166;
+}
+
+.gsv-seg-minor {
+  font-weight: 700;
+  color: #f77f00;
+}
+
+.gsv-alg {
+  color: #e6edf3;
+  word-break: break-word;
+}
+
+.gsv-num {
+  color: #8b9bb4;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+

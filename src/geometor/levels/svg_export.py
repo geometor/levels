@@ -7,6 +7,7 @@ import math
 from html import escape
 from itertools import combinations
 from pathlib import Path
+from typing import Any
 
 import numpy as np
 import sympy as sp
@@ -14,6 +15,58 @@ from geometor.divine.golden import GoldenFieldTracker, find_golden_sections_in_m
 from geometor.model import Model
 
 from .levels import fundamental
+
+
+def _fmt_alg(expr: sp.Expr) -> str:
+    """Format an exact SymPy expression using clean Unicode radicals."""
+    return str(sp.simplify(expr)).replace("sqrt(", "√(")
+
+
+def _build_section_metadata(
+    tri: tuple[str, str, str],
+    sym_pts: list[sp.Point2D],
+) -> dict[str, Any]:
+    """Build exact algebraic and float coordinate/segment tables for a golden section."""
+    points_meta: list[dict[str, str]] = []
+    for pid, pt in zip(tri, sym_pts, strict=True):
+        x_s = sp.simplify(pt.x)
+        y_s = sp.simplify(pt.y)
+        points_meta.append(
+            {
+                "id": pid,
+                "x_alg": _fmt_alg(x_s),
+                "x_num": f"{float(x_s.evalf(12)):.10f}",
+                "y_alg": _fmt_alg(y_s),
+                "y_num": f"{float(y_s.evalf(12)):.10f}",
+            }
+        )
+
+    d01 = sp.simplify(sym_pts[0].distance(sym_pts[1]))
+    d12 = sp.simplify(sym_pts[1].distance(sym_pts[2]))
+    f01 = float(d01.evalf(12))
+    f12 = float(d12.evalf(12))
+    if f01 >= f12:
+        maj = (f"{tri[0]}–{tri[1]}", d01, f01)
+        mnr = (f"{tri[1]}–{tri[2]}", d12, f12)
+    else:
+        maj = (f"{tri[1]}–{tri[2]}", d12, f12)
+        mnr = (f"{tri[0]}–{tri[1]}", d01, f01)
+
+    segments_meta = [
+        {
+            "role": "Major",
+            "label": maj[0],
+            "len_alg": _fmt_alg(maj[1]),
+            "len_num": f"{maj[2]:.10f}",
+        },
+        {
+            "role": "Minor",
+            "label": mnr[0],
+            "len_alg": _fmt_alg(mnr[1]),
+            "len_num": f"{mnr[2]:.10f}",
+        },
+    ]
+    return {"points": points_meta, "segments": segments_meta}
 
 
 def _mul(*args: float) -> float:
@@ -144,14 +197,15 @@ def _render_square_svg(
             sx, sy = tx(px), ty(py)
             if 0 <= sx <= size and 0 <= sy <= size:
                 parts.append(
-                    f'<circle class="geom-point" cx="{sx:.2f}" cy="{sy:.2f}" '
-                    'r="3.5" data-base-r="3.5" '
+                    f'<circle class="geom-point" data-pt-id="{escape(k)}" '
+                    f'cx="{sx:.2f}" cy="{sy:.2f}" r="3.5" data-base-r="3.5" '
                     'fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>'
                 )
                 oy = 20 if sy < size - 28 else -12
                 lbl_y = sy + oy
                 parts.append(
-                    f'<text class="geom-label" x="{sx:.2f}" y="{lbl_y:.2f}" '
+                    f'<text class="geom-label" data-pt-id="{escape(k)}" '
+                    f'x="{sx:.2f}" y="{lbl_y:.2f}" '
                     f'data-anchor-x="{sx:.2f}" data-anchor-y="{sy:.2f}" '
                     f'data-offset-y="{oy}" data-base-font="16" '
                     'fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" '
@@ -162,27 +216,30 @@ def _render_square_svg(
 
     # 4. Highlighted golden segments & points
     for p1, p2, color in highlight_segments:
+        seg_role = "major" if color == "#ffd166" else "minor"
         parts.append(
-            f'<line x1="{tx(p1[0]):.2f}" y1="{ty(p1[1]):.2f}" '
+            f'<line class="geom-seg" data-seg-role="{seg_role}" '
+            f'x1="{tx(p1[0]):.2f}" y1="{ty(p1[1]):.2f}" '
             f'x2="{tx(p2[0]):.2f}" y2="{ty(p2[1]):.2f}" '
             f'stroke="{color}" stroke-width="5.5" stroke-linecap="round"/>'
         )
     for pid, (px, py) in highlight_pts:
         sx, sy = tx(px), ty(py)
         parts.append(
-            f'<circle class="geom-point" cx="{sx:.2f}" cy="{sy:.2f}" '
-            'r="7.5" data-base-r="7.5" '
+            f'<circle class="geom-point" data-pt-id="{escape(pid)}" '
+            f'cx="{sx:.2f}" cy="{sy:.2f}" r="7.5" data-base-r="7.5" '
             'fill="#0b0e14" stroke="#ffd166" stroke-width="2.5"/>'
         )
         parts.append(
-            f'<circle class="geom-point" cx="{sx:.2f}" cy="{sy:.2f}" '
-            'r="3.5" data-base-r="3.5" '
+            f'<circle class="geom-point" data-pt-id="{escape(pid)}" '
+            f'cx="{sx:.2f}" cy="{sy:.2f}" r="3.5" data-base-r="3.5" '
             'fill="#f8f9fa" stroke="none"/>'
         )
         oy = -14 if sy > 36 else 26
         lbl_y = sy + oy
         parts.append(
-            f'<text class="geom-label" x="{sx:.2f}" y="{lbl_y:.2f}" '
+            f'<text class="geom-label" data-pt-id="{escape(pid)}" '
+            f'x="{sx:.2f}" y="{lbl_y:.2f}" '
             f'data-anchor-x="{sx:.2f}" data-anchor-y="{sy:.2f}" '
             f'data-offset-y="{oy}" data-base-font="16" '
             'fill="#ffd166" stroke="#0b0e14" stroke-width="4" '
@@ -231,7 +288,7 @@ def export_level1_svg(out_path: Path) -> Path:
     return out_path
 
 
-def export_level2_svgs(out_dir: Path) -> list[dict[str, str]]:
+def export_level2_svgs(out_dir: Path) -> list[dict[str, Any]]:
     """Export square SVGs for Level 2 overview and each of its 34 explicit-line golden sections."""
     m = Model("level-2", use_point_subscript=True, enable_logging=False)
     tracker = GoldenFieldTracker(tag_model=True).attach(m)
@@ -274,7 +331,7 @@ def export_level2_svgs(out_dir: Path) -> list[dict[str, str]]:
         out_path=out_dir / "l2_overview.svg",
     )
 
-    items: list[dict[str, str]] = []
+    items: list[dict[str, Any]] = []
     for idx, sec in enumerate(tracker.sections, 1):
         tri = tuple(m[p].ID for p in sec.points)
         anc: set[str] = set()
@@ -306,7 +363,14 @@ def export_level2_svgs(out_dir: Path) -> list[dict[str, str]]:
             highlight_pts=[(k, pts_xy[k]) for k in tri],
             out_path=out_dir / fname,
         )
-        items.append({"src": fname, "caption": f"Section {idx}/34: {tri[0]} — {tri[1]} — {tri[2]}"})
+        meta = _build_section_metadata(tri, list(sec.points))
+        items.append(
+            {
+                "src": fname,
+                "caption": f"Section {idx}/34: {tri[0]} — {tri[1]} — {tri[2]}",
+                **meta,
+            }
+        )
     return items
 
 
@@ -315,13 +379,14 @@ def export_level3_ancestor_svgs(
     out_dir: Path,
     *,
     count: int = 24,
-) -> list[dict[str, str]]:
+) -> list[dict[str, Any]]:
     """Export ``count`` square SVGs of Level 3 golden sections with full recursive ancestors."""
     data = json.loads(ckpt_path.read_text(encoding="utf-8"))
     elements = data["elements"]
     del data
 
     pts_xy: dict[str, tuple[float, float]] = {}
+    pts_sym_raw: dict[str, str] = {}
     lines_xy: dict[str, tuple[tuple[float, float], tuple[float, float]]] = {}
     circles_xy: dict[str, tuple[tuple[float, float], float]] = {}
     parents_map: dict[str, list[str]] = {}
@@ -335,6 +400,7 @@ def export_level3_ancestor_svgs(
         sym = v.get("sympy_obj", "")
         if sym.startswith("Point2D("):
             pts_xy[k] = _eval_point_float(sym)
+            pts_sym_raw[k] = sym
         elif sym.startswith("Line2D("):
             ln = sp.sympify(sym)
             lines_xy[k] = (
@@ -379,7 +445,7 @@ def export_level3_ancestor_svgs(
     annotated.sort(key=lambda item: item[2])
 
     indices = np.linspace(0, len(annotated) - 1, count, dtype=int)
-    items: list[dict[str, str]] = []
+    items: list[dict[str, Any]] = []
     for step, idx in enumerate(indices, 1):
         tri, anc, n_structs = annotated[int(idx)]
         p0, p1, p2 = (pts_xy[k] for k in tri)
@@ -396,6 +462,8 @@ def export_level3_ancestor_svgs(
             highlight_pts=[(k, pts_xy[k]) for k in tri],
             out_path=out_dir / fname,
         )
+        sym_pts = [sp.sympify(pts_sym_raw[k]) for k in tri]
+        meta = _build_section_metadata(tri, sym_pts)
         items.append(
             {
                 "src": fname,
@@ -403,6 +471,7 @@ def export_level3_ancestor_svgs(
                     f"{step}/{count}: {tri[0]} — {tri[1]} — {tri[2]} "
                     f"({n_structs} ancestor lines/circles)"
                 ),
+                **meta,
             }
         )
     return items
