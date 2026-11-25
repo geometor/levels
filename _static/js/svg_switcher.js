@@ -365,7 +365,11 @@
       if (!role) return;
       const key = role.toLowerCase();
       if (svgEl) {
-        svgEl.querySelectorAll(`[data-seg-role="${CSS.escape(key)}"]`).forEach((el) => {
+        const selector =
+          key === "ratio"
+            ? "[data-seg-role]"
+            : `[data-seg-role="${CSS.escape(key)}"]`;
+        svgEl.querySelectorAll(selector).forEach((el) => {
           el.classList.add("is-highlighted");
         });
       }
@@ -414,9 +418,15 @@
       const segRows = segs
         .map((s) => {
           const roleLower = s.role.toLowerCase();
-          const roleCls = roleLower === "major" ? "gsv-seg-major" : "gsv-seg-minor";
+          const segKey = roleLower === "major" || roleLower === "minor" ? roleLower : "ratio";
+          const roleCls =
+            segKey === "major"
+              ? "gsv-seg-major"
+              : segKey === "minor"
+                ? "gsv-seg-minor"
+                : "gsv-seg-ratio";
           return `
-          <tr data-seg-role="${escHtml(roleLower)}">
+          <tr data-seg-role="${escHtml(segKey)}">
             <td class="${roleCls}">${escHtml(s.role)}</td>
             <td>${escHtml(s.label)}</td>
             <td>
