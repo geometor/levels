@@ -390,17 +390,21 @@
         return;
       }
 
+      function fmtMath(tex, alg) {
+        return tex ? `\\(${escHtml(tex)}\\)` : escHtml(alg || "");
+      }
+
       const ptRows = pts
         .map(
           (p) => `
           <tr data-pt-id="${escHtml(p.id)}">
             <td class="gsv-pt-id">${escHtml(p.id)}</td>
             <td>
-              <div class="gsv-alg">${escHtml(p.x_alg)}</div>
+              <div class="gsv-alg">${fmtMath(p.x_tex, p.x_alg)}</div>
               <div class="gsv-num">${escHtml(p.x_num)}</div>
             </td>
             <td>
-              <div class="gsv-alg">${escHtml(p.y_alg)}</div>
+              <div class="gsv-alg">${fmtMath(p.y_tex, p.y_alg)}</div>
               <div class="gsv-num">${escHtml(p.y_num)}</div>
             </td>
           </tr>`
@@ -416,7 +420,7 @@
             <td class="${roleCls}">${escHtml(s.role)}</td>
             <td>${escHtml(s.label)}</td>
             <td>
-              <div class="gsv-alg">${escHtml(s.len_alg)}</div>
+              <div class="gsv-alg">${fmtMath(s.len_tex, s.len_alg)}</div>
               <div class="gsv-num">${escHtml(s.len_num)}</div>
             </td>
           </tr>`;
@@ -452,6 +456,12 @@
         row.addEventListener("mouseenter", () => highlightSegment(row.dataset.segRole));
         row.addEventListener("mouseleave", clearHighlights);
       });
+
+      if (window.MathJax && typeof window.MathJax.typesetPromise === "function") {
+        window.MathJax.typesetPromise([inspectorEl]).catch(() => {});
+      } else if (window.MathJax && window.MathJax.Hub) {
+        window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub, inspectorEl]);
+      }
     }
 
     stageEl.addEventListener("pointerover", (ev) => {
