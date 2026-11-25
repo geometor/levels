@@ -1,0 +1,138 @@
+[
+  {
+    "src": "overlay.svg",
+    "caption": "Pair 45 (S2 \u2014 T2) Overlay: 2 new golden sections & ancestors",
+    "stats": {
+      "pair_idx": 45,
+      "pair": "S2 \u2014 T2",
+      "new_pts": 436,
+      "new_lines": 0,
+      "new_circles": 2,
+      "new_goldens": 2,
+      "cum_pts": 12357,
+      "cum_lines": 42,
+      "cum_circles": 95,
+      "cum_goldens": 1110,
+      "size_counts": [
+        {
+          "a_alg": "\u221a(39)/2",
+          "a_tex": "\\frac{\\sqrt{39}}{2}",
+          "a_num": "3.1224989992",
+          "count": 2
+        }
+      ]
+    }
+  },
+  {
+    "src": "sec_001.svg",
+    "caption": "1/2: Z465 \u2014 D474 \u2014 F242 (9 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "Z465",
+        "x_alg": "1/4",
+        "x_tex": "\\frac{1}{4}",
+        "x_num": "0.2500000000",
+        "y_alg": "-\u221a(195)/4 - \u221a(39)/4 - \u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{195}}{4} - \\frac{\\sqrt{39}}{4} - \\frac{\\sqrt{3}}{4}",
+        "y_num": "-5.4853222124"
+      },
+      {
+        "id": "D474",
+        "x_alg": "1/4",
+        "x_tex": "\\frac{1}{4}",
+        "x_num": "0.2500000000",
+        "y_alg": "-\u221a(195)/4 - \u221a(3)/4 + \u221a(39)/4",
+        "y_tex": "- \\frac{\\sqrt{195}}{4} - \\frac{\\sqrt{3}}{4} + \\frac{\\sqrt{39}}{4}",
+        "y_num": "-2.3628232132"
+      },
+      {
+        "id": "F242",
+        "x_alg": "1/4",
+        "x_tex": "\\frac{1}{4}",
+        "x_num": "0.2500000000",
+        "y_alg": "-\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{3}}{4}",
+        "y_num": "-0.4330127019"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "Z465\u2013D474",
+        "len_alg": "\u221a(39)/2",
+        "len_tex": "\\frac{\\sqrt{39}}{2}",
+        "len_num": "3.1224989992"
+      },
+      {
+        "role": "b",
+        "label": "D474\u2013F242",
+        "len_alg": "-\u221a(39)/4 + \u221a(195)/4",
+        "len_tex": "- \\frac{\\sqrt{39}}{4} + \\frac{\\sqrt{195}}{4}",
+        "len_num": "1.9298105113"
+      },
+      {
+        "role": "a / b",
+        "label": "(Z465\u2013D474) / (D474\u2013F242)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{\\sqrt{39}}{2}}{- \\frac{\\sqrt{39}}{4} + \\frac{\\sqrt{195}}{4}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_002.svg",
+    "caption": "2/2: F242 \u2014 A466 \u2014 E474 (9 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "F242",
+        "x_alg": "1/4",
+        "x_tex": "\\frac{1}{4}",
+        "x_num": "0.2500000000",
+        "y_alg": "-\u221a(3)/4",
+        "y_tex": "- \\frac{\\sqrt{3}}{4}",
+        "y_num": "-0.4330127019"
+      },
+      {
+        "id": "A466",
+        "x_alg": "1/4",
+        "x_tex": "\\frac{1}{4}",
+        "x_num": "0.2500000000",
+        "y_alg": "-\u221a(39)/4 - \u221a(3)/4 + \u221a(195)/4",
+        "y_tex": "- \\frac{\\sqrt{39}}{4} - \\frac{\\sqrt{3}}{4} + \\frac{\\sqrt{195}}{4}",
+        "y_num": "1.4967978095"
+      },
+      {
+        "id": "E474",
+        "x_alg": "1/4",
+        "x_tex": "\\frac{1}{4}",
+        "x_num": "0.2500000000",
+        "y_alg": "-\u221a(3)/4 + \u221a(39)/4 + \u221a(195)/4",
+        "y_tex": "- \\frac{\\sqrt{3}}{4} + \\frac{\\sqrt{39}}{4} + \\frac{\\sqrt{195}}{4}",
+        "y_num": "4.6192968086"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "A466\u2013E474",
+        "len_alg": "\u221a(39)/2",
+        "len_tex": "\\frac{\\sqrt{39}}{2}",
+        "len_num": "3.1224989992"
+      },
+      {
+        "role": "b",
+        "label": "F242\u2013A466",
+        "len_alg": "-\u221a(39)/4 + \u221a(195)/4",
+        "len_tex": "- \\frac{\\sqrt{39}}{4} + \\frac{\\sqrt{195}}{4}",
+        "len_num": "1.9298105113"
+      },
+      {
+        "role": "a / b",
+        "label": "(A466\u2013E474) / (F242\u2013A466)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{\\sqrt{39}}{2}}{- \\frac{\\sqrt{39}}{4} + \\frac{\\sqrt{195}}{4}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  }
+]

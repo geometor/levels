@@ -1,0 +1,144 @@
+[
+  {
+    "src": "overlay.svg",
+    "caption": "Pair 64 (L3 \u2014 M3) Overlay: 2 new golden sections & ancestors",
+    "stats": {
+      "pair_idx": 64,
+      "pair": "L3 \u2014 M3",
+      "new_pts": 773,
+      "new_lines": 1,
+      "new_circles": 2,
+      "new_goldens": 2,
+      "cum_pts": 22751,
+      "cum_lines": 52,
+      "cum_circles": 133,
+      "cum_goldens": 1186,
+      "size_counts": [
+        {
+          "a_alg": "5*\u221a(3)/18 + 5*\u221a(15)/18",
+          "a_tex": "\\frac{5 \\sqrt{3}}{18} + \\frac{5 \\sqrt{15}}{18}",
+          "a_num": "1.5569539316",
+          "count": 1
+        },
+        {
+          "a_alg": "5*\u221a(3)/3",
+          "a_tex": "\\frac{5 \\sqrt{3}}{3}",
+          "a_num": "2.8867513459",
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "src": "sec_001.svg",
+    "caption": "1/2: Z847 \u2014 P846 \u2014 K847 (12 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "Z847",
+        "x_alg": "4/3",
+        "x_tex": "\\frac{4}{3}",
+        "x_num": "1.3333333333",
+        "y_alg": "-19*\u221a(3)/9 - 5*\u221a(15)/18",
+        "y_tex": "- \\frac{19 \\sqrt{3}}{9} - \\frac{5 \\sqrt{15}}{18}",
+        "y_num": "-4.7323804121"
+      },
+      {
+        "id": "P846",
+        "x_alg": "4/3",
+        "x_tex": "\\frac{4}{3}",
+        "x_num": "1.3333333333",
+        "y_alg": "-11*\u221a(3)/6",
+        "y_tex": "- \\frac{11 \\sqrt{3}}{6}",
+        "y_num": "-3.1754264805"
+      },
+      {
+        "id": "K847",
+        "x_alg": "4/3",
+        "x_tex": "\\frac{4}{3}",
+        "x_num": "1.3333333333",
+        "y_alg": "-23*\u221a(3)/18",
+        "y_tex": "- \\frac{23 \\sqrt{3}}{18}",
+        "y_num": "-2.2131760319"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "Z847\u2013P846",
+        "len_alg": "5*\u221a(3)/18 + 5*\u221a(15)/18",
+        "len_tex": "\\frac{5 \\sqrt{3}}{18} + \\frac{5 \\sqrt{15}}{18}",
+        "len_num": "1.5569539316"
+      },
+      {
+        "role": "b",
+        "label": "P846\u2013K847",
+        "len_alg": "5*\u221a(3)/9",
+        "len_tex": "\\frac{5 \\sqrt{3}}{9}",
+        "len_num": "0.9622504486"
+      },
+      {
+        "role": "a / b",
+        "label": "(Z847\u2013P846) / (P846\u2013K847)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{5 \\sqrt{3}}{18} + \\frac{5 \\sqrt{15}}{18}}{\\frac{5 \\sqrt{3}}{9}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  },
+  {
+    "src": "sec_002.svg",
+    "caption": "2/2: R849 \u2014 U846 \u2014 T846 (12 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "R849",
+        "x_alg": "4/3",
+        "x_tex": "\\frac{4}{3}",
+        "x_num": "1.3333333333",
+        "y_alg": "-5*\u221a(15)/6",
+        "y_tex": "- \\frac{5 \\sqrt{15}}{6}",
+        "y_num": "-3.2274861218"
+      },
+      {
+        "id": "U846",
+        "x_alg": "4/3",
+        "x_tex": "\\frac{4}{3}",
+        "x_num": "1.3333333333",
+        "y_alg": "-5*\u221a(3)/6",
+        "y_tex": "- \\frac{5 \\sqrt{3}}{6}",
+        "y_num": "-1.4433756730"
+      },
+      {
+        "id": "T846",
+        "x_alg": "4/3",
+        "x_tex": "\\frac{4}{3}",
+        "x_num": "1.3333333333",
+        "y_alg": "5*\u221a(3)/6",
+        "y_tex": "\\frac{5 \\sqrt{3}}{6}",
+        "y_num": "1.4433756730"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "U846\u2013T846",
+        "len_alg": "5*\u221a(3)/3",
+        "len_tex": "\\frac{5 \\sqrt{3}}{3}",
+        "len_num": "2.8867513459"
+      },
+      {
+        "role": "b",
+        "label": "R849\u2013U846",
+        "len_alg": "-5*\u221a(3)/6 + 5*\u221a(15)/6",
+        "len_tex": "- \\frac{5 \\sqrt{3}}{6} + \\frac{5 \\sqrt{15}}{6}",
+        "len_num": "1.7841104489"
+      },
+      {
+        "role": "a / b",
+        "label": "(U846\u2013T846) / (R849\u2013U846)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\frac{5 \\sqrt{3}}{3}}{- \\frac{5 \\sqrt{3}}{6} + \\frac{5 \\sqrt{15}}{6}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  }
+]

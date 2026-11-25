@@ -38,6 +38,26 @@ Levels
 
    .. container:: home-book-thumb
 
+      .. image:: _static/svg/rr/pair_12/overlay.svg
+         :alt: Round Robin Pair 12 Overlay
+
+   .. container:: home-book-body
+
+      **Round Robin Pairs (06–70)**
+
+      Step-by-step progression through all 65 active Level 3 round-robin
+      pairs from **Pair 06 (F — G)** to **Pair 70 (R3 — S3)**, featuring
+      label-free ancestor overlays, scale-count breakdowns, and individual
+      golden section proofs.
+
+      .. container:: home-actions
+
+         :doc:`Explore Pairs <round-robin/index>`
+
+.. container:: home-book-hero
+
+   .. container:: home-book-thumb
+
       .. image:: _static/svg/l3/l3_01.svg
          :alt: Level 3 Ancestor Tree
 
@@ -58,4 +78,5 @@ Levels
    :hidden:
 
    levels/index
+   round-robin/index
    approaches/index

@@ -1,0 +1,82 @@
+[
+  {
+    "src": "overlay.svg",
+    "caption": "Pair 30 (D2 \u2014 E2) Overlay: 1 new golden sections & ancestors",
+    "stats": {
+      "pair_idx": 30,
+      "pair": "D2 \u2014 E2",
+      "new_pts": 293,
+      "new_lines": 1,
+      "new_circles": 2,
+      "new_goldens": 1,
+      "cum_pts": 5443,
+      "cum_lines": 32,
+      "cum_circles": 65,
+      "cum_goldens": 679,
+      "size_counts": [
+        {
+          "a_alg": "\u221a(24 - 6*\u221a(13))",
+          "a_tex": "\\sqrt{24 - 6 \\sqrt{13}}",
+          "a_num": "1.5384057811",
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "src": "sec_001.svg",
+    "caption": "1/1: E2 \u2014 H202 \u2014 K202 (11 ancestor lines/circles)",
+    "points": [
+      {
+        "id": "E2",
+        "x_alg": "-1/2",
+        "x_tex": "- \\frac{1}{2}",
+        "x_num": "-0.5000000000",
+        "y_alg": "\u221a(3)",
+        "y_tex": "\\sqrt{3}",
+        "y_num": "1.7320508076"
+      },
+      {
+        "id": "H202",
+        "x_alg": "1",
+        "x_tex": "1",
+        "x_num": "1.0000000000",
+        "y_alg": "-\u221a(39)/2 + 3*\u221a(3)",
+        "y_tex": "- \\frac{\\sqrt{39}}{2} + 3 \\sqrt{3}",
+        "y_num": "2.0736534235"
+      },
+      {
+        "id": "K202",
+        "x_alg": "1/4 + 3*\u221a(5)/4",
+        "x_tex": "\\frac{1}{4} + \\frac{3 \\sqrt{5}}{4}",
+        "x_num": "1.9270509831",
+        "y_alg": "-\u221a(195)/4 - \u221a(39)/4 + 2*\u221a(3) + \u221a(15)",
+        "y_tex": "- \\frac{\\sqrt{195}}{4} - \\frac{\\sqrt{39}}{4} + 2 \\sqrt{3} + \\sqrt{15}",
+        "y_num": "2.2847754508"
+      }
+    ],
+    "segments": [
+      {
+        "role": "a",
+        "label": "E2\u2013H202",
+        "len_alg": "\u221a(24 - 6*\u221a(13))",
+        "len_tex": "\\sqrt{24 - 6 \\sqrt{13}}",
+        "len_num": "1.5384057811"
+      },
+      {
+        "role": "b",
+        "label": "H202\u2013K202",
+        "len_alg": "\u221a(-9*\u221a(13) - 12*\u221a(5) + 3*\u221a(65) + 36)",
+        "len_tex": "\\sqrt{- 9 \\sqrt{13} - 12 \\sqrt{5} + 3 \\sqrt{65} + 36}",
+        "len_num": "0.9507870612"
+      },
+      {
+        "role": "a / b",
+        "label": "(E2\u2013H202) / (H202\u2013K202)",
+        "len_alg": "1/2 + \u221a(5)/2",
+        "len_tex": "\\frac{\\sqrt{24 - 6 \\sqrt{13}}}{\\sqrt{- 9 \\sqrt{13} - 12 \\sqrt{5} + 3 \\sqrt{65} + 36}} = \\frac{1}{2} + \\frac{\\sqrt{5}}{2}",
+        "len_num": "1.6180339887"
+      }
+    ]
+  }
+]

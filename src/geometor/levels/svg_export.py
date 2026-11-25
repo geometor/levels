@@ -14,7 +14,7 @@ import sympy as sp
 from geometor.divine.golden import GoldenFieldTracker, find_golden_sections_in_model
 from geometor.model import Model
 
-from .levels import fundamental
+from .levels import fundamental, order_pairs_round_robin
 
 
 def _simplify_exact(expr: sp.Expr) -> sp.Expr:
@@ -130,6 +130,7 @@ def _render_square_svg(
     highlight_pts: list[tuple[str, tuple[float, float]]],
     out_path: Path,
     size: int = 1000,
+    show_labels: bool = True,
 ) -> None:
     """Render a pure, title-free square SVG fitting all highlighted points and ancestor circles."""
     xs = [xy[0] for _, xy in highlight_pts]
@@ -226,18 +227,19 @@ def _render_square_svg(
                     f'cx="{sx:.2f}" cy="{sy:.2f}" r="3.5" data-base-r="3.5" '
                     'fill="#f8f9fa" stroke="#0b0e14" stroke-width="3.5"/>'
                 )
-                oy = 20 if sy < size - 28 else -12
-                lbl_y = sy + oy
-                parts.append(
-                    f'<text class="geom-label" data-pt-id="{escape(k)}" '
-                    f'x="{sx:.2f}" y="{lbl_y:.2f}" '
-                    f'data-anchor-x="{sx:.2f}" data-anchor-y="{sy:.2f}" '
-                    f'data-offset-y="{oy}" data-base-font="16" '
-                    'fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" '
-                    'stroke-linejoin="round" paint-order="stroke fill" '
-                    'font-family="monospace" font-size="16" '
-                    f'font-weight="bold" text-anchor="middle">{escape(k)}</text>'
-                )
+                if show_labels:
+                    oy = 20 if sy < size - 28 else -12
+                    lbl_y = sy + oy
+                    parts.append(
+                        f'<text class="geom-label" data-pt-id="{escape(k)}" '
+                        f'x="{sx:.2f}" y="{lbl_y:.2f}" '
+                        f'data-anchor-x="{sx:.2f}" data-anchor-y="{sy:.2f}" '
+                        f'data-offset-y="{oy}" data-base-font="16" '
+                        'fill="#4cc9f0" stroke="#0b0e14" stroke-width="4" '
+                        'stroke-linejoin="round" paint-order="stroke fill" '
+                        'font-family="monospace" font-size="16" '
+                        f'font-weight="bold" text-anchor="middle">{escape(k)}</text>'
+                    )
 
     # 4. Highlighted golden segments & points
     for p1, p2, color in highlight_segments:
@@ -260,18 +262,19 @@ def _render_square_svg(
             f'cx="{sx:.2f}" cy="{sy:.2f}" r="3.5" data-base-r="3.5" '
             'fill="#f8f9fa" stroke="none"/>'
         )
-        oy = -14 if sy > 36 else 26
-        lbl_y = sy + oy
-        parts.append(
-            f'<text class="geom-label" data-pt-id="{escape(pid)}" '
-            f'x="{sx:.2f}" y="{lbl_y:.2f}" '
-            f'data-anchor-x="{sx:.2f}" data-anchor-y="{sy:.2f}" '
-            f'data-offset-y="{oy}" data-base-font="16" '
-            'fill="#ffd166" stroke="#0b0e14" stroke-width="4" '
-            'stroke-linejoin="round" paint-order="stroke fill" '
-            'font-family="monospace" font-size="16" '
-            f'font-weight="bold" text-anchor="middle">{escape(pid)}</text>'
-        )
+        if show_labels:
+            oy = -14 if sy > 36 else 26
+            lbl_y = sy + oy
+            parts.append(
+                f'<text class="geom-label" data-pt-id="{escape(pid)}" '
+                f'x="{sx:.2f}" y="{lbl_y:.2f}" '
+                f'data-anchor-x="{sx:.2f}" data-anchor-y="{sy:.2f}" '
+                f'data-offset-y="{oy}" data-base-font="16" '
+                'fill="#ffd166" stroke="#0b0e14" stroke-width="4" '
+                'stroke-linejoin="round" paint-order="stroke fill" '
+                'font-family="monospace" font-size="16" '
+                f'font-weight="bold" text-anchor="middle">{escape(pid)}</text>'
+            )
 
     parts.append("</g></svg>")
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -500,3 +503,254 @@ def export_level3_ancestor_svgs(
             }
         )
     return items
+
+
+def export_round_robin_pairs(
+    ckpt_path: Path,
+    out_dir: Path,
+) -> list[dict[str, Any]]:
+    """Export per-pair overlays (no labels + size stats) and individual golden SVGs."""
+    m = Model("level-2", use_point_subscript=True, enable_logging=False)
+    pt_a = m.set_point(sp.Rational(-1, 2), 0, classes=["given"])
+    pt_b = m.set_point(sp.Rational(1, 2), 0, classes=["given"])
+    fundamental(m, pt_a, pt_b)
+    for p1, p2 in combinations(m.points, 2):
+        fundamental(m, p1, p2)
+    l2_ids = [m[p].ID for p in m.points]
+    l2_elem_keys = {m[e].ID for e in m}
+    pairs = order_pairs_round_robin(l2_ids)[:70]
+    pair_idx_map = {frozenset(pair): i + 1 for i, pair in enumerate(pairs)}
+
+    data = json.loads(ckpt_path.read_text(encoding="utf-8"))
+    elements = data["elements"]
+    del data
+
+    pts_xy: dict[str, tuple[float, float]] = {}
+    pts_sym_raw: dict[str, str] = {}
+    lines_xy: dict[str, tuple[tuple[float, float], tuple[float, float]]] = {}
+    circles_xy: dict[str, tuple[tuple[float, float], float]] = {}
+    parents_map: dict[str, list[str]] = {}
+    given_keys: set[str] = set()
+    birth_pair: dict[str, int] = {}
+    golden_triples: list[tuple[str, str, str]] = []
+
+    for k, v in elements.items():
+        parents_map[k] = list(v.get("parents", []))
+        if "given" in v.get("classes", []):
+            given_keys.add(k)
+        if k in l2_elem_keys:
+            birth_pair[k] = 0
+        sym = v.get("sympy_obj", "")
+        if sym.startswith("Point2D("):
+            pts_xy[k] = _eval_point_float(sym)
+            pts_sym_raw[k] = sym
+            if k not in birth_pair:
+                birth_pair[k] = max(
+                    (birth_pair.get(p, 0) for p in parents_map[k][:2]),
+                    default=0,
+                )
+        elif sym.startswith("Line2D("):
+            ln = sp.sympify(sym)
+            lines_xy[k] = (
+                (float(ln.p1.x.evalf()), float(ln.p1.y.evalf())),
+                (float(ln.p2.x.evalf()), float(ln.p2.y.evalf())),
+            )
+            if k not in birth_pair:
+                birth_pair[k] = pair_idx_map.get(frozenset(parents_map[k][:2]), 0)
+        elif sym.startswith("Circle("):
+            c = sp.sympify(sym)
+            circles_xy[k] = (
+                (float(c.center.x.evalf()), float(c.center.y.evalf())),
+                float(c.radius.evalf()),
+            )
+            if k not in birth_pair:
+                birth_pair[k] = pair_idx_map.get(frozenset(parents_map[k][:2]), 0)
+        elif "golden" in v.get("classes", []):
+            pts_list = v.get("pts", [])
+            if len(pts_list) == 3:
+                golden_triples.append((pts_list[0], pts_list[1], pts_list[2]))
+
+    del elements
+    sp.core.cache.clear_cache()
+
+    def _get_anc(keys: tuple[str, str, str]) -> set[str]:
+        visited: set[str] = set()
+        stack = list(keys)
+        while stack:
+            cur = stack.pop()
+            if cur in visited:
+                continue
+            visited.add(cur)
+            if cur in given_keys:
+                continue
+            for p in parents_map.get(cur, ())[:2]:
+                if p not in visited:
+                    stack.append(p)
+        return visited
+
+    sym_pt_cache: dict[str, sp.Point2D] = {}
+
+    def _get_sym_pt(pid: str) -> sp.Point2D:
+        if pid not in sym_pt_cache:
+            sym_pt_cache[pid] = sp.sympify(pts_sym_raw[pid])
+        return sym_pt_cache[pid]
+
+    by_pair_pts: dict[int, int] = {i: 0 for i in range(6, 71)}
+    by_pair_lines: dict[int, int] = {i: 0 for i in range(6, 71)}
+    by_pair_circles: dict[int, int] = {i: 0 for i in range(6, 71)}
+    for k, bp in birth_pair.items():
+        if 6 <= bp <= 70:
+            if k in pts_xy:
+                by_pair_pts[bp] += 1
+            elif k in lines_xy:
+                by_pair_lines[bp] += 1
+            elif k in circles_xy:
+                by_pair_circles[bp] += 1
+
+    by_pair_goldens: dict[int, list[tuple[str, str, str]]] = {i: [] for i in range(6, 71)}
+    for tri in golden_triples:
+        if all(p in pts_xy for p in tri):
+            bp = max(birth_pair.get(p, 0) for p in tri)
+            if 6 <= bp <= 70:
+                by_pair_goldens[bp].append(tri)
+
+    cum_pts = sum(1 for k, bp in birth_pair.items() if bp == 0 and k in pts_xy)
+    cum_lines = sum(1 for k, bp in birth_pair.items() if bp == 0 and k in lines_xy)
+    cum_circles = sum(1 for k, bp in birth_pair.items() if bp == 0 and k in circles_xy)
+    cum_goldens = sum(
+        1
+        for tri in golden_triples
+        if all(p in pts_xy for p in tri) and max(birth_pair.get(p, 0) for p in tri) == 0
+    )
+
+    summaries: list[dict[str, Any]] = []
+    for p_idx in range(6, 71):
+        pt_p, pt_q = pairs[p_idx - 1]
+        new_pts = by_pair_pts[p_idx]
+        new_lines = by_pair_lines[p_idx]
+        new_circles = by_pair_circles[p_idx]
+        tris = by_pair_goldens[p_idx]
+        new_goldens = len(tris)
+
+        cum_pts += new_pts
+        cum_lines += new_lines
+        cum_circles += new_circles
+        cum_goldens += new_goldens
+
+        size_groups: dict[float, dict[str, Any]] = {}
+        manifest_items: list[dict[str, Any]] = []
+        ov_anc: set[str] = set()
+        ov_segs: list[tuple[tuple[float, float], tuple[float, float], str]] = []
+        ov_pts: dict[str, tuple[float, float]] = {}
+
+        if new_goldens > 0:
+            pair_dir = out_dir / f"pair_{p_idx:02d}"
+            pair_dir.mkdir(parents=True, exist_ok=True)
+
+            for sec_i, tri in enumerate(tris, 1):
+                anc = _get_anc(tri)
+                ov_anc |= anc
+                p0, p1, p2 = (pts_xy[k] for k in tri)
+                q1 = (p1[0] - p0[0]) ** 2 + (p1[1] - p0[1]) ** 2
+                q2 = (p2[0] - p1[0]) ** 2 + (p2[1] - p1[1]) ** 2
+                c1, c2 = ("#ffd166", "#f77f00") if q1 >= q2 else ("#f77f00", "#ffd166")
+                ov_segs.append((p0, p1, c1))
+                ov_segs.append((p1, p2, c2))
+                for k in tri:
+                    ov_pts[k] = pts_xy[k]
+
+                sym_pts = [_get_sym_pt(k) for k in tri]
+                meta = _build_section_metadata(tri, sym_pts)
+                maj_seg = meta["segments"][0]
+                size_key = round(float(maj_seg["len_num"]), 9)
+                if size_key not in size_groups:
+                    size_groups[size_key] = {
+                        "a_alg": maj_seg["len_alg"],
+                        "a_tex": maj_seg["len_tex"],
+                        "a_num": maj_seg["len_num"],
+                        "count": 0,
+                    }
+                size_groups[size_key]["count"] += 1
+
+                fname = f"sec_{sec_i:03d}.svg"
+                _render_square_svg(
+                    pts_xy=pts_xy,
+                    lines_xy=lines_xy,
+                    circles_xy=circles_xy,
+                    anc_keys=anc,
+                    highlight_segments=[(p0, p1, c1), (p1, p2, c2)],
+                    highlight_pts=[(k, pts_xy[k]) for k in tri],
+                    out_path=pair_dir / fname,
+                    show_labels=True,
+                )
+                n_structs = sum(1 for a in anc if a in lines_xy or a in circles_xy)
+                manifest_items.append(
+                    {
+                        "src": fname,
+                        "caption": (
+                            f"{sec_i}/{new_goldens}: {tri[0]} — {tri[1]} — {tri[2]} "
+                            f"({n_structs} ancestor lines/circles)"
+                        ),
+                        **meta,
+                    }
+                )
+
+            size_counts = sorted(
+                size_groups.values(),
+                key=lambda item: (-item["count"], float(item["a_num"])),
+            )
+            _render_square_svg(
+                pts_xy=pts_xy,
+                lines_xy=lines_xy,
+                circles_xy=circles_xy,
+                anc_keys=ov_anc,
+                highlight_segments=ov_segs,
+                highlight_pts=list(ov_pts.items()),
+                out_path=pair_dir / "overlay.svg",
+                show_labels=False,
+            )
+            overlay_item: dict[str, Any] = {
+                "src": "overlay.svg",
+                "caption": (
+                    f"Pair {p_idx:02d} ({pt_p} — {pt_q}) Overlay: "
+                    f"{new_goldens} new golden sections & ancestors"
+                ),
+                "stats": {
+                    "pair_idx": p_idx,
+                    "pair": f"{pt_p} — {pt_q}",
+                    "new_pts": new_pts,
+                    "new_lines": new_lines,
+                    "new_circles": new_circles,
+                    "new_goldens": new_goldens,
+                    "cum_pts": cum_pts,
+                    "cum_lines": cum_lines,
+                    "cum_circles": cum_circles,
+                    "cum_goldens": cum_goldens,
+                    "size_counts": size_counts,
+                },
+            }
+            full_manifest = [overlay_item, *manifest_items]
+            (pair_dir / "manifest.json").write_text(
+                json.dumps(full_manifest, indent=2),
+                encoding="utf-8",
+            )
+
+        summaries.append(
+            {
+                "pair_idx": p_idx,
+                "pt_p": pt_p,
+                "pt_q": pt_q,
+                "new_pts": new_pts,
+                "new_lines": new_lines,
+                "new_circles": new_circles,
+                "new_goldens": new_goldens,
+                "cum_pts": cum_pts,
+                "cum_lines": cum_lines,
+                "cum_circles": cum_circles,
+                "cum_goldens": cum_goldens,
+                "has_manifest": new_goldens > 0,
+            }
+        )
+
+    return summaries
+

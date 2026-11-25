@@ -1,6 +1,6 @@
 :type: book
 :navigation: header
-:order: 2
+:order: 3
 :nav_title: Approaches
 :layout: book
 :author: phi ARCHITECT
