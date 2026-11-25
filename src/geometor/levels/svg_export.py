@@ -35,8 +35,10 @@ def _build_section_metadata(
             {
                 "id": pid,
                 "x_alg": _fmt_alg(x_s),
+                "x_tex": sp.latex(x_s),
                 "x_num": f"{float(x_s.evalf(12)):.10f}",
                 "y_alg": _fmt_alg(y_s),
+                "y_tex": sp.latex(y_s),
                 "y_num": f"{float(y_s.evalf(12)):.10f}",
             }
         )
@@ -57,12 +59,14 @@ def _build_section_metadata(
             "role": "Major",
             "label": maj[0],
             "len_alg": _fmt_alg(maj[1]),
+            "len_tex": sp.latex(maj[1]),
             "len_num": f"{maj[2]:.10f}",
         },
         {
             "role": "Minor",
             "label": mnr[0],
             "len_alg": _fmt_alg(mnr[1]),
+            "len_tex": sp.latex(mnr[1]),
             "len_num": f"{mnr[2]:.10f}",
         },
     ]
