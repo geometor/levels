@@ -17,9 +17,17 @@ from geometor.model import Model
 from .levels import fundamental
 
 
+def _simplify_exact(expr: sp.Expr) -> sp.Expr:
+    """Simplify and denest nested radicals in an exact SymPy expression."""
+    out = sp.sqrtdenest(sp.simplify(expr))
+    out = sp.radsimp(out)
+    out = sp.sqrtdenest(sp.simplify(out))
+    return sp.simplify(out)
+
+
 def _fmt_alg(expr: sp.Expr) -> str:
     """Format an exact SymPy expression using clean Unicode radicals."""
-    return str(sp.simplify(expr)).replace("sqrt(", "√(")
+    return str(expr).replace("sqrt(", "√(")
 
 
 def _build_section_metadata(
@@ -29,8 +37,8 @@ def _build_section_metadata(
     """Build exact algebraic and float coordinate/segment tables for a golden section."""
     points_meta: list[dict[str, str]] = []
     for pid, pt in zip(tri, sym_pts, strict=True):
-        x_s = sp.simplify(pt.x)
-        y_s = sp.simplify(pt.y)
+        x_s = _simplify_exact(pt.x)
+        y_s = _simplify_exact(pt.y)
         points_meta.append(
             {
                 "id": pid,
@@ -43,8 +51,8 @@ def _build_section_metadata(
             }
         )
 
-    d01 = sp.simplify(sym_pts[0].distance(sym_pts[1]))
-    d12 = sp.simplify(sym_pts[1].distance(sym_pts[2]))
+    d01 = _simplify_exact(sym_pts[0].distance(sym_pts[1]))
+    d12 = _simplify_exact(sym_pts[1].distance(sym_pts[2]))
     f01 = float(d01.evalf(12))
     f12 = float(d12.evalf(12))
     if f01 >= f12:
@@ -54,7 +62,7 @@ def _build_section_metadata(
         maj = (f"{tri[1]}–{tri[2]}", d12, f12)
         mnr = (f"{tri[0]}–{tri[1]}", d01, f01)
 
-    ratio_expr = sp.simplify(maj[1] / mnr[1])
+    ratio_expr = _simplify_exact(maj[1] / mnr[1])
     ratio_num = maj[2] / mnr[2]
 
     segments_meta = [
