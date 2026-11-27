@@ -147,6 +147,6 @@ To reveal the minimal compass-and-straightedge origin of each golden section :ma
 Algorithmic & Parallel Architecture
 ===================================
 
-* **Exact :math:`O(1)` Point Deduplication** (``geometor.model`` ``v0.6.1``): :math:`3 \times 3` spatial grid hash (``h = 1e-6``) screens candidates with ``zero_test`` *before* running ``clean_expr``, preventing :math:`O(N^2)` blowups.
+* **Exact** :math:`O(1)` **Point Deduplication** (``geometor.model`` ``v0.6.1``): :math:`3 \times 3` spatial grid hash (``h = 1e-6``) screens candidates with ``zero_test`` *before* running ``clean_expr``, preventing :math:`O(N^2)` blowups.
 * **Fast Golden Search & Point-Birth Impact** (``geometor.divine`` ``v0.4.5``–``v0.4.6``): ``bisect_left`` 1D projection search (:math:`O(n^2 \log n)`) and incremental ``GoldenFieldTracker`` (:math:`O(m \log m)` per new point).
 * **Out-of-Core Parallel Level 3** (``geometor.levels.parallel_l3``): 3D spatial grid dedup builds all 50,281 unique Level-3 structures in **111.5s** (14.6× faster than linear dedup). Intersecting single full Level-3 lines against all 50,280 structures reveals **31,627 points** on ``line 0`` and **58,650 points** each on ``lines 1–3``.
